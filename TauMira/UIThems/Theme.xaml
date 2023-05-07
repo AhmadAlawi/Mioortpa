@@ -1,0 +1,303 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <!--<Color x:Key="MainBlueColor">#264B80</Color>
+    <Color x:Key="MainGrayColor">#858B94</Color>
+    <Color x:Key="MainRedColor">#ED3D3D</Color>
+    <Color x:Key="MainPurbleColor">#AF3DED</Color>
+    <SolidColorBrush x:Key="WindowBorderColour"  Color="#FFE0E0E0" />
+    <SolidColorBrush x:Key="WindowTitleColour"  Color="WhiteSmoke" />
+
+    <Color x:Key="ShadowColor">#858B94</Color>
+
+    <SolidColorBrush x:Key="MainBlueSolidColorBrush" Color="{DynamicResource MainBlueColor}"/>
+    <SolidColorBrush x:Key="MainGraySolidColorBrush" Color="{DynamicResource MainGrayColor}"/>
+    <SolidColorBrush x:Key="MainRedSolidColorBrush" Color="{DynamicResource MainRedColor}"/>
+    <SolidColorBrush x:Key="MainPurbleSolidColorBrush" Color="{DynamicResource MainPurbleColor}"/>
+    <SolidColorBrush x:Key="BackgroundColour"  Color="#FFF8F8F8" />
+    <SolidColorBrush x:Key="ShadowSolidColorBrush" Color="{DynamicResource ShadowColor}" Opacity="0.3"/>
+    <SolidColorBrush x:Key="TransparentBrush" Color="Transparent"/>
+    <SolidColorBrush x:Key="ContainerBackground" Color="WhiteSmoke"/>
+    <SolidColorBrush x:Key="ContainerBorder" Color="#FFE8E8E8"/>
+    <SolidColorBrush x:Key="ControlDefaultForeground"  Color="#000000" Opacity="60.63" />
+    <SolidColorBrush x:Key="ControlMOSelectForeground"  Color="#FF040404" />
+    <SolidColorBrush x:Key="ControlDarkerBackground"             Color="#FFC7C7C7"/>
+    <SolidColorBrush x:Key="ControlDarkerBorderBrush"            Color="#FFBEBEBE"/>
+    <SolidColorBrush x:Key="ControlDefaultBackground"            Color="#eff1f3" Opacity="7"/>
+    <SolidColorBrush x:Key="ControlDefaultBorderBrush"           Color="#000000"/>
+    <SolidColorBrush x:Key="ControlBrightDefaultBackground"      Color="#FFCDCDCD"/>
+    <SolidColorBrush x:Key="ControlBrightDefaultBorderBrush"     Color="#FFAFAFAF"/>
+    <SolidColorBrush x:Key="ControlDisabledBackground"           Color="#FFB4B4B4"/>
+    <SolidColorBrush x:Key="ControlEnabledBackground"            Color="#A61A32" Opacity="0.2"/>
+    <SolidColorBrush x:Key="ControlDisabledBorderBrush"          Color="#FF8C8C8C"/>
+    <SolidColorBrush x:Key="ControlMouseOverBackground"          Color="#FFD2D2D2"/>
+    <SolidColorBrush x:Key="ControlMouseOverBorderBrush"         Color="#FFBEBEBE"/>
+    <SolidColorBrush x:Key="ControlSelectedBackground"           Color="#FFE0E0E0"/>
+    <SolidColorBrush x:Key="ControlSelectedBorderBrush"          Color="#FFCCCCCC"/>
+    <SolidColorBrush x:Key="ControlSelectedMouseOverBackground"  Color="Gainsboro"/>
+    <SolidColorBrush x:Key="ControlSelectedMouseOverBorderBrush" Color="#FFB9B9B9"/>
+    <SolidColorBrush x:Key="ControlGlythColour"                  Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ControlMouseOverGlythColour"         Color="#FF212121"/>
+    <SolidColorBrush x:Key="ControlSelectedGlythColour"          Color="#FF191919"/>
+    <SolidColorBrush x:Key="ControlDisabledGlythColour"          Color="#FF666666"/>
+    <SolidColorBrush x:Key="Primary" Color=" #A61A32"/>
+
+
+    <FontFamily x:Key="TauFont"></FontFamily>
+
+
+    <Style x:Key="LabelStyle1" TargetType="Label">
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="{DynamicResource TauFont}"/>
+        <Setter Property="Foreground" Value="{DynamicResource MainBlueSolidColorBrush}"/>
+    </Style>
+
+    <Style x:Key="LabelStyle2" TargetType="Label">
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="{DynamicResource TauFont}"/>
+        <Setter Property="Foreground" Value="{DynamicResource MainGraySolidColorBrush}"/>
+    </Style>
+
+    <Style x:Key="LabelStyleSectionName" TargetType="Label">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="{DynamicResource TauFont}"/>
+        <Setter Property="Foreground" Value="{DynamicResource   MainPurbleSolidColorBrush}"/>
+    </Style>
+
+
+
+    <Style x:Key="LabelStyleFieldInput" TargetType="Label">
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="{DynamicResource TauFont}"/>
+        <Setter Property="Foreground" Value="{DynamicResource MainBlueSolidColorBrush}"/>
+    </Style>
+
+ 
+    <Style x:Key="LabelStyleResetInput" TargetType="Label">
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="{DynamicResource TauFont}"/>
+        <Setter Property="Foreground" Value="{DynamicResource MainBlueSolidColorBrush}"/>
+    </Style>
+    <Style x:Key="LabelStyleClearFieldInput" TargetType="Label">
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="{DynamicResource TauFont}"/>
+        <Setter Property="Foreground" Value="{DynamicResource MainRedSolidColorBrush}"/>
+    </Style>
+
+    <Style x:Key="CustomWindowStyle" TargetType="{x:Type Window}">
+        <Setter Property="BorderBrush" Value="{StaticResource WindowBorderColour}" />
+        <Setter Property="Background" Value="{StaticResource BackgroundColour}" />
+        <Setter Property="Foreground" Value="{StaticResource ControlDefaultForeground}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="ResizeMode" Value="CanResizeWithGrip"/>
+        <Setter Property="WindowStyle" Value="SingleBorderWindow"/>
+        <Setter Property="WindowChrome.WindowChrome">
+            <Setter.Value>
+                <WindowChrome CaptionHeight="26"
+                              ResizeBorderThickness="6"
+                              CornerRadius="0"
+                              GlassFrameThickness="1"
+                              NonClientFrameEdges="None"
+                              UseAeroCaptionButtons="False"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Window}">
+                    <Grid>
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <Grid>
+                                <AdornerDecorator Margin="0,30,0,0">
+                                    <ContentPresenter />
+                                </AdornerDecorator>
+                                <Grid Height="30" x:Name="titlebar"
+                                      Background="{StaticResource Primary}"
+                                      VerticalAlignment="Top" Margin="0">
+                                    <Button x:Name="HidePanels" HorizontalAlignment="Left"
+                                            Background="Transparent"
+                                            MouseRightButtonDown="HidePanels_MouseRightButtonDown"
+                                            MouseRightButtonUp="HidePanels_MouseRightButtonUp"
+                                                BorderBrush="Transparent"
+                                                Width="40" Click="HidePanels_Click"
+                                                VerticalContentAlignment="Center"
+                                                WindowChrome.IsHitTestVisibleInChrome="True" ClickMode="Press" >
+                                        <Button.Content>
+                                            <Image Width="16" Height="16" >
+                                                <Image.Source>
+                                                    <DrawingImage>
+                                                        <DrawingImage.Drawing>
+                                                            <DrawingGroup ClipGeometry="M0,0 V12 H16 V0 H0 Z">
+                                                                <GeometryDrawing Brush="{StaticResource ControlGlythColour}" Geometry="F1 M16,12z M0,0z M1.96094,12C1.70052,12 1.45052,11.9479 1.21094,11.8438 0.976562,11.7344 0.768229,11.5911 0.585938,11.4141 0.408854,11.2318 0.265625,11.0234 0.15625,10.7891 0.0520833,10.5495 0,10.2995 0,10.0391L0,1.96094C0,1.70052 0.0520833,1.45312 0.15625,1.21875 0.265625,0.979167 0.408854,0.770833 0.585938,0.59375 0.768229,0.411458 0.976562,0.268229 1.21094,0.164062 1.45052,0.0546875 1.70052,0 1.96094,0L14.0391,0C14.2995,0 14.5469,0.0546875 14.7812,0.164062 15.0208,0.268229 15.2292,0.411458 15.4062,0.59375 15.5885,0.770833 15.7318,0.979167 15.8359,1.21875 15.9453,1.45312 16,1.70052 16,1.96094L16,10.0391C16,10.2995 15.9453,10.5495 15.8359,10.7891 15.7318,11.0234 15.5885,11.2318 15.4062,11.4141 15.2292,11.5911 15.0208,11.7344 14.7812,11.8438 14.5469,11.9479 14.2995,12 14.0391,12L1.96094,12z M5,11L5,1 2,1C1.85938,1 1.72917,1.02604 1.60938,1.07812 1.48958,1.13021 1.38281,1.20312 1.28906,1.29688 1.20052,1.38542 1.13021,1.48958 1.07812,1.60938 1.02604,1.72917 1,1.85938 1,2L1,10C1,10.1406 1.02604,10.2734 1.07812,10.3984 1.13021,10.5182 1.20052,10.6224 1.28906,10.7109 1.3776,10.7995 1.48177,10.8698 1.60156,10.9219 1.72656,10.974 1.85938,11 2,11L5,11z M14,11C14.1406,11 14.2708,10.974 14.3906,10.9219 14.5104,10.8698 14.6146,10.7995 14.7031,10.7109 14.7969,10.6172 14.8698,10.5104 14.9219,10.3906 14.974,10.2708 15,10.1406 15,10L15,2C15,1.86458 14.974,1.73698 14.9219,1.61719 14.8698,1.49219 14.7969,1.38542 14.7031,1.29688 14.6146,1.20312 14.5078,1.13021 14.3828,1.07812 14.263,1.02604 14.1354,1 14,1L6,1 6,11 14,11z" />
+                                                            </DrawingGroup>
+                                                        </DrawingImage.Drawing>
+                                                    </DrawingImage>
+                                                </Image.Source>
+                                            </Image>
+                                        </Button.Content>
+                                        <Button.ContextMenu >
+                                            <ContextMenu x:Name="cmTab" Visibility="Hidden"  >
+                                                <MenuItem x:Name="WorkSpaceMenuItem" Header="Hide/Show WorkSpaces Panel" Click="Hid_WorkSpacePael_Event"/>
+                                                <MenuItem x:Name="ActionBarMenuItem" Header="Hide/Show Action Bar" Click="Hid_ActionBar_Event"/>
+                                                <MenuItem x:Name="GroupPanelMenuItem" Header="Hide/Show Groups Panel" Click="Hid_GroupPanel_Event"/>
+                                            </ContextMenu>
+                                        </Button.ContextMenu>
+                                    </Button>
+                                    <StackPanel Margin="0,0,130,0" Orientation="Horizontal" HorizontalAlignment="Center" >
+
+                                        <Image HorizontalAlignment="Center" VerticalAlignment="Center" Margin="3,3"  Height="16" Width="16" >
+                                            <Image.Source>
+                                                <DrawingImage>
+                                                    <DrawingImage.Drawing>
+                                                        <DrawingGroup ClipGeometry="M0,0 V64 H64 V0 H0 Z">
+                                                            <DrawingGroup Opacity="1">
+                                                                <GeometryDrawing Brush="{StaticResource ControlGlythColour}" Geometry="F0 M64,64z M0,0z M31.9989506,7C47.5752615,7 60.8512261,21.4988981 60.8512261,39.3860496 60.8512261,43.6460279 59.0462098,51.7686011 59.0462098,51.7686011 58.9279743,52.2989121 59.2763844,52.7326757 59.8192885,52.7326757L59.8192885,52.7326757 60.7644734,52.7326757C61.3080771,52.7326757 61.8083045,52.7662574 61.8761675,52.8061357 61.9440305,52.8467135 62,53.506454 62,54.0500577L62,54.0500577 62,56.1664043C62,56.710008 61.9440305,57.3690489 61.8761675,57.4096268 61.8083045,57.4502046 61.3080771,57.4830867 60.7644734,57.4830867L60.7644734,57.4830867 42.4967293,57.4830867C41.9531255,57.4830867 41.3472557,57.4096268 41.3171721,57.3186763 41.2863889,57.2284255 41.2619023,56.710008 41.2619023,56.1664043L41.2619023,56.1664043 41.2619023,54.0500577C41.2619023,53.506454 41.3171721,52.8467135 41.3850352,52.8061357 41.4528982,52.7662574 41.9531255,52.7326757 42.4967293,52.7326757L42.4967293,52.7326757 43.4866898,52.7326757C44.0302935,52.7326757 44.3227341,52.3150033 44.1359359,51.8049813 44.1359359,51.8049813 40.453143,41.7010879 31.9324868,41.7010879 23.0536258,41.7010879 20.0368699,51.7860916 20.0368699,51.7860916 19.8808549,52.3066079 20.1984818,52.7326757 20.7413859,52.7326757L20.7413859,52.7326757 21.5032707,52.7326757C22.0461748,52.7326757 22.6527443,52.8068353 22.6828279,52.8970861 22.7136111,52.9873369 22.7380977,53.506454 22.7380977,54.0500577L22.7380977,54.0500577 22.7380977,56.1664043C22.7380977,56.710008 22.6828279,57.3690489 22.6149648,57.4096268 22.5471018,57.4502046 22.0461748,57.4830867 21.5032707,57.4830867L21.5032707,57.4830867 3.23552664,57.4830867C2.6919229,57.4830867 2.0860531,57.4096268 2.05526988,57.3186763 2.02518627,57.2284255 2,56.710008 2,56.1664043L2.00097348,53.9228838C2.00868107,53.4086191 2.06118973,52.8435922 2.12383251,52.8061357 2.19169553,52.7662574 2.6919229,52.7326757 3.23552664,52.7326757L3.23552664,52.7326757 4.65715185,52.7326757C5.20075559,52.7326757,5.52118096,52.3059083,5.3693637,51.7839927L5.3693637,51.7839927 5.36106624,51.755238C5.21353345,51.2419658 3.1480743,43.974224 3.1480743,39.3860496 3.1480743,21.4988981 16.4254381,7 31.9989506,7z M32.1514675,13.8744534C18.6768111,13.8744534 8.40640851,26.8558785 8.40640851,42.8666527 8.40640851,46.2793927 8.90243817,49.552209 9.81054325,52.5913527L9.81054325,52.5913527 9.82453563,52.6396264C9.82103753,52.6906986,10.2617973,52.7326757,10.8054011,52.7326757L10.8054011,52.7326757 13.0567741,52.7326757C13.5996782,52.7326757 13.9774723,52.5822577 13.9655788,52.5185924 13.9536852,52.4549271 13.9445902,51.9581978 13.9445902,51.4152937L13.9445902,48.0956029C13.9445902,47.5519992 13.9718753,46.9132473 14.0061566,46.8453843 14.040438,46.7775213 14.326582,46.3598489 14.6428097,45.9176899L14.6428097,45.9176899 19.3127645,39.3874488C19.6289922,38.9459894 20.1488089,38.3869941 20.3160178,38.3590093 20.482527,38.3317242 21.0632106,38.3086368 21.6068143,38.3086368L21.6068143,38.3086368 41.790814,38.3086368C42.3344177,38.3086368 43.1655648,38.4086823 43.3838458,38.5290167 43.6014272,38.6500507 44.0393885,39.1097002 44.357715,39.5497604L44.357715,39.5497604 48.9682023,45.9351803C49.2865288,46.3759401 49.6370378,46.9090496 49.649631,46.9832092 49.6622241,47.0580684 49.6762165,47.5638927 49.6804142,48.1067968L49.6804142,48.1067968 49.711897,51.682548C49.7132963,51.8637493,49.7143845,52.0373324,49.7151101,52.1886574L49.7159198,52.3971211C49.7160073,52.4284727,49.7160704,52.4579758,49.7161085,52.4854014L49.7160291,52.6231963C49.7158324,52.6777993 49.7153951,52.7095883 49.7146955,52.7123867 49.7111974,52.7235806 50.1526568,52.7326757 50.6962605,52.7326757L53.6451534,52.7326757C54.1887571,52.7326757 54.7162696,52.2961136 54.8177143,51.7623045 54.8177143,51.7623045 55.8951272,46.0890964 55.8951272,42.8666527 55.8951272,26.8558785 45.627523,13.8744534 32.1514675,13.8744534z M31.5721132,19.8374436C31.7204324,19.8227516 31.9632001,19.8227516 32.1108196,19.8374436 32.2591388,19.8521356 32.7803547,20.4845909 33.0748942,20.9414419L33.0748942,20.9414419 41.5206912,34.034806C41.8152307,34.491657,41.6123413,34.8645538,41.0687375,34.8645538L41.0687375,34.8645538 38.3115402,34.8645538C37.7686361,34.8645538,37.0725155,34.4979536,36.7660825,34.049498L36.7660825,34.049498 32.9377689,28.4553468C32.6306363,28.0068912 32.1583937,27.4269073 32.0457551,27.3975233 31.9338161,27.368839 31.5609193,27.4185119 31.4692692,27.4968692 31.3783188,27.5759261 31.0522965,28.0068912 30.7458635,28.4553468L30.7458635,28.4553468 26.9175499,34.049498C26.6104173,34.4979536,25.9149963,34.8645538,25.3713926,34.8645538L25.3713926,34.8645538 22.6148949,34.8645538C22.0712911,34.8645538,21.8677021,34.491657,22.1622416,34.034806L22.1622416,34.034806 30.6087382,20.9414419C30.9025781,20.4845909,31.423794,19.8521356,31.5721132,19.8374436z" />
+                                                            </DrawingGroup>
+                                                        </DrawingGroup>
+                                                    </DrawingImage.Drawing>
+                                                </DrawingImage>
+                                            </Image.Source>
+                                        </Image>
+                                        <TextBlock Margin="3,3"
+                                                   VerticalAlignment="Center"
+                                                   HorizontalAlignment="Center"
+                                                   TextWrapping="NoWrap"
+                                                   FontSize="12" Width="Auto"
+                                                   Foreground="{StaticResource WindowTitleColour}"
+                                                   Text="{Binding Title, RelativeSource={RelativeSource TemplatedParent}}"   
+                                                   Grid.Column="1" TextAlignment="Left"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal"
+                                                Grid.Column="0" HorizontalAlignment="Right">
+                                        <Button x:Name="btnMinimize"
+                                                Background="Transparent"
+                                                BorderBrush="Transparent"
+                                                Width="40"
+                                                VerticalContentAlignment="Center"
+                                                WindowChrome.IsHitTestVisibleInChrome="True" 
+                                                Click="Minimize_Event">
+                                            <Rectangle Width="10" 
+                                                       VerticalAlignment="Center" 
+                                                       Margin="1 2 0 0" 
+                                                       Stroke="{StaticResource ControlGlythColour}" 
+                                                       StrokeThickness="2"/>
+                                        </Button>
+
+                                        <Button x:Name="btnRestore"
+                                                Background="Transparent"
+                                                BorderBrush="Transparent"
+                                                Width="40"
+                                                WindowChrome.IsHitTestVisibleInChrome="True" 
+                                                Click="AutoMinimize_Event">
+                                        </Button>
+                                        <Button x:Name="btnClose"
+                                                Background="Transparent"
+                                                BorderBrush="Transparent"
+                                                Template="{DynamicResource CloseWindowButton}"
+                                                Width="40"
+                                                WindowChrome.IsHitTestVisibleInChrome="True" 
+                                                Click="CloseWindow_Event">
+                                            <Grid Margin="0 1 0 0">
+                                                <Line X1="0" Y1="0" X2="11" Y2="11" Stroke="{StaticResource ControlGlythColour}" StrokeThickness="2" />
+                                                <Line X1="0" Y2="0" Y1="11" X2="11" Stroke="{StaticResource ControlGlythColour}" StrokeThickness="2" />
+                                            </Grid>
+                                        </Button>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="WindowState" Value="Maximized">
+                            <Setter TargetName="btnRestore" Property="Content">
+                                <Setter.Value>
+                                    <Grid Width="14" Height="14">
+                                        <Rectangle StrokeThickness="2" 
+                                                   Stroke="{StaticResource ControlGlythColour}"
+                                                   Margin="3,0,0,3"/>
+                                        <Rectangle StrokeThickness="2" 
+                                                   Fill="{StaticResource WindowBorderColour}"
+                                                   Stroke="{StaticResource ControlGlythColour}"
+                                                   Margin="0,4,4,0"/>
+                                    </Grid>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="WindowState" Value="Normal">
+                            <Setter TargetName="btnRestore" Property="Content">
+                                <Setter.Value>
+                                    <Grid Width="12" Height="12">
+                                        <Rectangle StrokeThickness="2" 
+                                                   Stroke="{StaticResource ControlGlythColour}"
+                                                   Margin="0"/>
+                                    </Grid>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="WindowState" Value="Maximized">
+                <Setter Property="BorderThickness" Value="8"/>
+            </Trigger>
+            <Trigger Property="WindowState" Value="Normal">
+                <Setter Property="BorderThickness" Value="1"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <ControlTemplate x:Key="CloseWindowButton" TargetType="{x:Type Button}">
+        <Border x:Name="border" 
+                BorderBrush="{TemplateBinding BorderBrush}" 
+                BorderThickness="{TemplateBinding BorderThickness}" 
+                Background="{TemplateBinding Background}" 
+                SnapsToDevicePixels="true"
+                HorizontalAlignment="Stretch" 
+                VerticalAlignment="Stretch">
+            <ContentPresenter x:Name="contentPresenter" 
+                              Focusable="False" 
+                              Margin="{TemplateBinding Padding}" 
+                              RecognizesAccessKey="True" 
+                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                              VerticalAlignment="Center"
+                              HorizontalAlignment="Center"/>
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsDefaulted" Value="true">
+                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource ControlMouseOverBorderBrush}"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Background" TargetName="border" Value="#FFF01428"/>
+                <Setter Property="BorderBrush" TargetName="border" Value="#FFF01428"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="true">
+                <Setter Property="Background" TargetName="border" Value="#FF940A14"/>
+                <Setter Property="BorderBrush" TargetName="border" Value="#FF940A14"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="false">
+                <Setter Property="Background" TargetName="border" Value="{StaticResource ControlBrightDefaultBackground}"/>
+                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource ControlBrightDefaultBorderBrush}"/>
+                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource ControlDisabledGlythColour}"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>-->
+
+</ResourceDictionary>

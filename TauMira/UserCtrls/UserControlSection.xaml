@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="TauMira.UserCtrls.UserControlSection"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TauMira.UserCtrls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <Border CornerRadius="12" BorderThickness="1,0.5,1,2" BorderBrush="{DynamicResource ShadowSolidColorBrush}" Margin="0,0,0,20">
+
+
+        <Grid Margin="15">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Label Name="SectionName" HorizontalAlignment="Left"  Style="{DynamicResource  LabelStyleSectionName}">Identification Code</Label>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Label Margin="5,0" Style="{DynamicResource LabelStyleResetInput}" Cursor="Hand" MouseUp="Label_MouseUp">Reset Section</Label>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Label Name="Remove_" Cursor="Hand" MouseUp="Remove_MouseUp"  Margin="5,0"  Style="{DynamicResource LabelStyleClearFieldInput}">Remove Section</Label>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1"></Grid>
+            <Grid Grid.Row="2">
+                <WrapPanel   Name="WrapPanelData"  />
+
+            </Grid>
+        </Grid>
+    </Border>
+</UserControl>

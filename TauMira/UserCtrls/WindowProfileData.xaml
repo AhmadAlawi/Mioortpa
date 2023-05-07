@@ -1,0 +1,30 @@
+﻿<Window x:Class="TauMira.UserCtrls.WindowProfileData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TauMira.UserCtrls"
+        mc:Ignorable="d"
+        Title="Profiles Data" WindowStyle="None" WindowStartupLocation="CenterScreen" Height="100" Width="280" MaxHeight="100" MinHeight="100" MaxWidth="280" MinWidth="280" >
+
+    <Border CornerRadius="4">
+
+        <StackPanel>
+            <Label  HorizontalAlignment="Center"  Style="{DynamicResource LabelStyleSectionName}" Content="  Set the number of profiles  " />
+            <Label HorizontalAlignment="Center"  Style="{DynamicResource LabelStyleClearFieldInput}" Content=" Months " />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBox  x:Name="TextBoxTo" MinWidth="100" Width="209" MinHeight="25" />
+            <Button Cursor="Hand"  Click="Button_Click" Width="30" Height="20"  Content=" Ok "></Button>
+                
+            </StackPanel>
+        </StackPanel>
+     
+         
+       
+
+
+
+    
+
+    </Border>
+</Window>
