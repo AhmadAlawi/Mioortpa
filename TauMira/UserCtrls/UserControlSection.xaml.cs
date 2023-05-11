@@ -35,33 +35,29 @@ namespace TauMira.UserCtrls
 
         StackPanel parent_;
         public static List<string> types = new List<string>() { "system.string", "system.int32", "system.datetime", "system.boolean" };
-
-
-        public UserControlSection(string Name_, object obj,Visibility removeVisable = Visibility.Collapsed, StackPanel parent_ =null)
+        public UserControlSection(string Name_, object obj, Visibility removeVisable = Visibility.Collapsed, StackPanel parent_ = null)
         {
             InitializeComponent();
-            this.parent_=  parent_;
+            this.parent_ = parent_;
             Remove_.Visibility = removeVisable;
-          
+
 
             SectionName.Content = Name_;
 
-            if (obj == null)  return;
+            if (obj == null) return;
 
 
-            var Properties= obj.GetType().GetProperties();
+            var Properties = obj.GetType().GetProperties();
 
 
             for (int i = 0; i < Properties.Length; i++)
             {
                 if (types.Contains(Properties[i].GetValue(obj).GetType().ToString().ToLower()))
                 {
-
-                    
-                    UserControlItemField userControlItemField = new UserControlItemField(ref Properties[i],ref obj,i);
-                    
+                    UserControlItemField userControlItemField = new UserControlItemField(ref Properties[i], ref obj, i);
                     userControlItemField.Margin = new Thickness(0, 0, 5, 0);
-                    WrapPanelData.Children.Add(userControlItemField);
+                    if (!userControlItemField.FieldName.Content.ToString().Contains("Desc"))
+                        WrapPanelData.Children.Add(userControlItemField);
                 }
             }
 
@@ -72,9 +68,9 @@ namespace TauMira.UserCtrls
 
                 if (types.Contains(item.GetValue(obj).GetType().ToString().ToLower()))
                 {
-                 
+
                     UserControlItemField userControlItemField = new UserControlItemField(item.Name, item.GetValue(obj));
-                    
+
                     userControlItemField.Margin = new Thickness(0, 0, 5, 0);
                     WrapPanelData.Children.Add(userControlItemField);
                 }
@@ -93,7 +89,7 @@ namespace TauMira.UserCtrls
             }
         }
 
-        
+
 
         private void Remove_MouseUp(object sender, MouseButtonEventArgs e)
         {

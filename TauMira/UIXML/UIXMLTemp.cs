@@ -1226,7 +1226,7 @@ namespace TauMira.UIXML
             {
                 CBContractCode = ProviderContractNo = ContractTypeDesc = ContractPhase = ContractPhaseDesc = Role = RoleDesc = OriginalCurrency = CreditFacilityPurposeDesc = OriginalCurrencyDesc = "";
 
-                ContractType = ProviderCodeEncrypted = CreditFacilityPurpose = 0;
+               ContractType = ProviderCodeEncrypted = CreditFacilityPurpose = 0;
 
                 ContractStartDate = ContractEndDate = LastUpdateDate = DateTime.Now;
 
@@ -1467,8 +1467,8 @@ namespace TauMira.UIXML
         {
             public Profile()
             {
-                ReferenceYear = OutstandingBalance = MinPaymentIndicator = OverdueInsPaymentsNumber = TotalGuaranteedAmount = Utilization = CreditLimit = DaysPastDue = ReferenceMonth = OverduePaymentsNumber = FlagCardUsed = TimesCardUsed = BilledAmount = 0;
-                DaysPastDueDesc = Status = MinPaymentIndicatorDesc = ContractStatusLastUpdatDesc = ContractStatusLastUpdate = StatusDesc = "";
+                ReferenceYear = OutstandingBalance = MinPaymentIndicator = OverdueInsPaymentsNumber = TotalGuaranteedAmount = Utilization = CreditLimit = DaysPastDue = ReferenceMonth = OverduePaymentsNumber = TimesCardUsed = BilledAmount = 0;
+                DaysPastDueDesc = Status = MinPaymentIndicatorDesc=FlagCardUsed = ContractStatusLastUpdateDesc = ContractStatusLastUpdate = StatusDesc = "";
                 ContractStatusLastUpdateDate = DateTime.Now;
             }
             [XmlAttribute(AttributeName = "ReferenceYear")]
@@ -1495,8 +1495,8 @@ namespace TauMira.UIXML
             [XmlAttribute(AttributeName = "ContractStatusLastUpdate")]
             public string ContractStatusLastUpdate { get; set; }
 
-            [XmlAttribute(AttributeName = "ContractStatusLastUpdatDesc")]
-            public string ContractStatusLastUpdatDesc { get; set; }
+            [XmlAttribute(AttributeName = "ContractStatusLastUpdateDesc")]
+            public string ContractStatusLastUpdateDesc { get; set; }
 
             [XmlAttribute(AttributeName = "ContractStatusLastUpdateDate")]
             public DateTime ContractStatusLastUpdateDate { get; set; }
@@ -1525,7 +1525,7 @@ namespace TauMira.UIXML
 
 
             [XmlAttribute(AttributeName = "FlagCardUsed")]
-            public int FlagCardUsed { get; set; }
+            public string FlagCardUsed { get; set; }
 
             [XmlAttribute(AttributeName = "TimesCardUsed")]
             public int TimesCardUsed { get; set; }

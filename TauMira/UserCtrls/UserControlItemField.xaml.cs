@@ -42,7 +42,7 @@ namespace TauMira.UserCtrls
 
             InitializeComponent();
             FieldName.Content = Property.Name;
-            ini(Property.Name, Property.GetValue(obj));
+            Init(Property.Name, Property.GetValue(obj));
 
         }
 
@@ -50,10 +50,10 @@ namespace TauMira.UserCtrls
         {
             InitializeComponent();
             FieldName.Content = Name_;
-            ini(Name_, obj);
+            Init(Name_, obj);
 
         }
-        void ini(string Name_, object obj)
+        void Init(string Name_, object obj)
         {
             type_ = Type_.STRING;
             string gettype = obj.GetType().ToString().ToLower();
@@ -117,7 +117,7 @@ namespace TauMira.UserCtrls
 
                             textBox.Text = obj.ToString();
                             textBox.MinWidth = 200;
-                           
+
                             textBox.TextChanged += TextChanged;
                             GBody.Children.Add(textBox);
 
@@ -180,15 +180,14 @@ namespace TauMira.UserCtrls
 
         private void ComboBox_BooleanSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-             ComboBox tb = (ComboBox)sender;
-             try
-             {
-                 ((System.Reflection.PropertyInfo)this.Property).SetValue(parentObj, (tb.SelectedIndex!=0));
-            
-             }
-             catch (Exception)
-             {
-             }
+            ComboBox tb = (ComboBox)sender;
+            try
+            {
+                ((System.Reflection.PropertyInfo)this.Property).SetValue(parentObj, tb.SelectedItem);
+            }
+            catch (Exception)
+            {
+            }
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -197,7 +196,16 @@ namespace TauMira.UserCtrls
             ComboBox tb = (ComboBox)sender;
             try
             {
-                ((System.Reflection.PropertyInfo)this.Property).SetValue(parentObj, tb.SelectedIndex);
+                var selectedValue = (tb.SelectedItem as ComboBoxItem).Content.ToString();
+                var name = ((System.Reflection.PropertyInfo)this.Property).Name;
+                var propertyDesc = parentObj.GetType().GetProperty(name + "Desc");
+                var code = MainWindow.keyValuePairs[name.ToUpper()].Values.Where(v => v.Descriptions.En == selectedValue).ToList().First().Code;
+
+                if (propertyDesc != null)
+                {
+                    propertyDesc.SetValue(parentObj, (tb.SelectedItem as ComboBoxItem).Content.ToString());
+                }
+                ((System.Reflection.PropertyInfo)this.Property).SetValue(parentObj, code.ToString());
 
             }
             catch (Exception)
@@ -218,7 +226,7 @@ namespace TauMira.UserCtrls
                 if (type_ == Type_.INT)
                 {
                     int data_ = 0;
-                    int.TryParse(tb.Text,out data_);
+                    int.TryParse(tb.Text, out data_);
                     ((System.Reflection.PropertyInfo)this.Property).SetValue(parentObj, data_);
                 }
                 else

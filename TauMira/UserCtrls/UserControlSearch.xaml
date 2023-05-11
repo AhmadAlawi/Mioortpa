@@ -11,7 +11,7 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="auto"/>
         </Grid.ColumnDefinitions>
-        <Border CornerRadius="8" BorderBrush="Red" BorderThickness="1" Background="White">
+        <Border CornerRadius="8" BorderBrush="#C7C7C7" BorderThickness="1" Background="White">
         <TextBox x:Name="SearchText" Grid.Column="0" BorderBrush="Transparent" Background="Transparent" Margin="1" Text="Search..." FontFamily="Montserrat" VerticalAlignment="Center" MouseUp="TextBox_MouseUp"/>
         </Border>
         <Image Grid.Column="1">
