@@ -34,7 +34,7 @@ namespace TauMira.UserCtrls
         //}
 
         StackPanel parent_;
-        public static List<string> types = new List<string>() { "system.string", "system.int32", "system.datetime", "system.boolean" };
+        public static List<string> types = new List<string>() { "system.string", "system.int32", "system.datetime", "system.boolean", "system.int64" };
         public UserControlSection(string Name_, object obj, Visibility removeVisable = Visibility.Collapsed, StackPanel parent_ = null)
         {
             InitializeComponent();
@@ -52,13 +52,18 @@ namespace TauMira.UserCtrls
 
             for (int i = 0; i < Properties.Length; i++)
             {
+                try
+                {
+
                 if (types.Contains(Properties[i].GetValue(obj).GetType().ToString().ToLower()))
                 {
                     UserControlItemField userControlItemField = new UserControlItemField(ref Properties[i], ref obj, i);
                     userControlItemField.Margin = new Thickness(0, 0, 5, 0);
-                    if (!userControlItemField.FieldName.Content.ToString().Contains("Desc"))
-                        WrapPanelData.Children.Add(userControlItemField);
+                        if (!userControlItemField.FieldName.Content.ToString().EndsWith("Desc"))
+                            WrapPanelData.Children.Add(userControlItemField);
                 }
+                }
+                catch { }
             }
 
             return;

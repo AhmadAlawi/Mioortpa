@@ -32,12 +32,18 @@
                         <MenuItem Header="Add ID"/>
                         <MenuItem Header="Add Contact"/>
                     </MenuItem>
+                    <MenuItem Header="CBScore">
+                        <MenuItem Header="Add Negative Event" Click="AddNegativeEvent_Click"/>
+                        <MenuItem Header="Add Positive Event" Click="AddPositiveEvent_Click"/>
+                    </MenuItem>
                     <Separator/>
                     <MenuItem Header="Add Installment Contract" Click="Add_Installment_Click"/>
                     <MenuItem Header="Add NonInstallment Contract" Click="Add_NonInstallment_Click"/>
                     <MenuItem Header="Add CreditCard Contract" Click="Add_CreditCards_Click"/>
                     <MenuItem Header="Add Service Contract" Click="Add_Services_Click"/>
-                    <MenuItem Header="Add FootPrints" Click="Add_FootPrints_Click"/>
+                    <MenuItem Header="Add NegativeEvent/BouncedCheque" Click="AddSubjectInfo_Click"/>
+                    <!--<MenuItem Header="Add FootPrints" Click="Add_FootPrints_Click"/>-->
+
                 </MenuItem>
             </Menu>
         </Grid>
@@ -138,7 +144,7 @@
                         <Label FontSize="24" Grid.Row="0" Style="{DynamicResource LabelStyle1}" HorizontalAlignment="Left" Content="Fill in the following fields" FontWeight="Bold" FontFamily="Montserrat"/>
                         <Label Grid.Row="1" Style="{DynamicResource LabelStyle1}" HorizontalAlignment="Left" FontSize="18" FontWeight="Medium" FontFamily="Montserrat" Content="You can add new fields from the left side menu"/>
                     </Grid>
-                    <Border Grid.Column="1" CornerRadius="10" Height="56" Width="182" HorizontalAlignment="Right" Background="#FF264B80" BorderThickness="1">
+                    <Border Grid.Column="1" CornerRadius="10" Height="56" Width="200" HorizontalAlignment="Right" Background="#FF264B80" BorderThickness="1">
                         <Button Foreground="White" FontSize="20" Content="Export XML" Background="Transparent" Margin="4"  Click="Button_Click" Padding="32,0,32,0" FontFamily="Montserrat" FontWeight="SemiBold"/>
                     </Border>
                     <!--<Grid Grid.Column="0">

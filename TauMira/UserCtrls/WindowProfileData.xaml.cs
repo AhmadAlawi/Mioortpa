@@ -22,9 +22,11 @@ namespace TauMira.UserCtrls
         Action<int, StackPanel> fromtoMonths;
         StackPanel stackPanel;
 
-        public WindowProfileData()
+        public WindowProfileData(string Titel="Set the number of profiles",string lable= "Months")
         {
             InitializeComponent();
+            LabelProfileData.Content = Titel;
+            LabelNumberOf.Content = lable;
         }
         public int GetMonths()
         {
@@ -50,6 +52,21 @@ namespace TauMira.UserCtrls
            
             Close();
 
+        }
+
+        private void OnKeyDownHandler(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Return)
+            {
+                if (!int.TryParse(TextBoxTo.Text, out Months))
+                {
+                    MessageBox.Show("the input should be integar");
+                    return;
+                }
+
+
+                Close();
+            }
         }
     }
 }

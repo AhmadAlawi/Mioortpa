@@ -17,7 +17,7 @@
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0" Name="FieldName" Style="{DynamicResource LabelStyleFieldInput}" Content="Input Something"></Label>
 
-            <Label Grid.Column="1" Name="ClearButton" Cursor="Hand" MouseUp="ClearButton_MouseUp" Style="{DynamicResource  LabelStyleClearFieldInput}" Content="Clear"></Label>
+            <Label Grid.Column="1" Name="ClearButton" Cursor="Hand" MouseUp="ClearButton_MouseUp" Style="{DynamicResource LabelStyleClearFieldInput}" Content="Clear"></Label>
         </Grid>
         <Grid Grid.Row="1" Name="GBody"/>
     </Grid>

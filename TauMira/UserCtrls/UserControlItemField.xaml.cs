@@ -8,6 +8,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Markup;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
@@ -22,7 +23,7 @@ namespace TauMira.UserCtrls
     {
         enum Type_
         {
-            STRING, INT, DROPDOWN, DATE
+            STRING, INT, DROPDOWN, DATE, LABEL
         }
         Type_ type_;
 
@@ -71,8 +72,11 @@ namespace TauMira.UserCtrls
 
                         }
                         comboBox.MinWidth = 200;
+                        comboBox.MinHeight = 40;
                         comboBox.Text = obj.ToString();
                         comboBox.SelectionChanged += ComboBox_BooleanSelectionChanged;
+                        BooleanChange(comboBox, obj);
+
                         GBody.Children.Add(comboBox);
                         return;
                     }
@@ -99,10 +103,25 @@ namespace TauMira.UserCtrls
                                 }
                                 comboBox.Text = obj.ToString();
                                 comboBox.MinWidth = 200;
+                                comboBox.MinHeight = 40;
                                 comboBox.SelectionChanged += ComboBox_SelectionChanged;
+                                TestChange(comboBox, obj);
                                 GBody.Children.Add(comboBox);
 
 
+                            }
+                            else
+                            {
+                                if (domain.Type.ToLower() == "label")
+                                {
+                                    Label label = new Label();
+                                    label.Content = obj.ToString();
+                                    label.VerticalContentAlignment = VerticalAlignment.Center;
+                                    label.MinWidth = 200;
+                                    label.BorderThickness = new Thickness(1.0);
+                                    label.BorderBrush = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFAFAFAF"));
+                                    GBody.Children.Add(label);
+                                }
                             }
 
 
@@ -112,18 +131,12 @@ namespace TauMira.UserCtrls
                             //double hanle
                             if (gettype == "system.int32")
                                 type_ = Type_.INT;
-
                             TextBox textBox = new TextBox();
-
                             textBox.Text = obj.ToString();
                             textBox.MinWidth = 200;
-
                             textBox.TextChanged += TextChanged;
                             GBody.Children.Add(textBox);
-
                         }
-
-
                         return;
                     }
                 case "system.datetime":
@@ -132,7 +145,19 @@ namespace TauMira.UserCtrls
                         datePicker.SelectedDateChanged += DatePicker_SelectedDateChanged;
                         GBody.Children.Add(datePicker);
                         datePicker.Text = obj.ToString();
+                        DateTimeChange(datePicker, obj);
                         type_ = Type_.DATE;
+
+                        return;
+                    }
+                case "system.int64":
+                    {
+                        TextBox textBox = new TextBox();
+                        textBox.Text = obj.ToString();
+                        textBox.MinWidth = 200;
+                        textBox.LostFocus += RawChanged;
+                        Int64Change(textBox, obj);
+                        GBody.Children.Add(textBox);
                         return;
                     }
 
@@ -162,6 +187,71 @@ namespace TauMira.UserCtrls
             //{
             //    StackPanelData.Children.Add(new SegmentUserControl(item.GetValue(obj), item.Name, Name_));
             //}
+        }
+
+        private void RawChangedl(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RawChanged(object sender, RoutedEventArgs e)
+        {
+            var txtScoreRaw = sender as TextBox;
+            string input = txtScoreRaw.Text;
+            if (!input.All(c => char.IsDigit(c)) || input == "")
+            {
+                txtScoreRaw.Text = "";
+                return;
+            }
+            var a = txtScoreRaw.Parent as Grid;
+            var l = a.Parent as Grid;
+            var d = l.Parent as TauMira.UserCtrls.UserControlItemField;
+            var s = d.Parent as System.Windows.Controls.WrapPanel;
+
+            var b = s.Children[1];
+            var mk = b as TauMira.UserCtrls.UserControlItemField;
+            var f = mk.Content as Grid;
+            var gh = f.Children[1] as Grid;
+            var RiskL = gh.Children[0] as System.Windows.Controls.Label;
+
+            int scoreRaw = int.Parse(input);
+            string riskLevel = ConvertScoreRawToRiskLevel(scoreRaw);
+            RiskL.Content = riskLevel;
+            RiskL.IsEnabled = false;
+            if (riskLevel == "-")
+                MessageBox.Show("scoreRaw should be between 300 and 900");
+            (parentObj as UIXML.UIXMLTemp.CBSGlocal).RiskLevel = riskLevel;
+            ((System.Reflection.PropertyInfo)this.Property).SetValue(parentObj, scoreRaw);
+        }
+
+        // Convert ScoreRaw into RiskLevel
+        string ConvertScoreRawToRiskLevel(int scoreRaw)
+        {
+            string result;
+
+            switch (scoreRaw)
+            {
+                case int n when n >= 300 && n <= 564:
+                    result = "The credit bureau score indicates a very high risk profile for the subject";
+                    break;
+                case int n when n >= 565 && n <= 654:
+                    result = "The credit bureau score indicates a high risk profile for the subject";
+                    break;
+                case int n when n >= 655 && n <= 684:
+                    result = "The credit bureau score indicates a medium risk profile for the subject";
+                    break;
+                case int n when n >= 685 && n <= 774:
+                    result = "The credit bureau score indicates a low risk profile for the subject";
+                    break;
+                case int n when n >= 775 && n <= 900:
+                    result = "The credit bureau score indicates a very low risk profile for the subject";
+                    break;
+                default:
+                    result = "-";
+                    break;
+            }
+
+            return result;
         }
 
         private void DatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
@@ -205,6 +295,9 @@ namespace TauMira.UserCtrls
                 {
                     propertyDesc.SetValue(parentObj, (tb.SelectedItem as ComboBoxItem).Content.ToString());
                 }
+
+
+
                 ((System.Reflection.PropertyInfo)this.Property).SetValue(parentObj, code.ToString());
 
             }
@@ -213,10 +306,106 @@ namespace TauMira.UserCtrls
             }
         }
 
+        private void TestChange(object sender, object obj)
+        {
+            ComboBox tb = (ComboBox)sender;
+            try
+            {
+
+                // var selectedValue = (tb.SelectedItem as ComboBoxItem).Content.ToString();
+                var name = ((System.Reflection.PropertyInfo)this.Property).Name;
+                var propertyDesc = parentObj.GetType().GetProperty(name + "Desc");
+                //var code = MainWindow.keyValuePairs[name.ToUpper()].Values.Where(v => v.Descriptions.En == selectedValue).ToList().First().Code;
+                //var des = MainWindow.keyValuePairs[name.ToUpper()].Values.Where(v => v.Code = obj.ToString()).ToList().First().Code;
+                var codeToDescriptionDict = MainWindow.keyValuePairs[name.ToUpper()].Values.ToDictionary(v => v.Code, v => v.Descriptions.En);
+                var selectedCode = obj.ToString(); // Replace this with the actual code you want to select
+
+                // var matchingDescription = codeToDescriptionDict.FirstOrDefault(kv => kv.Key == selectedCode).Value;
+
+                //foreach (ComboBoxItem item in tb.Items)
+                //{
+                //    if (item.Content.ToString() == matchingDescription)
+                //    {
+                //        tb.SelectedItem = item;
+                //        break;
+                //    }
+                //}
+                if (codeToDescriptionDict.ContainsKey(selectedCode))
+                {
+                    var matchingDescription = codeToDescriptionDict[selectedCode];
+
+                    tb.SelectedItem = matchingDescription.ToString();
+                    tb.SelectedValue = matchingDescription.ToString();
+
+                    foreach (ComboBoxItem item in tb.Items)
+                    {
+                        if (item.Content.ToString().ToLower() == matchingDescription.ToLower())
+                        {
+                            tb.SelectedItem = item;
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    // Handle case when the code is not found in the dictionary
+                    // You can set a default selected item or display an error message
+                }
+
+
+
+
+                //((System.Reflection.PropertyInfo)this.Property).SetValue(parentObj, code.ToString());
+
+            }
+            catch (Exception)
+            {
+            }
+        }
+
+        private void BooleanChange(object sender, object obj)
+        {
+            ComboBox tb = (ComboBox)sender;
+            foreach (ComboBoxItem item in tb.Items)
+            {
+                if (item.Content == obj.ToString())
+                {
+                    tb.SelectedItem = item;
+                }
+            }
+
+
+
+        }
+
+        private void Int64Change(object sender, object obj)
+        {
+            TextBox tb = (TextBox)sender;
+            if (obj is string stringValue)
+            {
+                tb.Text = stringValue;
+            }
+            else if (obj is int intValue)
+            {
+                tb.Text = intValue.ToString();
+            }
+            else if (obj is long longValue)
+            {
+                tb.Text = longValue.ToString();
+            }
+        }
+
+        private void DateTimeChange(object sender, object obj)
+        {
+            DatePicker datePicker = (DatePicker)sender;
+            datePicker.SelectedDate = (DateTime)obj;
+        }
+
         private void TextChanged(object sender, TextChangedEventArgs e)
         {
 
             TextBox tb = ((TextBox)sender);
+
 
             if (tb.Text.Length == 0) return;
 

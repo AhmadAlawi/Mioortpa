@@ -48,7 +48,7 @@
     <Color x:Key="BorderDarkColor">#EBEBEB</Color>
     <Color x:Key="ControlLightColor">#EBEBEB</Color>
     <Color x:Key="ControlMediumColor">#EBEBEB</Color>
-    
+
     <FontFamily x:Key="TauFont"></FontFamily>
 
 
@@ -135,7 +135,7 @@
                                 <Grid Height="30" x:Name="titlebar"
                                       Background="{StaticResource Primary}"
                                       VerticalAlignment="Top" Margin="0">
-                                    
+
                                     <StackPanel Margin="32,8,0,8" Orientation="Horizontal" HorizontalAlignment="Left" >
                                         <Image>
                                             <Image.Source>
@@ -426,7 +426,47 @@
         <Setter Property="Background"   Value="Transparent"/>
         <Setter Property="Padding"      Value="10,0,0,0"/>
         <Setter Property="MinHeight"    Value="40"/>
-        <Setter Property="MinWidth"     Value="344"/>
+        <Setter Property="MinWidth"     Value="320"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="0,0,16,0"/>
+        <Setter Property="FontFamily" Value="Montserrat"/>
+        <Setter Property="FontWeight" Value="Regular" />
+        <Setter Property="FontSize" Value="16"/>
+        
+
+        <Style.Resources>
+            <Style TargetType="{x:Type Border}">
+                <Setter Property="CornerRadius" Value="3" />
+            </Style>
+        </Style.Resources>
+    </Style>
+
+
+    <Style TargetType="{x:Type ComboBox}">
+        <Setter Property="Background"   Value="Transparent"/>
+        <Setter Property="Padding"      Value="10,0,0,0"/>
+        <Setter Property="MinHeight"    Value="40"/>
+        <Setter Property="MinWidth"     Value="320"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="0,0,16,0"/>
+        <Setter Property="FontFamily" Value="Montserrat"/>
+        <Setter Property="FontWeight" Value="Regular" />
+        <Setter Property="FontSize" Value="16"/>
+        <Style.Resources>
+            <Style TargetType="{x:Type Border}">
+                <Setter Property="CornerRadius" Value="3" />
+            </Style>
+            <Style TargetType="{x:Type TextBox}">
+                <Setter Property="TextWrapping" Value="NoWrap" />
+            </Style>
+        </Style.Resources>
+        
+    </Style>
+    <Style TargetType="{x:Type DatePicker}">
+        <Setter Property="Background"   Value="Transparent"/>
+        <Setter Property="Padding"      Value="10,0,0,0"/>
+        <Setter Property="MinHeight"    Value="40"/>
+        <Setter Property="MinWidth"     Value="200"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="Margin" Value="0,0,16,0"/>
         <Setter Property="FontFamily" Value="Montserrat"/>
@@ -438,5 +478,6 @@
             </Style>
         </Style.Resources>
     </Style>
+    
 
 </ResourceDictionary>

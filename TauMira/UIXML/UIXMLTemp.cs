@@ -3,7 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
+using System.Windows;
 using System.Xml.Serialization;
+using TauMira.UserCtrls;
+using System.Windows.Media;
+using static TauMira.UIXML.UIXMLTemp;
+using System.Xml.Linq;
+using System.Windows.Markup;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace TauMira.UIXML
 {
@@ -86,7 +95,7 @@ namespace TauMira.UIXML
             public string ResultDescription { get; set; }
         }
 
-        [XmlRoot(ElementName = "MessageId")]
+        [XmlRoot(ElementName = "MessageId", Namespace = "urn:crif-creditbureau:v1")]
         public class MessageId
         {
             public MessageId()
@@ -97,7 +106,7 @@ namespace TauMira.UIXML
             public string CBSMessageId { get; set; }
         }
 
-        [XmlRoot(ElementName = "IndividualName")]
+        [XmlRoot(ElementName = "IndividualName", Namespace = "urn:crif-creditbureau:v1")]
         public class IndividualName
         {
             public IndividualName()
@@ -137,7 +146,7 @@ namespace TauMira.UIXML
         }
 
 
-        [XmlRoot(ElementName = "BirthData")]
+        [XmlRoot(ElementName = "BirthData", Namespace = "urn:crif-creditbureau:v1")]
         public class BirthData
         {
             public BirthData()
@@ -159,7 +168,7 @@ namespace TauMira.UIXML
 
         }
 
-        [XmlRoot(ElementName = "BirthData")]
+        [XmlRoot(ElementName = "BirthData", Namespace = "urn:crif-creditbureau:v1")]
         public class BirthData2
         {
             public BirthData2()
@@ -169,21 +178,21 @@ namespace TauMira.UIXML
             }
 
 
-            [XmlElement(ElementName = "BirthData")]
+            [XmlElement(ElementName = "BirthData", Namespace = "urn:crif-creditbureau:v1")]
             public BirthData BirthData { get; set; }
 
-            [XmlElement(ElementName = "BirthDataDesc")]
+            [XmlElement(ElementName = "BirthDataDesc", Namespace = "urn:crif-creditbureau:v1")]
             public BirthDataDesc BirthDataDesc { get; set; }
         }
-        [XmlRoot(ElementName = "Address")]
+        [XmlRoot(ElementName = "Address", Namespace = "urn:crif-creditbureau:v1")]
         public class Address
         {
             public Address()
             {
                 Type = "MI";
-                    FullAddress = "";
+                FullAddress = "";
 
-                Region = Governorate = 0;
+                Region = Governorate = "";
 
             }
             [XmlAttribute(AttributeName = "Type")]
@@ -193,15 +202,15 @@ namespace TauMira.UIXML
             public string FullAddress { get; set; }
 
             [XmlAttribute(AttributeName = "Region")]
-            public int Region { get; set; }
+            public string Region { get; set; }
 
             [XmlAttribute(AttributeName = "Governorate")]
-            public int Governorate { get; set; }
+            public string Governorate { get; set; }
 
 
         }
 
-        [XmlRoot(ElementName = "Address")]
+        [XmlRoot(ElementName = "Address", Namespace = "urn:crif-creditbureau:v1")]
         public class Address2
         {
             public Address2()
@@ -211,14 +220,14 @@ namespace TauMira.UIXML
             }
 
 
-            [XmlElement(ElementName = "Address")]
+            [XmlElement(ElementName = "Address", Namespace = "urn:crif-creditbureau:v1")]
             public Address Address { get; set; }
 
-            [XmlElement(ElementName = "AddressDesc")]
+            [XmlElement(ElementName = "AddressDesc", Namespace = "urn:crif-creditbureau:v1")]
             public AddressDesc AddressDesc { get; set; }
         }
 
-        [XmlRoot(ElementName = "AddressDesc")]
+        [XmlRoot(ElementName = "AddressDesc", Namespace = "urn:crif-creditbureau:v1")]
         public class AddressDesc
         {
             public AddressDesc()
@@ -236,7 +245,7 @@ namespace TauMira.UIXML
         }
 
 
-        [XmlRoot(ElementName = "IdentificationCode")]
+        [XmlRoot(ElementName = "IdentificationCode", Namespace = "urn:crif-creditbureau:v1")]
         public class IdentificationCode
         {
             public IdentificationCode()
@@ -258,7 +267,7 @@ namespace TauMira.UIXML
         }
 
 
-        [XmlRoot(ElementName = "IdentificationCode")]
+        [XmlRoot(ElementName = "IdentificationCode", Namespace = "urn:crif-creditbureau:v1")]
         public class IdentificationCode2
         {
             public IdentificationCode2()
@@ -270,16 +279,16 @@ namespace TauMira.UIXML
 
             [XmlAttribute(AttributeName = "LastUpdateDate")]
             public DateTime LastUpdateDate { get; set; }
-            [XmlElement(ElementName = "IdentificationCode")]
+            [XmlElement(ElementName = "IdentificationCode", Namespace = "urn:crif-creditbureau:v1")]
             public IdentificationCode IdentificationCode { get; set; }
 
-            [XmlElement(ElementName = "IdentificationCodeDesc")]
+            [XmlElement(ElementName = "IdentificationCodeDesc", Namespace = "urn:crif-creditbureau:v1")]
             public IdentificationCodeDesc IdentificationCodeDesc { get; set; }
 
 
         }
 
-        [XmlRoot(ElementName = "IdentificationCodeDesc")]
+        [XmlRoot(ElementName = "IdentificationCodeDesc", Namespace = "urn:crif-creditbureau:v1")]
         public class IdentificationCodeDesc
         {
             public IdentificationCodeDesc()
@@ -290,7 +299,7 @@ namespace TauMira.UIXML
             public string TypeDesc { get; set; }
         }
 
-        [XmlRoot(ElementName = "Contact")]
+        [XmlRoot(ElementName = "Contact", Namespace = "urn:crif-creditbureau:v1")]
         public class Contact
         {
             public Contact()
@@ -308,7 +317,7 @@ namespace TauMira.UIXML
 
         }
 
-        [XmlRoot(ElementName = "Contact")]
+        [XmlRoot(ElementName = "Contact", Namespace = "urn:crif-creditbureau:v1")]
         public class Contact2
         {
             public Contact2()
@@ -320,16 +329,16 @@ namespace TauMira.UIXML
 
             [XmlAttribute(AttributeName = "LastUpdateDate")]
             public DateTime LastUpdateDate { get; set; }
-            [XmlElement(ElementName = "Contact")]
+            [XmlElement(ElementName = "Contact", Namespace = "urn:crif-creditbureau:v1")]
             public Contact Contact { get; set; }
 
-            [XmlElement(ElementName = "ContactDesc")]
+            [XmlElement(ElementName = "ContactDesc", Namespace = "urn:crif-creditbureau:v1")]
             public ContactDesc ContactDesc { get; set; }
 
 
         }
 
-        [XmlRoot(ElementName = "ContactDesc")]
+        [XmlRoot(ElementName = "ContactDesc", Namespace = "urn:crif-creditbureau:v1")]
         public class ContactDesc
         {
             public ContactDesc()
@@ -340,7 +349,7 @@ namespace TauMira.UIXML
             public string TypeDesc { get; set; }
         }
 
-        [XmlRoot(ElementName = "Individual")]
+        [XmlRoot(ElementName = "Individual", Namespace = "urn:crif-creditbureau:v1")]
         public class Individual
         {
             public Individual()
@@ -373,27 +382,27 @@ namespace TauMira.UIXML
 
                 LastUpdateDate = DateTime.Now;
             }
-        
 
 
 
-            [XmlElement(ElementName = "IndividualName")]
+
+            [XmlElement(ElementName = "IndividualName", Namespace = "urn:crif-creditbureau:v1")]
             public IndividualName individualName { get; set; }
 
 
-            [XmlElement(ElementName = "BirthData")]
+            [XmlElement(ElementName = "BirthData", Namespace = "urn:crif-creditbureau:v1")]
             public BirthData2 birthData2 { get; set; }
 
-            [XmlElement(ElementName = "Address")]
+            [XmlElement(ElementName = "Address", Namespace = "urn:crif-creditbureau:v1")]
             public Address address { get; set; }
 
-            [XmlElement(ElementName = "Contact")]
+            [XmlElement(ElementName = "Contact", Namespace = "urn:crif-creditbureau:v1")]
             public List<Contact2> Contact { get; set; }
 
-            [XmlElement(ElementName = "EmploymentData")]
+            [XmlElement(ElementName = "EmploymentData", Namespace = "urn:crif-creditbureau:v1")]
             public EmploymentData2 EmploymentData { get; set; }
 
-            [XmlElement(ElementName = "CompanyLink")]
+            [XmlElement(ElementName = "CompanyLink", Namespace = "urn:crif-creditbureau:v1")]
             public CompanyLink CompanyLink { get; set; }
 
             [XmlAttribute(AttributeName = "Gender")]
@@ -432,18 +441,18 @@ namespace TauMira.UIXML
             public DateTime LastUpdateDate { get; set; }
         }
 
-        [XmlRoot(ElementName = "Subject")]
+        [XmlRoot(ElementName = "Subject", Namespace = "")]
         public class Subject
         {
             public Subject()
             {
                 Individual = new Individual();
             }
-            [XmlElement(ElementName = "Individual")]
+            [XmlElement(ElementName = "Individual", Namespace = "urn:crif-creditbureau:v1")]
             public Individual Individual { get; set; }
         }
 
-        [XmlRoot(ElementName = "Installment")]
+        [XmlRoot(ElementName = "Installment", Namespace = "")]
         public class Installment
         {
 
@@ -451,7 +460,7 @@ namespace TauMira.UIXML
             {
                 FinancedAmount = InstallmentsNumber = 0;
                 PaymentPeriodicity = "";
-               
+
             }
             [XmlAttribute(AttributeName = "FinancedAmount")]
             public int FinancedAmount { get; set; }
@@ -462,10 +471,10 @@ namespace TauMira.UIXML
             [XmlAttribute(AttributeName = "PaymentPeriodicity")]
             public string PaymentPeriodicity { get; set; }
 
-    
+
         }
 
-        [XmlRoot(ElementName = "Application")]
+        [XmlRoot(ElementName = "Application", Namespace = "")]
         public class Application
         {
             public Application()
@@ -483,7 +492,7 @@ namespace TauMira.UIXML
                 Currency = "";
 
             }
-            [XmlElement(ElementName = "Installment")]
+            [XmlElement(ElementName = "Installment", Namespace = "urn:crif-creditbureau:v1")]
             public Installment Installment { get; set; }
 
             [XmlAttribute(AttributeName = "ContractType")]
@@ -502,7 +511,7 @@ namespace TauMira.UIXML
             public int CreditFacilityPurpose { get; set; }
         }
 
-        [XmlRoot(ElementName = "ApplicationDesc")]
+        [XmlRoot(ElementName = "ApplicationDesc", Namespace = "")]
         public class ApplicationDesc
         {
 
@@ -530,7 +539,7 @@ namespace TauMira.UIXML
             public string CreditFacilityPurposeDesc { get; set; }
         }
 
-        [XmlRoot(ElementName = "Link")]
+        [XmlRoot(ElementName = "Link", Namespace = "")]
         public class Link
         {
             public Link()
@@ -541,7 +550,7 @@ namespace TauMira.UIXML
             public string Role { get; set; }
         }
 
-        [XmlRoot(ElementName = "LinkDesc")]
+        [XmlRoot(ElementName = "LinkDesc", Namespace = "")]
         public class LinkDesc
         {
             public LinkDesc()
@@ -552,7 +561,7 @@ namespace TauMira.UIXML
             public string RoleDesc { get; set; }
         }
 
-        [XmlRoot(ElementName = "EnquiredData")]
+        [XmlRoot(ElementName = "EnquiredData", Namespace = "urn:crif-creditbureau:v1")]
         public class EnquiredData
         {
             public EnquiredData()
@@ -564,26 +573,26 @@ namespace TauMira.UIXML
                 LinkDesc = new LinkDesc();
                 SubjectRefDate = DateTime.Now;
             }
-            [XmlElement(ElementName = "Subject")]
+            [XmlElement(ElementName = "Subject", Namespace = "urn:crif-creditbureau:v1")]
             public Subject Subject { get; set; }
 
-            [XmlElement(ElementName = "Application")]
+            [XmlElement(ElementName = "Application", Namespace = "urn:crif-creditbureau:v1")]
             public Application Application { get; set; }
 
-            [XmlElement(ElementName = "ApplicationDesc")]
+            [XmlElement(ElementName = "ApplicationDesc", Namespace = "urn:crif-creditbureau:v1")]
             public ApplicationDesc ApplicationDesc { get; set; }
 
-            [XmlElement(ElementName = "Link")]
+            [XmlElement(ElementName = "Link", Namespace = "urn:crif-creditbureau:v1")]
             public Link Link { get; set; }
 
-            [XmlElement(ElementName = "LinkDesc")]
+            [XmlElement(ElementName = "LinkDesc", Namespace = "urn:crif-creditbureau:v1")]
             public LinkDesc LinkDesc { get; set; }
 
             [XmlAttribute(AttributeName = "SubjectRefDate")]
             public DateTime SubjectRefDate { get; set; }
         }
 
-        [XmlRoot(ElementName = "ApplicationCodes")]
+        [XmlRoot(ElementName = "ApplicationCodes", Namespace = "")]
         public class ApplicationCodes
         {
             public ApplicationCodes()
@@ -598,7 +607,7 @@ namespace TauMira.UIXML
             public int CBContractCode { get; set; }
         }
 
-        [XmlRoot(ElementName = "BirthDataDesc")]
+        [XmlRoot(ElementName = "BirthDataDesc", Namespace = "urn:crif-creditbureau:v1")]
         public class BirthDataDesc
         {
             public BirthDataDesc()
@@ -609,7 +618,7 @@ namespace TauMira.UIXML
             public string CountryDesc { get; set; }
         }
 
-        [XmlRoot(ElementName = "AddressHistory")]
+        [XmlRoot(ElementName = "AddressHistory", Namespace = "urn:crif-creditbureau:v1")]
         public class AddressHistory
         {
 
@@ -621,10 +630,10 @@ namespace TauMira.UIXML
                 LastUpdateDate = DateTime.Now;
             }
 
-            [XmlElement(ElementName = "Address")]
+            [XmlElement(ElementName = "Address", Namespace = "urn:crif-creditbureau:v1")]
             public Address2 Address { get; set; }
 
-            [XmlElement(ElementName = "AddressDesc")]
+            [XmlElement(ElementName = "AddressDesc", Namespace = "urn:crif-creditbureau:v1")]
             public AddressDesc AddressDesc { get; set; }
 
             [XmlAttribute(AttributeName = "FlagCurrent")]
@@ -634,7 +643,7 @@ namespace TauMira.UIXML
             public DateTime LastUpdateDate { get; set; }
         }
 
-        [XmlRoot(ElementName = "ID")]
+        [XmlRoot(ElementName = "ID", Namespace = "urn:crif-creditbureau:v1")]
         public class ID
         {
             public ID()
@@ -671,7 +680,7 @@ namespace TauMira.UIXML
 
         }
 
-        [XmlRoot(ElementName = "ID")]
+        [XmlRoot(ElementName = "ID", Namespace = "urn:crif-creditbureau:v1")]
         public class ID2
         {
             public ID2()
@@ -687,17 +696,17 @@ namespace TauMira.UIXML
             }
 
 
-            [XmlElement(ElementName = "ID")]
+            [XmlElement(ElementName = "ID", Namespace = "urn:crif-creditbureau:v1")]
             public ID ID { get; set; }
 
-            [XmlElement(ElementName = "IDDesc")]
+            [XmlElement(ElementName = "IDDesc", Namespace = "urn:crif-creditbureau:v1")]
             public IDDesc IDDesc { get; set; }
 
             [XmlAttribute(AttributeName = "LastUpdateDate")]
             public DateTime LastUpdateDate { get; set; }
         }
 
-        [XmlRoot(ElementName = "IDDesc")]
+        [XmlRoot(ElementName = "IDDesc", Namespace = "urn:crif-creditbureau:v1")]
         public class IDDesc
         {
             public IDDesc()
@@ -711,7 +720,7 @@ namespace TauMira.UIXML
             public string IssueCountryDesc { get; set; }
         }
 
-        [XmlRoot(ElementName = "CompanyName")]
+        [XmlRoot(ElementName = "CompanyName", Namespace = "urn:crif-creditbureau:v1")]
         public class CompanyName
         {
             public CompanyName()
@@ -722,7 +731,7 @@ namespace TauMira.UIXML
             public string TradeName { get; set; }
         }
 
-        [XmlRoot(ElementName = "CompanyAddress")]
+        [XmlRoot(ElementName = "CompanyAddress", Namespace = "urn:crif-creditbureau:v1")]
         public class CompanyAddress
         {
             public CompanyAddress()
@@ -733,7 +742,7 @@ namespace TauMira.UIXML
             public string EmployerAddress { get; set; }
         }
 
-        [XmlRoot(ElementName = "EmployerData")]
+        [XmlRoot(ElementName = "EmployerData", Namespace = "urn:crif-creditbureau:v1")]
         public class EmployerData
         {
             public EmployerData()
@@ -741,14 +750,14 @@ namespace TauMira.UIXML
                 CompanyName = new CompanyName();
                 CompanyAddress = new CompanyAddress();
             }
-            [XmlElement(ElementName = "CompanyName")]
+            [XmlElement(ElementName = "CompanyName", Namespace = "urn:crif-creditbureau:v1")]
             public CompanyName CompanyName { get; set; }
 
-            [XmlElement(ElementName = "CompanyAddress")]
+            [XmlElement(ElementName = "CompanyAddress", Namespace = "urn:crif-creditbureau:v1")]
             public CompanyAddress CompanyAddress { get; set; }
         }
 
-        [XmlRoot(ElementName = "EmploymentData")]
+        [XmlRoot(ElementName = "EmploymentData", Namespace = "urn:crif-creditbureau:v1")]
         public class EmploymentData
         {
             public EmploymentData()
@@ -759,7 +768,7 @@ namespace TauMira.UIXML
                 GrossIncome = OccupationStatus = 0;
                 DateHired = DateTime.Now;
             }
-            [XmlElement(ElementName = "EmployerData")]
+            [XmlElement(ElementName = "EmployerData", Namespace = "urn:crif-creditbureau:v1")]
             public EmployerData EmployerData { get; set; }
 
             [XmlAttribute(AttributeName = "GrossIncome")]
@@ -781,7 +790,7 @@ namespace TauMira.UIXML
 
         }
 
-        [XmlRoot(ElementName = "EmploymentData")]
+        [XmlRoot(ElementName = "EmploymentData", Namespace = "urn:crif-creditbureau:v1")]
         public class EmploymentData2
         {
             public EmploymentData2()
@@ -794,16 +803,16 @@ namespace TauMira.UIXML
 
             [XmlAttribute(AttributeName = "LastUpdateDate")]
             public DateTime LastUpdateDate { get; set; }
-            [XmlElement(ElementName = "EmploymentData")]
+            [XmlElement(ElementName = "EmploymentData", Namespace = "urn:crif-creditbureau:v1")]
             public EmploymentData EmploymentData { get; set; }
 
-            [XmlElement(ElementName = "EmploymentDataDesc")]
+            [XmlElement(ElementName = "EmploymentDataDesc", Namespace = "urn:crif-creditbureau:v1")]
             public EmploymentDataDesc EmploymentDataDesc { get; set; }
 
 
         }
 
-        [XmlRoot(ElementName = "EmploymentDataDesc")]
+        [XmlRoot(ElementName = "EmploymentDataDesc", Namespace = "urn:crif-creditbureau:v1")]
         public class EmploymentDataDesc
         {
             public EmploymentDataDesc()
@@ -817,7 +826,7 @@ namespace TauMira.UIXML
             public string CurrencyDesc { get; set; }
         }
 
-        [XmlRoot(ElementName = "CompanyLink")]
+        [XmlRoot(ElementName = "CompanyLink", Namespace = "urn:crif-creditbureau:v1")]
         public class CompanyLink
         {
             public CompanyLink()
@@ -858,7 +867,7 @@ namespace TauMira.UIXML
             public int ParentFlag { get; set; }
         }
 
-        [XmlRoot(ElementName = "MatchedSubject")]
+        [XmlRoot(ElementName = "MatchedSubject", Namespace = "urn:crif-creditbureau:v1")]
         public class MatchedSubject
         {
             public MatchedSubject()
@@ -868,7 +877,7 @@ namespace TauMira.UIXML
                 FlagMatched = 0;
             }
 
-            [XmlElement(ElementName = "Individual")]
+            [XmlElement(ElementName = "Individual", Namespace = "urn:crif-creditbureau:v1")]
             public Individual Individual { get; set; }
 
             [XmlAttribute(AttributeName = "CBSubjectCode")]
@@ -878,7 +887,7 @@ namespace TauMira.UIXML
             public int FlagMatched { get; set; }
         }
 
-        [XmlRoot(ElementName = "NegativeEvent")]
+        [XmlRoot(ElementName = "NegativeEvent", Namespace = "urn:crif-creditbureau:v1")]
         public class NegativeEvent
         {
             public NegativeEvent()
@@ -914,19 +923,77 @@ namespace TauMira.UIXML
             public DateTime EventStatusDate { get; set; }
         }
 
-        [XmlRoot(ElementName = "SubjectInfo")]
+        [XmlRoot(ElementName = "BouncedCheque", Namespace = "urn:crif-creditbureau:v1")]
+        public class BouncedCheque
+        {
+            public BouncedCheque()
+            {
+                BouncedChequeReferenceNumber = Currency = CurrencyDesc = ReasonCodeDesc = SettlementMethodDesc = "";
+                ChequeNumber = MicrNumber = BouncedChequeAmount = ReasonCode = SettlementMethod = 0;
+                DateOfIssue = SettlementDate = BouncedChequeReferenceDate = BouncedChequeDate = LastUpdatedDate = DateTime.Now;
+            }
+
+            [XmlAttribute(AttributeName = "BouncedChequeReferenceNumber")]
+            public string BouncedChequeReferenceNumber { get; set; }
+
+            [XmlAttribute(AttributeName = "BouncedChequeDate")]
+            public DateTime BouncedChequeDate { get; set; }
+
+            [XmlAttribute(AttributeName = "BouncedChequeReferenceDate")]
+            public DateTime BouncedChequeReferenceDate { get; set; }
+
+            [XmlAttribute(AttributeName = "MicrNumber")]
+            public int MicrNumber { get; set; }
+
+            [XmlAttribute(AttributeName = "ChequeNumber")]
+            public int ChequeNumber { get; set; }
+
+            [XmlAttribute(AttributeName = "DateOfIssue")]
+            public DateTime DateOfIssue { get; set; }
+
+            [XmlAttribute(AttributeName = "Currency")]
+            public string Currency { get; set; }
+
+            [XmlAttribute(AttributeName = "CurrencyDesc")]
+            public string CurrencyDesc { get; set; }
+
+            [XmlAttribute(AttributeName = "BouncedChequeAmount")]
+            public int BouncedChequeAmount { get; set; }
+
+            [XmlAttribute(AttributeName = "ReasonCode")]
+            public int ReasonCode { get; set; }
+
+            [XmlAttribute(AttributeName = "ReasonCodeDesc")]
+            public string ReasonCodeDesc { get; set; }
+
+            [XmlAttribute(AttributeName = "SettlementDate")]
+            public DateTime SettlementDate { get; set; }
+
+            [XmlAttribute(AttributeName = "SettlementMethod")]
+            public int SettlementMethod { get; set; }
+
+            [XmlAttribute(AttributeName = "SettlementMethodDesc")]
+            public string SettlementMethodDesc { get; set; }
+
+            [XmlAttribute(AttributeName = "LastUpdatedDate")]
+            public DateTime LastUpdatedDate { get; set; }
+        }
+
+        [XmlRoot(ElementName = "SubjectInfo", Namespace = "urn:crif-creditbureau:v1")]
         public class SubjectInfo
         {
             public SubjectInfo()
             {
                 NegativeEvent = new NegativeEvent();
-
-                SubjectInfoCategory = SubjectInfoCategoryDesc = SubjectInfoTypeCode = SubjectInfoTypeCodeDesc = "";
-
-                ProviderCodeEncrypted = 0;
+                BouncedCheque = new BouncedCheque();
+                SubjectInfoCategory = ProviderCodeEncrypted = SubjectInfoCategoryDesc = SubjectInfoTypeCode = SubjectInfoTypeCodeDesc = "";
             }
-            [XmlElement(ElementName = "NegativeEvent")]
+
+            [XmlElement(ElementName = "NegativeEvent", Namespace = "urn:crif-creditbureau:v1")]
             public NegativeEvent NegativeEvent { get; set; }
+
+            [XmlElement(ElementName = "BouncedCheque", Namespace = "urn:crif-creditbureau:v1")]
+            public BouncedCheque BouncedCheque { get; set; }
 
             [XmlAttribute(AttributeName = "SubjectInfoCategory")]
             public string SubjectInfoCategory { get; set; }
@@ -941,10 +1008,10 @@ namespace TauMira.UIXML
             public string SubjectInfoTypeCodeDesc { get; set; }
 
             [XmlAttribute(AttributeName = "ProviderCodeEncrypted")]
-            public int ProviderCodeEncrypted { get; set; }
+            public string ProviderCodeEncrypted { get; set; }
         }
 
-        [XmlRoot(ElementName = "AggregatedData")]
+        [XmlRoot(ElementName = "AggregatedData", Namespace = "urn:crif-creditbureau:v1")]
         public class AggregatedData
         {
 
@@ -1008,7 +1075,7 @@ namespace TauMira.UIXML
             public int MaxOverDueAmount { get; set; }
         }
 
-        [XmlRoot(ElementName = "NumbersSummary")]
+        [XmlRoot(ElementName = "NumbersSummary", Namespace = "urn:crif-creditbureau:v1")]
         public class NumbersSummary
         {
             public NumbersSummary()
@@ -1033,7 +1100,7 @@ namespace TauMira.UIXML
             public int Closed { get; set; }
         }
 
-        [XmlRoot(ElementName = "BCAmounts")]
+        [XmlRoot(ElementName = "BCAmounts", Namespace = "urn:crif-creditbureau:v1")]
         public class BCAmounts
         {
             public BCAmounts()
@@ -1062,7 +1129,7 @@ namespace TauMira.UIXML
             public int BilledAmount { get; set; }
         }
 
-        [XmlRoot(ElementName = "GAmounts")]
+        [XmlRoot(ElementName = "GAmounts", Namespace = "urn:crif-creditbureau:v1")]
         public class GAmounts
         {
             public GAmounts()
@@ -1091,7 +1158,7 @@ namespace TauMira.UIXML
             public int BilledAmount { get; set; }
         }
 
-        [XmlRoot(ElementName = "AmountsSummary")]
+        [XmlRoot(ElementName = "AmountsSummary", Namespace = "urn:crif-creditbureau:v1")]
         public class AmountsSummary
         {
             public AmountsSummary()
@@ -1104,10 +1171,10 @@ namespace TauMira.UIXML
 
                 OverdueFlag = OverdraftFlag = false;
             }
-            [XmlElement(ElementName = "BCAmounts")]
+            [XmlElement(ElementName = "BCAmounts", Namespace = "urn:crif-creditbureau:v1")]
             public BCAmounts BCAmounts { get; set; }
 
-            [XmlElement(ElementName = "GAmounts")]
+            [XmlElement(ElementName = "GAmounts", Namespace = "urn:crif-creditbureau:v1")]
             public GAmounts GAmounts { get; set; }
 
             [XmlAttribute(AttributeName = "ContractsCounter")]
@@ -1121,20 +1188,18 @@ namespace TauMira.UIXML
         }
 
 
-        [XmlRoot(ElementName = "NotGrantedContract")]
+        [XmlRoot(ElementName = "NotGrantedContract", Namespace = "urn:crif-creditbureau:v1")]
         public class NotGrantedContract
         {
             public NotGrantedContract()
             {
-                CBContractCode = ContractType = ProviderCodeEncrypted = CreditFacilityPurpose = 0;
+                CBContractCode = ContractType = CreditFacilityPurpose = 0;
 
-                ContractTypeDesc = ContractPhase = CreditFacilityPurposeDesc = ContractPhaseDesc = Role = RoleDesc = "";
+                ContractTypeDesc = ProviderCodeEncrypted = ContractPhase = CreditFacilityPurposeDesc = ContractPhaseDesc = Role = RoleDesc = "";
                 ContractRequestDate = LastUpdateDate = DateTime.Now;
 
 
-                NotGrantedInstallment = new NotGrantedInstallment();
 
-                NotGrantedCard = new NotGrantedCard();
             }
 
             [XmlAttribute(AttributeName = "CBContractCode")]
@@ -1165,7 +1230,7 @@ namespace TauMira.UIXML
             public DateTime LastUpdateDate { get; set; }
 
             [XmlAttribute(AttributeName = "ProviderCodeEncrypted")]
-            public int ProviderCodeEncrypted { get; set; }
+            public string ProviderCodeEncrypted { get; set; }
 
             [XmlAttribute(AttributeName = "CreditFacilityPurpose")]
             public int CreditFacilityPurpose { get; set; }
@@ -1175,30 +1240,34 @@ namespace TauMira.UIXML
 
 
 
-            [XmlElement(ElementName = "NotGrantedInstallment")]
-            public NotGrantedInstallment NotGrantedInstallment { get; set; }
-
-            [XmlElement(ElementName = "NotGrantedCard")]
-            public NotGrantedCard NotGrantedCard { get; set; }
         }
 
-        [XmlRoot(ElementName = "NotGrantedContract")]
+        [XmlRoot(ElementName = "NotGrantedContract", Namespace = "urn:crif-creditbureau:v1")]
         public class NotGrantedContract2
         {
             public NotGrantedContract2()
             {
                 NotGrantedContract = new NotGrantedContract();
+                NotGrantedInstallment = new NotGrantedInstallment();
+
+                NotGrantedCard = new NotGrantedCard();
             }
 
 
 
-            [XmlElement(ElementName = "NotGrantedContract")]
+            [XmlElement(ElementName = "NotGrantedContract", Namespace = "urn:crif-creditbureau:v1")]
             public NotGrantedContract NotGrantedContract { get; set; }
 
 
+            [XmlElement(ElementName = "NotGrantedInstallment", Namespace = "urn:crif-creditbureau:v1")]
+            public NotGrantedInstallment NotGrantedInstallment { get; set; }
+
+            [XmlElement(ElementName = "NotGrantedCard", Namespace = "urn:crif-creditbureau:v1")]
+            public NotGrantedCard NotGrantedCard { get; set; }
+
         }
 
-        [XmlRoot(ElementName = "NotGrantedInstallment")]
+        [XmlRoot(ElementName = "NotGrantedInstallment", Namespace = "urn:crif-creditbureau:v1")]
         public class NotGrantedInstallment
         {
             public NotGrantedInstallment()
@@ -1219,30 +1288,18 @@ namespace TauMira.UIXML
             public string PaymentPeriodicityDesc { get; set; }
         }
 
-        [XmlRoot(ElementName = "GrantedContract")]
+        [XmlRoot(ElementName = "GrantedContract", Namespace = "urn:crif-creditbureau:v1")]
         public class GrantedContract
         {
             public GrantedContract()
             {
-                CBContractCode = ProviderContractNo = ContractTypeDesc = ContractPhase = ContractPhaseDesc = Role = RoleDesc = OriginalCurrency = CreditFacilityPurposeDesc = OriginalCurrencyDesc = "";
+                CBContractCode = ProviderContractNo = ProviderCodeEncrypted = ContractTypeDesc = ContractPhase = ContractPhaseDesc = Role = RoleDesc = OriginalCurrency = CreditFacilityPurposeDesc = OriginalCurrencyDesc = "";
 
-               ContractType = ProviderCodeEncrypted = CreditFacilityPurpose = 0;
+                ContractType = CreditFacilityPurpose = 0;
 
-                ContractStartDate = ContractEndDate = LastUpdateDate = DateTime.Now;
+                ContractStartDate = LastUpdateDate = DateTime.Now;
+                ContractEndDate = new DateTime();
 
-                GrantedInstallment = new GrantedInstallment();
-
-                Maximum = new Maximum();
-
-                Profile = new List<Profile>();
-
-                Guarantee = new Guarantee();
-
-                GrantedNonInstallment = new GrantedNonInstallment();
-
-                GrantedCard = new GrantedCard();
-
-                GrantedService = new GrantedService();
             }
             [XmlAttribute(AttributeName = "CBContractCode")]
             public string CBContractCode { get; set; }
@@ -1284,7 +1341,7 @@ namespace TauMira.UIXML
             public string OriginalCurrencyDesc { get; set; }
 
             [XmlAttribute(AttributeName = "ProviderCodeEncrypted")]
-            public int ProviderCodeEncrypted { get; set; }
+            public string ProviderCodeEncrypted { get; set; }
 
             [XmlAttribute(AttributeName = "CreditFacilityPurpose")]
             public int CreditFacilityPurpose { get; set; }
@@ -1293,46 +1350,59 @@ namespace TauMira.UIXML
             public string CreditFacilityPurposeDesc { get; set; }
 
 
-            [XmlElement(ElementName = "GrantedInstallment")]
-            public GrantedInstallment GrantedInstallment { get; set; }
 
-            [XmlElement(ElementName = "Maximum")]
-            public Maximum Maximum { get; set; }
-
-            [XmlElement(ElementName = "Profile")]
-            public List<Profile> Profile { get; set; }
-
-            [XmlElement(ElementName = "Guarantee")]
-            public Guarantee Guarantee { get; set; }
-
-            [XmlElement(ElementName = "GrantedNonInstallment")]
-            public GrantedNonInstallment GrantedNonInstallment { get; set; }
-
-            [XmlElement(ElementName = "GrantedCard")]
-            public GrantedCard GrantedCard { get; set; }
-
-            [XmlElement(ElementName = "GrantedService")]
-            public GrantedService GrantedService { get; set; }
         }
 
 
 
-        [XmlRoot(ElementName = "GrantedContract")]
+        [XmlRoot(ElementName = "GrantedContract", Namespace = "urn:crif-creditbureau:v1")]
         public class GrantedContract2
         {
             public GrantedContract2()
             {
                 GrantedContract = new GrantedContract();
+                GrantedInstallment = new GrantedInstallment();
+
+                Maximum = new Maximum();
+
+                Profile = new List<Profile>();
+
+                Guarantee = new Guarantee();
+
+                GrantedNonInstallment = new GrantedNonInstallment();
+
+                GrantedCard = new GrantedCard();
+
+                GrantedService = new GrantedService();
             }
 
 
-            [XmlElement(ElementName = "GrantedContract")]
+            [XmlElement(ElementName = "GrantedContract", Namespace = "urn:crif-creditbureau:v1")]
             public GrantedContract GrantedContract { get; set; }
+            [XmlElement(ElementName = "GrantedInstallment", Namespace = "urn:crif-creditbureau:v1")]
+            public GrantedInstallment GrantedInstallment { get; set; }
 
+            [XmlElement(ElementName = "Maximum", Namespace = "urn:crif-creditbureau:v1")]
+            public Maximum Maximum { get; set; }
+
+            [XmlElement(ElementName = "Profile", Namespace = "urn:crif-creditbureau:v1")]
+            public List<Profile> Profile { get; set; }
+
+            [XmlElement(ElementName = "Guarantee", Namespace = "urn:crif-creditbureau:v1")]
+            public Guarantee Guarantee { get; set; }
+
+            [XmlElement(ElementName = "GrantedNonInstallment", Namespace = "urn:crif-creditbureau:v1")]
+            public GrantedNonInstallment GrantedNonInstallment { get; set; }
+
+            [XmlElement(ElementName = "GrantedCard", Namespace = "urn:crif-creditbureau:v1")]
+            public GrantedCard GrantedCard { get; set; }
+
+            [XmlElement(ElementName = "GrantedService", Namespace = "urn:crif-creditbureau:v1")]
+            public GrantedService GrantedService { get; set; }
 
         }
 
-        [XmlRoot(ElementName = "GrantedInstallment")]
+        [XmlRoot(ElementName = "GrantedInstallment", Namespace = "urn:crif-creditbureau:v1")]
         public class GrantedInstallment
         {
             public GrantedInstallment()
@@ -1409,7 +1479,7 @@ namespace TauMira.UIXML
             public string ReorganizedCreditCodeDesc { get; set; }
         }
 
-        [XmlRoot(ElementName = "Maximum")]
+        [XmlRoot(ElementName = "Maximum", Namespace = "urn:crif-creditbureau:v1")]
         public class Maximum
         {
 
@@ -1462,29 +1532,14 @@ namespace TauMira.UIXML
             public int MaxBilledAmount { get; set; }
         }
 
-        [XmlRoot(ElementName = "Profile")]
+        [XmlRoot(ElementName = "Profile", Namespace = "urn:crif-creditbureau:v1")]
         public class Profile
         {
-            public Profile()
-            {
-                ReferenceYear = OutstandingBalance = MinPaymentIndicator = OverdueInsPaymentsNumber = TotalGuaranteedAmount = Utilization = CreditLimit = DaysPastDue = ReferenceMonth = OverduePaymentsNumber = TimesCardUsed = BilledAmount = 0;
-                DaysPastDueDesc = Status = MinPaymentIndicatorDesc=FlagCardUsed = ContractStatusLastUpdateDesc = ContractStatusLastUpdate = StatusDesc = "";
-                ContractStatusLastUpdateDate = DateTime.Now;
-            }
             [XmlAttribute(AttributeName = "ReferenceYear")]
             public int ReferenceYear { get; set; }
 
             [XmlAttribute(AttributeName = "ReferenceMonth")]
             public int ReferenceMonth { get; set; }
-
-            [XmlAttribute(AttributeName = "OverduePaymentsNumber")]
-            public int OverduePaymentsNumber { get; set; }
-
-            [XmlAttribute(AttributeName = "DaysPastDue")]
-            public int DaysPastDue { get; set; }
-
-            [XmlAttribute(AttributeName = "DaysPastDueDesc")]
-            public string DaysPastDueDesc { get; set; }
 
             [XmlAttribute(AttributeName = "Status")]
             public string Status { get; set; }
@@ -1496,11 +1551,51 @@ namespace TauMira.UIXML
             public string ContractStatusLastUpdate { get; set; }
 
             [XmlAttribute(AttributeName = "ContractStatusLastUpdateDesc")]
-            public string ContractStatusLastUpdateDesc { get; set; }
+            public string ContractStatusLastUpdaetDesc { get; set; }
 
             [XmlAttribute(AttributeName = "ContractStatusLastUpdateDate")]
             public DateTime ContractStatusLastUpdateDate { get; set; }
 
+            public Profile()
+            {
+                var lastMonth = DateTime.Today.AddMonths(0);
+                ReferenceYear = lastMonth.Year;
+                ReferenceMonth = lastMonth.Month;
+                Status = "B";
+                StatusDesc = "No info";
+                ContractStatusLastUpdate = "A";
+                ContractStatusLastUpdaetDesc = "No info";
+                ContractStatusLastUpdateDate = DateTime.Now;
+            }
+
+            public virtual List<Profile> GenerateProfile(int months, ref StackPanel stackPanel)
+            {
+                //for (int i = 0; i < months; i++)
+                //{
+
+                //}
+                return new List<Profile>();
+            }
+
+            //public static void ShowProfiles(List<Profile> profiles, ref StackPanel stackPanel)
+            //{
+            //    int i = 0;
+            //    foreach (var profile in profiles)
+            //        stackPanel.Children.Add(new UserControlSection($"Profile #{++i}", profile, Visibility.Visible, stackPanel));
+            //}
+            public virtual List<Profile> ShowProfiles(List<Profile> profiles, ref StackPanel stackPanel)
+            {
+                //int i = 0;
+                //foreach (var profile in profiles)
+                //    stackPanel.Children.Add(new UserControlSection($"Profile #{++i}", profile, Visibility.Visible, stackPanel));
+                return new List<Profile>();
+            }
+        }
+
+        // NonInstallments
+        [XmlRoot(ElementName = "NonInstallmentsProfile")]
+        public class NonInstallmentsProfile : Profile
+        {
             [XmlAttribute(AttributeName = "CreditLimit")]
             public int CreditLimit { get; set; }
 
@@ -1510,12 +1605,82 @@ namespace TauMira.UIXML
             [XmlAttribute(AttributeName = "TotalGuaranteedAmount")]
             public int TotalGuaranteedAmount { get; set; }
 
+            public override List<Profile> GenerateProfile(int months, ref StackPanel stackPanel)
+            {
+                var profiles = new List<Profile>();
+                var lastMonth = DateTime.Today.AddMonths(0);
+
+                for (int i = 0; i < months; i++)
+                {
+                    var profile = new NonInstallmentsProfile();
+                    profiles.Add(profile);
+                    profiles[i].ReferenceYear = lastMonth.Year;
+                    profiles[i].ReferenceMonth = lastMonth.Month;
+                    lastMonth = lastMonth.AddMonths(-1);
+                    stackPanel.Children.Add(new UserControlSection("Profile", profile, Visibility.Visible, stackPanel));
+                }
+                return profiles;
+            }
+        }
+
+        // Installments
+        [XmlRoot(ElementName = "InstallmentsProfile", Namespace = "")]
+        public class InstallmentsProfile : Profile
+        {
+            [XmlAttribute(AttributeName = "OverduePaymentsNumber")]
+            public int OverduePaymentsNumber { get; set; }
+
+            [XmlAttribute(AttributeName = "DaysPastDue")]
+            public int DaysPastDue { get; set; }
+
+            [XmlAttribute(AttributeName = "DaysPastDueDesc")]
+            public string DaysPastDueDesc { get; set; }
+
+            public override List<Profile> GenerateProfile(int months, ref StackPanel stackPanel)
+            {
+                var profiles = new List<Profile>();
+                var lastMonth = DateTime.Today.AddMonths(0);
+
+                for (int i = 0; i < months; i++)
+                {
+                    var profile = new InstallmentsProfile();
+                    profile.DaysPastDueDesc = "Paid as agreed";
+                    profile.DaysPastDue = 1;
+                    profiles.Add(profile);
+                    profiles[i].ReferenceYear = lastMonth.Year;
+                    profiles[i].ReferenceMonth = lastMonth.Month;
+                    lastMonth = lastMonth.AddMonths(-1);
+                    stackPanel.Children.Add(new UserControlSection("Profile", profile, Visibility.Visible, stackPanel));
+                }
+
+                return profiles;
+            }
+
+            public virtual List<Profile> ShowProfiles(List<Profile> profiles, ref StackPanel stackPanel)
+            {
+                int i = 0;
+                foreach (var profile in profiles)
+                    stackPanel.Children.Add(new UserControlSection("Profile", profile, Visibility.Visible, stackPanel));
+                //stackPanel.Children.Add(new UserControlSection($"Profile #{++i}", profile, Visibility.Visible, stackPanel));
+                return profiles;    
+            }
+        }
+
+        // CreditCards
+        [XmlRoot(ElementName = "CreditCardsProfile", Namespace = "")]
+        public class CreditCardsProfile : Profile
+        {
             [XmlAttribute(AttributeName = "OverdueInsPaymentsNumber")]
             public int OverdueInsPaymentsNumber { get; set; }
 
-
             [XmlAttribute(AttributeName = "OutstandingBalance")]
             public int OutstandingBalance { get; set; }
+
+            [XmlAttribute(AttributeName = "DaysPastDue")]
+            public int DaysPastDue { get; set; }
+
+            [XmlAttribute(AttributeName = "DaysPastDueDesc")]
+            public string DaysPastDueDesc { get; set; }
 
             [XmlAttribute(AttributeName = "MinPaymentIndicator")]
             public int MinPaymentIndicator { get; set; }
@@ -1523,18 +1688,72 @@ namespace TauMira.UIXML
             [XmlAttribute(AttributeName = "MinPaymentIndicatorDesc")]
             public string MinPaymentIndicatorDesc { get; set; }
 
-
             [XmlAttribute(AttributeName = "FlagCardUsed")]
-            public string FlagCardUsed { get; set; }
+            public int FlagCardUsed { get; set; }
 
             [XmlAttribute(AttributeName = "TimesCardUsed")]
             public int TimesCardUsed { get; set; }
+            public override List<Profile> GenerateProfile(int months, ref StackPanel stackPanel)
+            {
+                var profiles = new List<Profile>();
+                var lastMonth = DateTime.Today.AddMonths(0);
+                for (int i = 0; i < months; i++)
+                {
+                    var profile = new CreditCardsProfile();
+                    profile.DaysPastDue = 1;
+                    profile.DaysPastDueDesc = "Paid as agreed";
+                    profile.MinPaymentIndicatorDesc = "";
+                    profiles.Add(profile);
+                    profiles[i].ReferenceYear = lastMonth.Year;
+                    profiles[i].ReferenceMonth = lastMonth.Month;
+                    lastMonth = lastMonth.AddMonths(-1);
+                    stackPanel.Children.Add(new UserControlSection("Profile", profile, Visibility.Visible, stackPanel));
+                }
+                return profiles;
+            }
 
-            [XmlAttribute(AttributeName = "BilledAmount")]
-            public int BilledAmount { get; set; }
         }
 
-        [XmlRoot(ElementName = "Real")]
+        // Services
+        [XmlRoot(ElementName = "ServicesProfile", Namespace = "")]
+        public class ServicesProfile : Profile
+        {
+            [XmlAttribute(AttributeName = "BilledAmount")]
+            public int BilledAmount { get; set; }
+
+            [XmlAttribute(AttributeName = "OutstandingBalance")]
+            public int OutstandingBalance { get; set; }
+
+            [XmlAttribute(AttributeName = "OverduePaymentsNumber")]
+            public int OverduePaymentsNumber { get; set; }
+
+            [XmlAttribute(AttributeName = "DaysPastDue")]
+            public int DaysPastDue { get; set; }
+
+            [XmlAttribute(AttributeName = "DaysPastDueDesc")]
+            public string DaysPastDueDesc { get; set; }
+
+            public override List<Profile> GenerateProfile(int months, ref StackPanel stackPanel)
+            {
+                var profiles = new List<Profile>();
+                var lastMonth = DateTime.Today.AddMonths(0);
+                for (int i = 0; i < months; i++)
+                {
+                    var profile = new ServicesProfile();
+                    profile.DaysPastDue = 1;
+                    profile.DaysPastDueDesc = "Paid as agreed";
+                    profiles.Add(profile);
+                    profiles[i].ReferenceYear = lastMonth.Year;
+                    profiles[i].ReferenceMonth = lastMonth.Month;
+                    lastMonth = lastMonth.AddMonths(-1);
+                    stackPanel.Children.Add(new UserControlSection("Profile", profile, Visibility.Visible, stackPanel));
+                }
+                return profiles;
+            }
+        }
+
+
+        [XmlRoot(ElementName = "Real", Namespace = "urn:crif-creditbureau:v1")]
         public class Real
         {
             public Real()
@@ -1559,7 +1778,7 @@ namespace TauMira.UIXML
             public string RealGuaranteesDesc { get; set; }
         }
 
-        [XmlRoot(ElementName = "Guarantee")]
+        [XmlRoot(ElementName = "Guarantee", Namespace = "urn:crif-creditbureau:v1")]
         public class Guarantee
         {
             public Guarantee()
@@ -1570,7 +1789,7 @@ namespace TauMira.UIXML
                 ValidityStartDate = ValidityEndDate = DateTime.Now;
                 Personal = new Personal();
             }
-            [XmlElement(ElementName = "Real")]
+            [XmlElement(ElementName = "Real", Namespace = "urn:crif-creditbureau:v1")]
             public Real Real { get; set; }
 
             [XmlAttribute(AttributeName = "CBSubjectCode")]
@@ -1594,12 +1813,12 @@ namespace TauMira.UIXML
             [XmlAttribute(AttributeName = "ValidityEndDate")]
             public DateTime ValidityEndDate { get; set; }
 
-            [XmlElement(ElementName = "Personal")]
+            [XmlElement(ElementName = "Personal", Namespace = "urn:crif-creditbureau:v1")]
             public Personal Personal { get; set; }
         }
 
-        [XmlRoot(ElementName = "Installments")]
-        public class Installments
+        [XmlRoot(ElementName = "Installments", Namespace = "urn:crif-creditbureau:v1")]
+        public class Installments : InstallmentsProfile
         {
             public Installments()
             {
@@ -1608,20 +1827,20 @@ namespace TauMira.UIXML
                 NotGrantedContract = new List<NotGrantedContract2>();
                 GrantedContract = new GrantedContract2();
             }
-            [XmlElement(ElementName = "NumbersSummary")]
+            [XmlElement(ElementName = "NumbersSummary", Namespace = "urn:crif-creditbureau:v1")]
             public NumbersSummary NumbersSummary { get; set; }
 
-            [XmlElement(ElementName = "AmountsSummary")]
+            [XmlElement(ElementName = "AmountsSummary", Namespace = "urn:crif-creditbureau:v1")]
             public AmountsSummary AmountsSummary { get; set; }
 
-            [XmlElement(ElementName = "NotGrantedContract")]
+            [XmlElement(ElementName = "NotGrantedContract", Namespace = "urn:crif-creditbureau:v1")]
             public List<NotGrantedContract2> NotGrantedContract { get; set; }
 
-            [XmlElement(ElementName = "GrantedContract")]
+            [XmlElement(ElementName = "GrantedContract", Namespace = "urn:crif-creditbureau:v1")]
             public GrantedContract2 GrantedContract { get; set; }
         }
 
-        [XmlRoot(ElementName = "GrantedNonInstallment")]
+        [XmlRoot(ElementName = "GrantedNonInstallment", Namespace = "urn:crif-creditbureau:v1")]
         public class GrantedNonInstallment
         {
             public GrantedNonInstallment()
@@ -1652,7 +1871,7 @@ namespace TauMira.UIXML
             public int OverdraftRangeNumber { get; set; }
         }
 
-        [XmlRoot(ElementName = "Personal")]
+        [XmlRoot(ElementName = "Personal", Namespace = "urn:crif-creditbureau:v1")]
         public class Personal
         {
             public Personal()
@@ -1675,7 +1894,7 @@ namespace TauMira.UIXML
         }
 
         [XmlRoot(ElementName = "NonInstallments")]
-        public class NonInstallments
+        public class NonInstallments : NonInstallmentsProfile
         {
             public NonInstallments()
             {
@@ -1683,17 +1902,17 @@ namespace TauMira.UIXML
                 AmountsSummary = new AmountsSummary();
                 GrantedContract = new GrantedContract2();
             }
-            [XmlElement(ElementName = "NumbersSummary")]
+            [XmlElement(ElementName = "NumbersSummary", Namespace = "urn:crif-creditbureau:v1")]
             public NumbersSummary NumbersSummary { get; set; }
 
-            [XmlElement(ElementName = "AmountsSummary")]
+            [XmlElement(ElementName = "AmountsSummary", Namespace = "urn:crif-creditbureau:v1")]
             public AmountsSummary AmountsSummary { get; set; }
 
-            [XmlElement(ElementName = "GrantedContract")]
+            [XmlElement(ElementName = "GrantedContract", Namespace = "urn:crif-creditbureau:v1")]
             public GrantedContract2 GrantedContract { get; set; }
         }
 
-        [XmlRoot(ElementName = "NotGrantedCard")]
+        [XmlRoot(ElementName = "NotGrantedCard", Namespace = "urn:crif-creditbureau:v1")]
         public class NotGrantedCard
         {
             public NotGrantedCard()
@@ -1712,7 +1931,7 @@ namespace TauMira.UIXML
             public string PaymentPeriodicityDesc { get; set; }
         }
 
-        [XmlRoot(ElementName = "GrantedCard")]
+        [XmlRoot(ElementName = "GrantedCard", Namespace = "urn:crif-creditbureau:v1")]
         public class GrantedCard
         {
             public GrantedCard()
@@ -1797,8 +2016,8 @@ namespace TauMira.UIXML
             public string ReorganizedCreditCodeDesc { get; set; }
         }
 
-        [XmlRoot(ElementName = "CreditCards")]
-        public class CreditCards
+        [XmlRoot(ElementName = "CreditCards", Namespace = "urn:crif-creditbureau:v1")]
+        public class CreditCards : CreditCardsProfile
         {
             public CreditCards()
             {
@@ -1808,20 +2027,20 @@ namespace TauMira.UIXML
                 GrantedContract = new GrantedContract2();
 
             }
-            [XmlElement(ElementName = "NumbersSummary")]
+            [XmlElement(ElementName = "NumbersSummary", Namespace = "urn:crif-creditbureau:v1")]
             public NumbersSummary NumbersSummary { get; set; }
 
-            [XmlElement(ElementName = "AmountsSummary")]
+            [XmlElement(ElementName = "AmountsSummary", Namespace = "urn:crif-creditbureau:v1")]
             public AmountsSummary AmountsSummary { get; set; }
 
-            [XmlElement(ElementName = "NotGrantedContract")]
+            [XmlElement(ElementName = "NotGrantedContract", Namespace = "urn:crif-creditbureau:v1")]
             public NotGrantedContract2 NotGrantedContract { get; set; }
 
-            [XmlElement(ElementName = "GrantedContract")]
+            [XmlElement(ElementName = "GrantedContract", Namespace = "urn:crif-creditbureau:v1")]
             public GrantedContract2 GrantedContract { get; set; }
         }
 
-        [XmlRoot(ElementName = "GrantedService")]
+        [XmlRoot(ElementName = "GrantedService", Namespace = "urn:crif-creditbureau:v1")]
         public class GrantedService
         {
             public GrantedService()
@@ -1876,8 +2095,8 @@ namespace TauMira.UIXML
             public string ReorganizedCreditCodeDesc { get; set; }
         }
 
-        [XmlRoot(ElementName = "Services")]
-        public class Services
+        [XmlRoot(ElementName = "Services", Namespace = "urn:crif-creditbureau:v1")]
+        public class Services : ServicesProfile
         {
             public Services()
             {
@@ -1885,17 +2104,17 @@ namespace TauMira.UIXML
                 AmountsSummary = new AmountsSummary();
                 GrantedContract = new GrantedContract2();
             }
-            [XmlElement(ElementName = "NumbersSummary")]
+            [XmlElement(ElementName = "NumbersSummary", Namespace = "urn:crif-creditbureau:v1")]
             public NumbersSummary NumbersSummary { get; set; }
 
-            [XmlElement(ElementName = "AmountsSummary")]
+            [XmlElement(ElementName = "AmountsSummary", Namespace = "urn:crif-creditbureau:v1")]
             public AmountsSummary AmountsSummary { get; set; }
 
-            [XmlElement(ElementName = "GrantedContract")]
+            [XmlElement(ElementName = "GrantedContract", Namespace = "urn:crif-creditbureau:v1")]
             public GrantedContract2 GrantedContract { get; set; }
         }
 
-        [XmlRoot(ElementName = "FootPrint")]
+        [XmlRoot(ElementName = "FootPrint", Namespace = "urn:crif-creditbureau:v1")]
         public class FootPrint
         {
             public FootPrint()
@@ -1923,7 +2142,7 @@ namespace TauMira.UIXML
             public string ProviderType { get; set; }
         }
 
-        [XmlRoot(ElementName = "FootPrints")]
+        [XmlRoot(ElementName = "FootPrints", Namespace = "urn:crif-creditbureau:v1")]
         public class FootPrints
         {
             public FootPrints()
@@ -1931,11 +2150,11 @@ namespace TauMira.UIXML
                 FootPrint = new List<FootPrint>();
             }
 
-            [XmlElement(ElementName = "FootPrint")]
+            [XmlElement(ElementName = "FootPrint", Namespace = "urn:crif-creditbureau:v1")]
             public List<FootPrint> FootPrint { get; set; }
         }
 
-        [XmlRoot(ElementName = "ContractsHistory")]
+        [XmlRoot(ElementName = "ContractsHistory", Namespace = "urn:crif-creditbureau:v1")]
         public class ContractsHistory
         {
             public ContractsHistory()
@@ -1947,45 +2166,45 @@ namespace TauMira.UIXML
                 Services = new Services();
                 FootPrints = new FootPrints();
             }
-            [XmlElement(ElementName = "AggregatedData")]
+            [XmlElement(ElementName = "AggregatedData", Namespace = "urn:crif-creditbureau:v1")]
             public AggregatedData AggregatedData { get; set; }
 
-            [XmlElement(ElementName = "Installments")]
+            [XmlElement(ElementName = "Installments", Namespace = "urn:crif-creditbureau:v1")]
             public Installments Installments { get; set; }
 
-            [XmlElement(ElementName = "NonInstallments")]
+            [XmlElement(ElementName = "NonInstallments", Namespace = "urn:crif-creditbureau:v1")]
             public NonInstallments NonInstallments { get; set; }
 
-            [XmlElement(ElementName = "CreditCards")]
+            [XmlElement(ElementName = "CreditCards", Namespace = "urn:crif-creditbureau:v1")]
             public CreditCards CreditCards { get; set; }
 
-            [XmlElement(ElementName = "Services")]
+            [XmlElement(ElementName = "Services", Namespace = "urn:crif-creditbureau:v1")]
             public Services Services { get; set; }
 
-            [XmlElement(ElementName = "FootPrints")]
+            [XmlElement(ElementName = "FootPrints", Namespace = "urn:crif-creditbureau:v1")]
             public FootPrints FootPrints { get; set; }
         }
 
-        [XmlRoot(ElementName = "CreditReport")]
+        [XmlRoot(ElementName = "CreditReport", Namespace = "urn:crif-creditbureau:v1")]
         public class CreditReport
         {
             public CreditReport()
             {
                 MatchedSubject = new MatchedSubject();
-                SubjectInfo = new SubjectInfo();
+                SubjectInfo = new List<SubjectInfo>();
                 ContractsHistory = new ContractsHistory();
             }
-            [XmlElement(ElementName = "MatchedSubject")]
+            [XmlElement(ElementName = "MatchedSubject", Namespace = "urn:crif-creditbureau:v1")]
             public MatchedSubject MatchedSubject { get; set; }
 
-            [XmlElement(ElementName = "SubjectInfo")]
-            public SubjectInfo SubjectInfo { get; set; }
+            [XmlElement(ElementName = "SubjectInfo", Namespace = "urn:crif-creditbureau:v1")]
+            public List<SubjectInfo> SubjectInfo { get; set; }
 
-            [XmlElement(ElementName = "ContractsHistory")]
+            [XmlElement(ElementName = "ContractsHistory", Namespace = "urn:crif-creditbureau:v1")]
             public ContractsHistory ContractsHistory { get; set; }
         }
 
-        [XmlRoot(ElementName = "PositiveScoreFactors")]
+        [XmlRoot(ElementName = "PositiveScoreFactors", Namespace = "urn:crif-creditbureau:v1")]
         public class PositiveScoreFactors
         {
             public PositiveScoreFactors()
@@ -1996,18 +2215,21 @@ namespace TauMira.UIXML
             public string Description { get; set; }
         }
 
-        [XmlRoot(ElementName = "NegativeScoreFactors")]
+        [XmlRoot(ElementName = "NegativeScoreFactors", Namespace = "urn:crif-creditbureau:v1")]
         public class NegativeScoreFactors
         {
             public NegativeScoreFactors()
             {
                 Description = "";
             }
+
             [XmlAttribute(AttributeName = "Description")]
             public string Description { get; set; }
         }
 
-        [XmlRoot(ElementName = "CBSGlocal")]
+        public XNamespace aw = "somewhere.com";
+
+        [XmlRoot(ElementName = "CBSGlocal", Namespace = "urn:crif-creditbureau:v1")]
         public class CBSGlocal
         {
             public CBSGlocal()
@@ -2017,31 +2239,34 @@ namespace TauMira.UIXML
                 ScoreRaw = 0;
                 RiskLevel = "";
             }
-            [XmlElement(ElementName = "PositiveScoreFactors")]
+            [XmlElement(ElementName = "PositiveScoreFactors", Namespace = "urn:crif-creditbureau:v1")]
             public List<PositiveScoreFactors> PositiveScoreFactors { get; set; }
 
-            [XmlElement(ElementName = "NegativeScoreFactors")]
+            [XmlElement(ElementName = "NegativeScoreFactors", Namespace = "urn:crif-creditbureau:v1")]
             public List<NegativeScoreFactors> NegativeScoreFactors { get; set; }
 
             [XmlAttribute(AttributeName = "ScoreRaw")]
-            public int ScoreRaw { get; set; }
+            public long ScoreRaw { get; set; }
 
             [XmlAttribute(AttributeName = "RiskLevel")]
             public string RiskLevel { get; set; }
         }
 
-        [XmlRoot(ElementName = "CBScore")]
+
+
+        [XmlRoot(ElementName = "CBScore", Namespace = "urn:crif-creditbureau:v1")]
         public class CBScore
         {
             public CBScore()
             {
                 CBSGlocal = new CBSGlocal();
             }
-            [XmlElement(ElementName = "CBSGlocal")]
+
+            [XmlElement(ElementName = "CBSGlocal", Namespace = "urn:crif-creditbureau:v1")]
             public CBSGlocal CBSGlocal { get; set; }
         }
 
-        [XmlRoot(ElementName = "CB_NAE_ProductOutput")]
+        [XmlRoot(ElementName = "CB_NAE_ProductOutput", Namespace = "")]
         public class CBNAEProductOutput
         {
             public CBNAEProductOutput()
@@ -2051,25 +2276,25 @@ namespace TauMira.UIXML
                 ApplicationCodes = new ApplicationCodes();
                 CreditReport = new CreditReport();
                 CBScore = new CBScore();
-                Cb = "";
+                //Cb = "";
             }
-            [XmlElement(ElementName = "MessageId")]
+            [XmlElement(ElementName = "MessageId", Namespace = "urn:crif-creditbureau:v1")]
             public MessageId MessageId { get; set; }
 
-            [XmlElement(ElementName = "EnquiredData")]
+            [XmlElement(ElementName = "EnquiredData", Namespace = "urn:crif-creditbureau:v1")]
             public EnquiredData EnquiredData { get; set; }
 
-            [XmlElement(ElementName = "ApplicationCodes")]
+            [XmlElement(ElementName = "ApplicationCodes", Namespace = "urn:crif-creditbureau:v1")]
             public ApplicationCodes ApplicationCodes { get; set; }
 
-            [XmlElement(ElementName = "CreditReport")]
+            [XmlElement(ElementName = "CreditReport", Namespace = "urn:crif-creditbureau:v1")]
             public CreditReport CreditReport { get; set; }
 
-            [XmlElement(ElementName = "CBScore")]
+            [XmlElement(ElementName = "CBScore", Namespace = "urn:crif-creditbureau:v1")]
             public CBScore CBScore { get; set; }
 
-            [XmlAttribute(AttributeName = "cb")]
-            public string Cb { get; set; }
+            //[XmlAttribute(AttributeName = "cb")]
+            //public string Cb { get; set; }
         }
 
         [XmlRoot(ElementName = "ProductResponse")]
@@ -2080,7 +2305,7 @@ namespace TauMira.UIXML
                 CBNAEProductOutput = new CBNAEProductOutput();
                 ServiceId = Id = Version = ResultLanguage = ResultCode = ResultDescription = "";
             }
-            [XmlElement(ElementName = "CB_NAE_ProductOutput")]
+            [XmlElement(ElementName = "CB_NAE_ProductOutput", Namespace = "urn:crif-creditbureau:v1")]
             public CBNAEProductOutput CBNAEProductOutput { get; set; }
 
             [XmlAttribute(AttributeName = "ServiceId")]
@@ -2109,7 +2334,7 @@ namespace TauMira.UIXML
             {
                 MessageResponse = new MessageResponse();
                 ProductResponse = new ProductResponse();
-                Xmlns = "";
+                // Xmlns = "";
             }
             [XmlElement(ElementName = "MessageResponse")]
             public MessageResponse MessageResponse { get; set; }
@@ -2117,49 +2342,47 @@ namespace TauMira.UIXML
             [XmlElement(ElementName = "ProductResponse")]
             public ProductResponse ProductResponse { get; set; }
 
-            [XmlAttribute(AttributeName = "xmlns")]
-            public string Xmlns { get; set; }
+            //[XmlAttribute(AttributeName = "xmlns")]
+            //public string Xmlns { get; set; }
         }
 
-        [XmlRoot(ElementName = "Body")]
+        [XmlRoot(ElementName = "Body", Namespace = "http://schemas.xmlsoap.org/soap/envelope/")]
         public class Body
         {
             public Body()
             {
                 MGResponse = new MGResponse();
-                Xsi =
-                Xsd = "";
+                //Xsi =
+                //Xsd = "";
             }
 
-            [XmlElement(ElementName = "MGResponse")]
+            [XmlElement(ElementName = "MGResponse", Namespace = "urn:cbs-messagegatewaysoap:2015-01-01")]
             public MGResponse MGResponse { get; set; }
 
-            [XmlAttribute(AttributeName = "xsi")]
-            public string Xsi { get; set; }
+            //[XmlAttribute(AttributeName = "xsi")]
+            //public string Xsi { get; set; }
 
-            [XmlAttribute(AttributeName = "xsd")]
-            public string Xsd { get; set; }
+            //[XmlAttribute(AttributeName = "xsd")]
+            //public string Xsd { get; set; }
         }
 
-
-
-        [XmlRoot(ElementName = "Envelope")]
+        [XmlRoot(ElementName = "Envelope", Namespace = "http://schemas.xmlsoap.org/soap/envelope/")]
         public class Envelope
         {
             public Envelope()
             {
                 Body = new Body();
-                S = "";
+                //S = "";
 
             }
 
-            [XmlElement(ElementName = "Body")]
+            [XmlElement(ElementName = "Body", Namespace = "http://schemas.xmlsoap.org/soap/envelope/")]
             public Body Body { get; set; }
 
 
 
-            [XmlAttribute(AttributeName = "s")]
-            public string S { get; set; }
+            //[XmlAttribute(AttributeName = "S")]
+            //public string S { get; set; }
         }
 
 

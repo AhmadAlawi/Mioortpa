@@ -288,6 +288,136 @@
     },
     {
       "Name": {
+        "En": "ProviderCodeEncrypted",
+        "Ar": ""
+      },
+      "Tip": {
+        "En": "",
+        "Ar": ""
+      },
+      "Type": "DropDown",
+      "Values": [
+        {
+          "Code": "001",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "001",
+            "Ar": "001"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "002",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "002",
+            "Ar": "002"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "003",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "003",
+            "Ar": "003"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "004",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "004",
+            "Ar": "004"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "005",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "005",
+            "Ar": "005"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "006",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "006",
+            "Ar": "006"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "007",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "007",
+            "Ar": "007"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "008",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "008",
+            "Ar": "008"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "009",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "009",
+            "Ar": "009"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        }
+      ]
+    },
+    {
+      "Name": {
         "En": "Title",
         "Ar": ""
       },
@@ -460,6 +590,3258 @@
           "Descriptions": {
             "En": "Excellency",
             "Ar": "معالي "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        }
+      ]
+    },
+
+    {
+      "Name": {
+        "En": "Nationality",
+        "Ar": ""
+      },
+      "Tip": {
+        "En": "",
+        "Ar": ""
+      },
+      "Type": "DropDown",
+      "Values": [
+        {
+          "Code": "JO",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "JORDAN",
+            "Ar": "الأردن"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AF",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "AFGHANISTAN",
+            "Ar": "أفغانستان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AX",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ALAND ISLANDS",
+            "Ar": "ألاند"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AL",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ALBANIA",
+            "Ar": "ألبانيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "DZ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ALGERIA",
+            "Ar": "الجزائر"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AS",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "AMERICAN SAMOA",
+            "Ar": "ساموا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AD",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ANDORRA",
+            "Ar": "أندورا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AO",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ANGOLA",
+            "Ar": "أنغولا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AI",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ANGUILLA",
+            "Ar": "أنغويلا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AQ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ANTARCTICA",
+            "Ar": "أنتاركتيكا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AG",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ANTIGUA AND BARBUDA",
+            "Ar": "أنتيغوا وبربودا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AR",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ARGENTINA",
+            "Ar": "الأرجنتين"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AM",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ARMENIA",
+            "Ar": "أرمينيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AW",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ARUBA",
+            "Ar": "أروبا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AU",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "AUSTRALIA",
+            "Ar": "أستراليا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AT",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "AUSTRIA",
+            "Ar": "النمسا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AZ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "AZERBAIJAN",
+            "Ar": "أذربيجان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BS",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BAHAMAS",
+            "Ar": "جزر البهاما"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BH",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BAHRAIN",
+            "Ar": "البحرين"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BD",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BANGLADESH",
+            "Ar": "بنغلاديش"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BB",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BARBADOS",
+            "Ar": "بربادوس"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BY",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BELARUS",
+            "Ar": "روسيا البيضاء"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BE",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BELGIUM",
+            "Ar": "بلجيكا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BZ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BELIZE",
+            "Ar": "بيليز"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BJ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BENIN",
+            "Ar": "بنين"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BM",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BERMUDA",
+            "Ar": "برمودا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BT",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BHUTAN",
+            "Ar": "بوتان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BO",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BOLIVIA",
+            "Ar": "بوليفيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BA",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BOSNIA AND HERZEGOVINA",
+            "Ar": "البوسنة والهرسك"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BW",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BOTSWANA",
+            "Ar": "بوتسوانا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BV",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BOUVET ISLAND",
+            "Ar": "جزيرة بوفيت"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BR",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BRAZIL",
+            "Ar": "البرازيل"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "IO",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BRITISH INDIAN OCEAN TERRITORY",
+            "Ar": "إقليم المحيط الهندي البريطاني    "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BN",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BRUNEI DARUSSALAM",
+            "Ar": "بروناي دار السلام"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BG",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BULGARIA",
+            "Ar": "بلغاريا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BF",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BURKINA FASO",
+            "Ar": "بوركينا فاسو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BI",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "BURUNDI",
+            "Ar": "بوروندي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KH",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CAMBODIA",
+            "Ar": "كمبوديا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CM",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CAMEROON",
+            "Ar": "الكاميرون"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CA",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CANADA",
+            "Ar": "كندا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CV",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CAPE VERDE",
+            "Ar": "الرأس الأخضر"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KY",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CAYMAN ISLANDS",
+            "Ar": "جزر كايمان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CF",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CENTRAL AFRICAN REPUBLIC",
+            "Ar": "جمهورية أفريقيا الوسطى"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TD",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CHAD",
+            "Ar": "تشاد"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CL",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CHILE",
+            "Ar": "شيلي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CN",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CHINA",
+            "Ar": "الصين"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CX",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CHRISTMAS ISLAND",
+            "Ar": "جزيرة كريسماس"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CC",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "COCOS (KEELING) ISLANDS",
+            "Ar": "كوكوس ( كيلينغ ) جزر"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CO",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "COLOMBIA",
+            "Ar": "كولومبيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KM",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "COMOROS",
+            "Ar": "جزر القمر"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CG",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CONGO",
+            "Ar": "جمهورية الكونغو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CD",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CONGO, THE DEMOCRATIC REPUBLIC OF THE",
+            "Ar": "جمهورية الكونغو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CK",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "COOK ISLANDS",
+            "Ar": "جزر كوك"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CR",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "COSTA RICA",
+            "Ar": "كوستاريكا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CI",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CÔTE DE IVOIRE",
+            "Ar": "ساحل العاج"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "HR",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CROATIA",
+            "Ar": "كرواتيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CU",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CUBA",
+            "Ar": "كوبا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CY",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CYPRUS",
+            "Ar": "قبرص"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CZ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CZECH REPUBLIC",
+            "Ar": "الجمهورية التشيكية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "DK",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "DENMARK",
+            "Ar": "الدانمارك"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "DJ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "DJIBOUTI",
+            "Ar": "جيبوتي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "DM",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "DOMINICA",
+            "Ar": "دومينيكا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "DO",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "DOMINICAN REPUBLIC",
+            "Ar": "الجمهورية الدومينيكية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TP",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "EAST TIMOR",
+            "Ar": "تيمور الشرقية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "EC",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ECUADOR",
+            "Ar": "الإكوادور"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "EG",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "EGYPT",
+            "Ar": "مصر"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SV",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "EL SALVADOR",
+            "Ar": "السلفادور"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GQ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "EQUATORIAL GUINEA",
+            "Ar": "غينيا الاستوائية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ER",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ERITREA",
+            "Ar": "إريتريا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "EE",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ESTONIA",
+            "Ar": "إستونيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ET",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ETHIOPIA",
+            "Ar": "أثيوبيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "FK",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "FALKLAND ISLANDS (MALVINAS)",
+            "Ar": "جزر فوكلاند"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "FO",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "FAROE ISLANDS",
+            "Ar": "جزر فارو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "FJ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "FIJI",
+            "Ar": "فيجي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "FI",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "FINLAND",
+            "Ar": "فنلندا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "FR",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "FRANCE",
+            "Ar": "فرنسا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GF",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "FRENCH GUIANA",
+            "Ar": "غويانا الفرنسية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PF",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "FRENCH POLYNESIA",
+            "Ar": "بولينيزيا الفرنسية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TF",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "FRENCH SOUTHERN TERRITORIES",
+            "Ar": "أراضي فرنسية جنوبية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GA",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "GABON",
+            "Ar": "الجابون"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GM",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "GAMBIA",
+            "Ar": "غامبيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GE",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "GEORGIA",
+            "Ar": "غامبيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "DE",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "GERMANY",
+            "Ar": "ألمانيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GH",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "GHANA",
+            "Ar": "غانا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GI",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "GIBRALTAR",
+            "Ar": "جبل طارق"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GR",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "GREECE",
+            "Ar": "اليونان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GL",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "GREENLAND",
+            "Ar": "جرينلاند"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GD",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "GRENADA",
+            "Ar": "جرينادا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GP",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "GUADELOUPE",
+            "Ar": "جوادلوب"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GU",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "GUAM",
+            "Ar": "جوام"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GT",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "GUATEMALA",
+            "Ar": "غواتيمالا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GG",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "GUERNSEY ISLANDS",
+            "Ar": "غيرنسي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GN",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "GUINEA",
+            "Ar": "غينيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GW",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "GUINEA-BISSAU",
+            "Ar": "غينيا-بيساو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GY",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "GUYANA",
+            "Ar": "غيانا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "HT",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "HAITI",
+            "Ar": "هايتي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "HM",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "HEARD ISLAND AND MCDONALD ISLANDS",
+            "Ar": "هيرد و ماكدونالد جزر"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "VA",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "HOLY SEE (VATICAN CITY STATE)",
+            "Ar": "مدينة الفاتيكان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "HN",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "HONDURAS",
+            "Ar": "هندوراس"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "HK",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "HONG KONG",
+            "Ar": "هونغ كونغ"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "HU",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "HUNGARY",
+            "Ar": "المجر"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "IS",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ICELAND",
+            "Ar": "آيسلندا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "IN",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "INDIA",
+            "Ar": "الهند"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ID",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "INDONESIA",
+            "Ar": "أندونيسيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "IR",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "IRAN, ISLAMIC REPUBLIC OF",
+            "Ar": "إيران"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "IQ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "IRAQ",
+            "Ar": "العراق"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "IE",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "IRELAND",
+            "Ar": "إيرلندا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "IL",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ISRAEL",
+            "Ar": "إسرائيل"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "IT",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ITALY",
+            "Ar": "إيطاليا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "JM",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "JAMAICA",
+            "Ar": "جاميكا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "JP",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "JAPAN",
+            "Ar": "اليابان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "JE",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "JERSEY, ISLANDS",
+            "Ar": "جيرسي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+
+        {
+          "Code": "KZ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "KAZAKSTAN",
+            "Ar": "كازاخستان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KE",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "KENYA",
+            "Ar": "كينيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KI",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "KIRIBATI",
+            "Ar": "كيريباتي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KP",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "KOREA, DEMOCRATIC PEOPLE REPUBLIC OF",
+            "Ar": "كوريا الشمالية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KR",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "KOREA, REPUBLIC OF",
+            "Ar": "كوريا الجنوبية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KW",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "KUWAIT",
+            "Ar": "الكويت"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KG",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "KYRGYZSTAN",
+            "Ar": "قيرغيزستان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LA",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "LAO PEOPLE DEMOCRATIC REPUBLIC",
+            "Ar": "لاوس"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LV",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "LATVIA",
+            "Ar": "لاتفيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LB",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "LEBANON",
+            "Ar": "لبنان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LS",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "LESOTHO",
+            "Ar": "ليسوتو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LR",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "LIBERIA",
+            "Ar": "ليبيريا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LY",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "LIBYAN ARAB JAMAHIRIYA",
+            "Ar": "ليبيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LI",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "LIECHTENSTEIN",
+            "Ar": "ليختنشتاين"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LT",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "LITHUANIA",
+            "Ar": "ليتوانيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LU",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "LUXEMBOURG",
+            "Ar": "اللوكسمبورغ"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MO",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MACAU",
+            "Ar": "ماكاو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MK",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF",
+            "Ar": "مقدونيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MG",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MADAGASCAR",
+            "Ar": "مدغشقر"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MW",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MALAWI",
+            "Ar": "مالاوي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MY",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MALAYSIA",
+            "Ar": "ماليزيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MV",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MALDIVES",
+            "Ar": "جزر المالديف"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ML",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MALI",
+            "Ar": "مالي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MT",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MALTA",
+            "Ar": "مالطا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "IM",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MAN ISLAND",
+            "Ar": "جزيرة مان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MH",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MARSHALL ISLANDS",
+            "Ar": "مارشال (جزر)"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MQ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MARTINIQUE",
+            "Ar": "جزر المارتينيك"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MR",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MAURITANIA",
+            "Ar": "موريتانيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MU",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MAURITIUS",
+            "Ar": "موريشيوس"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "YT",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MAYOTTE",
+            "Ar": "مايوت"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ME",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MONTENEGRO",
+            "Ar": "الجبل الأسود"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MX",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MEXICO",
+            "Ar": "المكسيك"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "FM",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MICRONESIA, FEDERATED STATES OF",
+            "Ar": "ميكرونيسيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MD",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MOLDOVA, REPUBLIC OF",
+            "Ar": "مولدافيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MC",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MONACO",
+            "Ar": "موناكو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MN",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MONGOLIA",
+            "Ar": "منغوليا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MS",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MONTSERRAT",
+            "Ar": "مونتسيرات"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MA",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MOROCCO",
+            "Ar": "المغرب"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MZ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MOZAMBIQUE",
+            "Ar": "موزمبيق"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MM",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "MYANMAR",
+            "Ar": "ميانمار"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "NA",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "NAMIBIA",
+            "Ar": "ناميبيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "NR",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "NAURU",
+            "Ar": "ناورو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "NP",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "NEPAL",
+            "Ar": "نيبال"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "NL",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "NETHERLANDS",
+            "Ar": "هولندا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AN",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "NETHERLANDS ANTILLES",
+            "Ar": "الأنتيل الهولندية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "NC",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "NEW CALEDONIA",
+            "Ar": "كاليدونيا الجديدة"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "NZ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "NEW ZEALAND",
+            "Ar": "نيوزيلندا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "NI",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "NICARAGUA",
+            "Ar": "نيكاراغوا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "NE",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "NIGER",
+            "Ar": "النيجر"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "NG",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "NIGERIA",
+            "Ar": "نيجيريا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "NU",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "NIUE",
+            "Ar": "نيوي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "NF",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "NORFOLK ISLAND",
+            "Ar": "جزيرة نورفولك"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MP",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "NORTHERN MARIANA ISLANDS",
+            "Ar": "جزر ماريانا الشمالية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "NO",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "NORWAY",
+            "Ar": "النرويج"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "OM",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "OMAN",
+            "Ar": "عمان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PK",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "PAKISTAN",
+            "Ar": "باكستان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PW",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "PALAU",
+            "Ar": "بالاو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PS",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "PALESTINIAN TERRITORY, OCCUPIED",
+            "Ar": "فلسطين"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PA",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "PANAMA",
+            "Ar": "بنما"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PG",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "PAPUA NEW GUINEA",
+            "Ar": "بابوا غينيا الجديدة"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PY",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "PARAGUAY",
+            "Ar": "باراجواي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PE",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "PERU",
+            "Ar": "بيرو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PH",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "PHILIPPINES",
+            "Ar": "الفلبين"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PN",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "PITCAIRN",
+            "Ar": "بيتكيرن"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PL",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "POLAND",
+            "Ar": "بولندا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PT",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "PORTUGAL",
+            "Ar": "البرتغال"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PR",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "PUERTO RICO",
+            "Ar": "بورتوريكو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "QA",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "QATAR",
+            "Ar": "قطر"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "RE",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "RÉUNION",
+            "Ar": "ريونيون"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "RO",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ROMANIA",
+            "Ar": "رومانيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "RU",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "RUSSIAN FEDERATION",
+            "Ar": "الاتحاد الروسي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "RW",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "RWANDA",
+            "Ar": "رواندا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BL",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SAINT BARTHÉLEMY",
+            "Ar": "سان بارتليمي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SH",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SAINT HELENA",
+            "Ar": "سانت هيلينا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KN",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SAINT KITTS AND NEVIS",
+            "Ar": "سانت كيتس ونيفيس"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LC",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SAINT LUCIA",
+            "Ar": "سانت لوسيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MF",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SAINT MARTIN (FRENCH PART)",
+            "Ar": "سانت مارتن (الجزء الفرنسية)"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PM",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SAINT PIERRE AND MIQUELON",
+            "Ar": "سان بيار و ميكلون"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "VC",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SAINT VINCENT AND THE GRENADINES",
+            "Ar": "سانت فنسنت و جزر غرينادين"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "WS",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SAMOA",
+            "Ar": "ساموا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SM",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SAN MARINO",
+            "Ar": "سان مارينو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ST",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SAO TOME AND PRINCIPE",
+            "Ar": "ساو تومي وبرينسيبي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SA",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SAUDI ARABIA",
+            "Ar": "المملكة العربية السعودية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SN",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SENEGAL",
+            "Ar": "السنغال"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CS",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SERBIA AND MONTENEGRO",
+            "Ar": "صربيا ومونتينيغرو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "RS",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SERBIA",
+            "Ar": "سيشل"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SC",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SEYCHELLES",
+            "Ar": "سيشل"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SL",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SIERRA LEONE",
+            "Ar": "سيراليون"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SG",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SINGAPORE",
+            "Ar": "سنغافورة"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SK",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SLOVAKIA",
+            "Ar": "سلوفاكيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SI",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SLOVENIA",
+            "Ar": "سلوفينيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SB",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SOLOMON ISLANDS",
+            "Ar": "جزر سليمان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SO",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SOMALIA",
+            "Ar": "الصومال"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ZA",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SOUTH AFRICA",
+            "Ar": "جنوب أفريقيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GS",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS",
+            "Ar": "جورجيا الجنوبية وجزر ساندويتش الجنوبية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ES",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SPAIN",
+            "Ar": "إسبانيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LK",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SRI LANKA",
+            "Ar": "سري لانكا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SD",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SUDAN",
+            "Ar": "السودان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SR",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SURINAME",
+            "Ar": "سورينام"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SJ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SVALBARD AND JAN MAYEN",
+            "Ar": "سفالبارد جزر"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SZ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SWAZILAND",
+            "Ar": "سوازيلند"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SE",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SWEDEN",
+            "Ar": "السويد"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CH",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SWITZERLAND",
+            "Ar": "سويسرا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SY",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "SYRIAN ARAB REPUBLIC",
+            "Ar": "سوريا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TW",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "TAIWAN, PROVINCE OF CHINA",
+            "Ar": "تايوان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TJ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "TAJIKISTAN",
+            "Ar": "طاجكستان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TZ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "TANZANIA, UNITED REPUBLIC OF",
+            "Ar": "تنزانيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TL",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "TIMOR-LESTE",
+            "Ar": "تيمور الشرقية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TH",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "THAILAND",
+            "Ar": "تايلاند"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TG",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "TOGO",
+            "Ar": "توجو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TK",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "TOKELAU",
+            "Ar": "توكيلاو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TO",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "TONGA",
+            "Ar": "تونجا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TT",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "TRINIDAD AND TOBAGO",
+            "Ar": "ترينيداد وتوباغو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TN",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "TUNISIA",
+            "Ar": "الجمهورية التونسية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TR",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "TURKEY",
+            "Ar": "تركيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TM",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "TURKMENISTAN",
+            "Ar": "توركمنستان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TC",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "TURKS AND CAICOS ISLANDS",
+            "Ar": "جزر تركس وكايكوس"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TV",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "TUVALU",
+            "Ar": "توفالو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "UG",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "UGANDA",
+            "Ar": "أوغندا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "UA",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "UKRAINE",
+            "Ar": "أوكرانيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AE",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "UNITED ARAB EMIRATES",
+            "Ar": "الامارات العربية المتحدة"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GB",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "UNITED KINGDOM",
+            "Ar": "المملكة المتحدة"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "US",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "UNITED STATES",
+            "Ar": "الولايات المتحدة الأمريكية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "UM",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "UNITED STATES MINOR OUTLYING ISLANDS",
+            "Ar": "ولايات المتحدة البعيدة الصغيرة جزر"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "UY",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "URUGUAY",
+            "Ar": "أورجواي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "UZ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "UZBEKISTAN",
+            "Ar": "أوزبكستان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "VU",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "VANUATU",
+            "Ar": "فانواتو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "VE",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "VENEZUELA",
+            "Ar": "فنزويلا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "VN",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "VIET NAM",
+            "Ar": "فيتنام"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "VG",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "VIRGIN ISLANDS, BRITISH",
+            "Ar": "فيرجن البريطانية (جزر)"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "VI",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "VIRGIN ISLANDS, U.S.",
+            "Ar": "جزر فرجين الأمريكية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "WF",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "WALLIS AND FUTUNA",
+            "Ar": "واليس و فوتونا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "EH",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "WESTERN SAHARA",
+            "Ar": "الصحراء الغربية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "YE",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "YEMEN",
+            "Ar": "الجمهورية اليمنية "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "YU",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "YUGOSLAVIA",
+            "Ar": "يوغوسلافيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ZM",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ZAMBIA",
+            "Ar": "زامبيا "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ZW",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "ZIMBABWE",
+            "Ar": "زمبابوي"
           },
           "Note": {
             "En": "",
@@ -3822,6 +7204,59 @@
         }
       ]
     },
+
+    {
+      "Name": {
+        "En": "Description",
+        "Ar": ""
+      },
+      "Tip": {
+        "En": "",
+        "Ar": ""
+      },
+      "Type": "DropDown",
+      "Values": [
+        {
+          "Code": "A",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "A",
+            "Ar": "ا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "B",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "B",
+            "Ar": "ب"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "C",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "C",
+            "Ar": "س"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        }
+      ]
+    },
     {
       "Name": {
         "En": "OnlyCardinalityFlag",
@@ -3853,6 +7288,331 @@
           "Descriptions": {
             "En": "To retrieve only the total numbers of alerts available",
             "Ar": "استعادة  كافة  التحذيرات "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        }
+      ]
+    },
+    {
+      "Name": {
+        "En": "SettlementMethod",
+        "Ar": ""
+      },
+      "Tip": {
+        "En": "",
+        "Ar": ""
+      },
+      "Type": "DropDown",
+      "Values": [
+        {
+          "Code": "0001",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Re-presenting the cheque for cashing and accepting it",
+            "Ar": "اعادة عرض الشيك للصرف وقبوله "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "0002",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Bring the original cheque to the bank / Cash settlement",
+            "Ar": "احضار أصل الشيك للبنك / تسوية نقدية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "0003",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Bring a letter from the last beneficiary stating the settlement of the cheque",
+            "Ar": "احضار كتاب مخالصة من المستفيد الأخير يفيد بتسوية الشيك مصادق عليه حسب الأصول"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "0004",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Other settlement Method",
+            "Ar": "تسوية الشيك بطريقة اخرى"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        }
+      ]
+    },
+    {
+      "Name": {
+        "En": "ReasonCode",
+        "Ar": ""
+      },
+      "Tip": {
+        "En": "",
+        "Ar": ""
+      },
+      "Type": "DropDown",
+      "Values": [
+        {
+          "Code": "0001",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Insufficient funds",
+            "Ar": "عدم وجود رصيد/عدم كفاية الرصيد. "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "0002",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Closed A/C",
+            "Ar": "الحساب مغلق"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "0003",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Stop pay by drawer",
+            "Ar": "معارضة الساحب"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "0004",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Account holder bankruptcy / Insolvency",
+            "Ar": "إفلاس / اعسار صاحب الحساب"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "0005",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Other Financial reasons",
+            "Ar": "أسباب مالية اخرى"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        }
+      ]
+    },
+    {
+      "Name": {
+        "En": "SubjectInfoTypeCode",
+        "Ar": ""
+      },
+      "Tip": {
+        "En": "",
+        "Ar": ""
+      },
+      "Type": "DropDown",
+      "Values": [
+        {
+          "Code": "U",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Untraceable",
+            "Ar": "لايمكن التواصل معه"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "E",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Attachment in course",
+            "Ar": "حظر/ منع / عزل عن ادارة او عمل او املاك / في الطريق إلى الحجز على الأملاك"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "O",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Write-off",
+            "Ar": "اعدام دين"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "N",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Bankruptcy petition",
+            "Ar": "عريضة افلاس"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "Z",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "A legal action has been taken",
+            "Ar": "تم اتخاذ اجراء قانوني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "K",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Court of justice declared the bankruptcy",
+            "Ar": "تم اعلان الافلاس من قبل المحكمه"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "L",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "liquidation",
+            "Ar": "تصفية الاصول"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "P",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Frauds",
+            "Ar": "احتيال"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "D",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Not allowed debit balance on current account (not related to any contract)",
+            "Ar": "حساب جاري دائن مكشوف / تحت الطلب مكشوف"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "R",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Stolen identity card",
+            "Ar": "هوية مسروقه"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "B",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Corporate Rehabilitation",
+            "Ar": "اعادة تاهيل الشركه"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "X",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Bounced cheque",
+            "Ar": "الشيكات المعادة"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "I",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Insolvency",
+            "Ar": "إعسار"
           },
           "Note": {
             "En": "",
@@ -5138,7 +8898,7 @@
           "Category": "NE",
           "Weight": "100",
           "Descriptions": {
-            "En": "untraceable",
+            "En": "Untraceable",
             "Ar": "لايمكن التواصل معه"
           },
           "Note": {
@@ -5359,7 +9119,7 @@
           "Category": "",
           "Weight": "",
           "Descriptions": {
-            "En": "untraceable",
+            "En": "Untraceable",
             "Ar": "لايمكن التواصل معه"
           },
           "Note": {
@@ -10516,6 +14276,19 @@
       "Type": "DropDown",
       "Values": [
         {
+          "Code": "JO",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "JORDAN",
+            "Ar": "الأردن"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
           "Code": "AF",
           "Category": "",
           "Weight": "",
@@ -11958,19 +15731,7 @@
             "Ar": ""
           }
         },
-        {
-          "Code": "JO",
-          "Category": "",
-          "Weight": "",
-          "Descriptions": {
-            "En": "JORDAN",
-            "Ar": "الأردن"
-          },
-          "Note": {
-            "En": "",
-            "Ar": ""
-          }
-        },
+
         {
           "Code": "KZ",
           "Category": "",
@@ -13766,6 +17527,19 @@
       "Type": "DropDown",
       "Values": [
         {
+          "Code": "JOD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Jordanian dinar ",
+            "Ar": "دينار"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
           "Code": "AED ",
           "Category": "",
           "Weight": "",
@@ -14702,6 +18476,1384 @@
           }
         },
         {
+          "Code": "JPY ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Japanese yen ",
+            "Ar": "ين"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KES ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Kenyan shilling ",
+            "Ar": "شلن"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KGS ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Som ",
+            "Ar": "سوم"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KHR ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Riel ",
+            "Ar": "ريال كمبودي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KMF ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Comoro franc ",
+            "Ar": "فرنك قمري"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KPW ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "North Korean won ",
+            "Ar": "ون كوريا الشمالية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KRW ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "South Korean won ",
+            "Ar": "ون كوريا الجنوبية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KWD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Kuwaiti dinar ",
+            "Ar": "دينار"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KYD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Cayman Islands dollar ",
+            "Ar": "دولار"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "KZT ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Tenge ",
+            "Ar": "تينغ"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LAK ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Kip ",
+            "Ar": "كب"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LBP ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Lebanese pound ",
+            "Ar": "ليرة"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LKR ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Sri Lanka rupee ",
+            "Ar": "روبية سريلانكي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LRD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Liberian dollar ",
+            "Ar": "دولار"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LSL ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Lesotho loti ",
+            "Ar": "لوتي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LTL ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Lithuanian litas ",
+            "Ar": "ليتاس لتواني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LVL ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Latvian lats ",
+            "Ar": "لاتس لاتفي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "LYD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Libyan dinar ",
+            "Ar": "دينار ليبي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MAD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Moroccan dirham ",
+            "Ar": "درهم مغربي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MDL ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Moldovan leu ",
+            "Ar": "ليو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MGA ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Malagasy ariary ",
+            "Ar": "أرياري"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MKD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Denar ",
+            "Ar": "دينار"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MMK ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Kyat ",
+            "Ar": "كيات"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MNT ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Tugrik ",
+            "Ar": "تيجرك "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MOP ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Pataca ",
+            "Ar": "باتاكا ماكاوية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MRO ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Ouguiya ",
+            "Ar": "أوقية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MUR ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Mauritius rupee ",
+            "Ar": "روبي موريشي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MVR ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Rufiyaa ",
+            "Ar": "روفيه"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MWK ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Kwacha ",
+            "Ar": "كواشا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MXN ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Mexican peso ",
+            "Ar": "بيزو مكسيكي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MXV ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Mexican Unidad de Inversion (UDI) (funds code) ",
+            "Ar": "ميكسكان اندايد دو انفيرجن "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MYR ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Malaysian ringgit ",
+            "Ar": "رينغيت"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "MZN ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Metical ",
+            "Ar": "متكال"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "NAD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Namibian dollar ",
+            "Ar": "دولار ناميبي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "NGN ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Naira ",
+            "Ar": "نيرة"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "NIO ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Cordoba oro ",
+            "Ar": "كوردوبا نيكاراغوي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "NOK ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Norwegian krone ",
+            "Ar": "كرونه نروجية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "NPR ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Nepalese rupee ",
+            "Ar": "روبي نيبالي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "NZD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "New Zealand dollar ",
+            "Ar": "دولار نيوزيلندي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "OMR ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Rial Omani ",
+            "Ar": "ريال عماني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PAB ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Balboa ",
+            "Ar": "بالبوا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PEN ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Nuevo sol ",
+            "Ar": "سول الجديد"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PGK ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Kina ",
+            "Ar": "كينا بابوا غينيا الجديدة"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PHP ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Philippine peso ",
+            "Ar": "بيسو الفلبيني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PKR ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Pakistan rupee ",
+            "Ar": "روبية باكستانية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PLN ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Zloty ",
+            "Ar": "زلوتي بولندي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "PYG ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Guarani ",
+            "Ar": "غواراني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "QAR ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Qatari rial ",
+            "Ar": "ريال قطري"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "RON ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Romanian new leu ",
+            "Ar": "ليو روماني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "RSD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Serbian dinar ",
+            "Ar": "دينار صربي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "RUB ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Russian rouble ",
+            "Ar": "روبل روسي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "RWF ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Rwanda franc ",
+            "Ar": "فرنك رواندي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SAR ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Saudi riyal ",
+            "Ar": "ريال سعودي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SBD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Solomon Islands dollar ",
+            "Ar": "دولار جزر سليمان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SCR ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Seychelles rupee ",
+            "Ar": "روبية سيشيلية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SDG ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Sudanese pound ",
+            "Ar": "جنيه سوداني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SEK ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Swedish krona/kronor ",
+            "Ar": "كرونه سويدية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SGD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Singapore dollar ",
+            "Ar": "دولار سنغافوري"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SHP ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Saint Helena pound ",
+            "Ar": "جنيه سانت هيلينا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SLL ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Leone ",
+            "Ar": "ليون "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SOS ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Somali shilling ",
+            "Ar": "شلن صومالي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SRD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Surinam dollar ",
+            "Ar": "دولار سورينامي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "STD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Dobra ",
+            "Ar": "دوبرا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SYP ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Syrian pound ",
+            "Ar": "ليرة سورية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "SZL ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Lilangeni ",
+            "Ar": "ليلانغيني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "THB ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Baht ",
+            "Ar": "بات"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TJS ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Somoni ",
+            "Ar": "ساماني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TMT ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Manat ",
+            "Ar": "منات تركمانستاني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TND ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Tunisian dinar ",
+            "Ar": "دينار تونسي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TOP ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Pa Anga ",
+            "Ar": "بانجا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TRY ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Turkish lira ",
+            "Ar": "ليرة تركية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TTD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Trinidad and Tobago dollar ",
+            "Ar": "دولار ترينيداد وتوباغو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TWD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "New Taiwan dollar ",
+            "Ar": "دولار تايواني جديد"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "TZS ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Tanzanian shilling ",
+            "Ar": "شيلينغ تنزاني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "UAH ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Hryvnia ",
+            "Ar": "هريفنا أوكرانية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "UGX ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Uganda shilling ",
+            "Ar": "شيلينغ أوغندي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "USD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "US dollar ",
+            "Ar": "دولار أمريكي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "USN ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "United States dollar (next day) (funds code) ",
+            "Ar": "دولار امريكي حق اليوم التالي "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "USS ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "United States dollar (same day) (funds code)",
+            "Ar": "دولار امريكي حق نفس اليوم "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "UYU ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Peso Uruguayo ",
+            "Ar": "بيزو أورغواي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "UZS ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Uzbekistan som ",
+            "Ar": "سوم"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "VEF ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Venezuelan bolívar fuerte ",
+            "Ar": "بوليفار فنزويلي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "VND ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Vietnamese d?ng ",
+            "Ar": "دونغ"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "VUV ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Vatu ",
+            "Ar": "فاتو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "WST ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Samoan tala ",
+            "Ar": "تالا ساموية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "XAF ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CFA franc BEAC ",
+            "Ar": "فرنك س ف ا وسط أفريقيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "XAG ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Silver (one troy ounce) ",
+            "Ar": "الفضة واحد اونصة "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "XAU ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Gold (one troy ounce) ",
+            "Ar": "الذهب واحد اونصة "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "XBA ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "European Composite Unit (EURCO) (bond market unit) ",
+            "Ar": "وحدة الاوروبية - وحدة السندات "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "XBB ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "European Monetary Unit (E.M.U.-6) (bond market unit) ",
+            "Ar": "وحدة النقد الاوروبي - وحدة السندات "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "XBC ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "European Unit of Account 9 (E.U.A.-9) (bond market unit) ",
+            "Ar": "وحدة اوروبية رقم 9 - وحدة السندات "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "XBD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "European Unit of Account 17 (E.U.A.-17) (bond market unit) ",
+            "Ar": "وحدة الاوروبية - وحدة السندات رقم  17 "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "XCD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "East Caribbean dollar ",
+            "Ar": "دولار شرق الكاريبي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "XDR ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Special Drawing Rights ",
+            "Ar": "حقوق السحب الخاصة "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "XFU ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "UIC franc (special settlement currency) ",
+            "Ar": "فرنك سي اف بي للتسوية الخاصة "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "XOF ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CFA Franc BCEAO ",
+            "Ar": "فرنك س ف ا غرب أفريقيا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "XPD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Palladium (one troy ounce) ",
+            "Ar": "بلاديوم "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "XPF ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "CFP franc ",
+            "Ar": "فرنك س ف ب"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "XPT ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Platinum (one troy ounce) ",
+            "Ar": "بلاتينيوم "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "XTS ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Code reserved for testing purposes ",
+            "Ar": "رمز احتياطي لغايات الاختبار "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "XXX",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "No currency ",
+            "Ar": "لايوجد عملة "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "YER ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Yemeni rial ",
+            "Ar": "ريال يمني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ZAR ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "South African rand ",
+            "Ar": "راند جنوب أفريقي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ZMK ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Kwacha ",
+            "Ar": "كواشا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ZWL ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Zimbabwe dollar ",
+            "Ar": "دولار زمبابوي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        }
+      ]
+    },
+    {
+      "Name": {
+        "En": "OriginalCurrency",
+        "Ar": ""
+      },
+      "Tip": {
+        "En": "",
+        "Ar": ""
+      },
+      "Type": "DropDown",
+      "Values": [
+        {
           "Code": "JOD ",
           "Category": "",
           "Weight": "",
@@ -14714,6 +19866,943 @@
             "Ar": ""
           }
         },
+        {
+          "Code": "AED ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "United Arab Emirates dirham ",
+            "Ar": "درهم إماراتي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AFN ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Afghani ",
+            "Ar": "أفغاني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ALL ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Lek ",
+            "Ar": "ليك ألباني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AMD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Armenian dram ",
+            "Ar": "درام"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ANG ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Netherlands Antillean guilder ",
+            "Ar": "جلدر هولندي "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AOA ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Kwanza ",
+            "Ar": "كوانزا أنغولي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ARS ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Argentine peso ",
+            "Ar": "بيزو أرجنتيني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AUD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Australian dollar ",
+            "Ar": "دولار أسترالي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AWG ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Aruban guilder ",
+            "Ar": "فلورن أروبي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "AZN ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Azerbaijanian manat ",
+            "Ar": "مانات"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BAM ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Convertible marks ",
+            "Ar": "مارك بوسني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BBD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Barbados dollar ",
+            "Ar": "دولار بربادوسي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BDT ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Bangladeshi taka ",
+            "Ar": "تاك بنغالي "
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BGN ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Bulgarian lev ",
+            "Ar": "ليف"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BHD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Bahraini dinar ",
+            "Ar": "دينار بحريني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BIF ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Burundian franc ",
+            "Ar": "فرنك بروندي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BMD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Bermudian dollar (customarily known as Bermuda dollar) ",
+            "Ar": "دولار برمودي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BND ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Brunei dollar ",
+            "Ar": "دولار بروني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BOB ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Boliviano ",
+            "Ar": "بوليفاريو بوليفي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BOV ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Bolivian Mvdol (funds code) ",
+            "Ar": "بوليفاريو بوليفي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BRL ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Brazilian real ",
+            "Ar": "ريال برازيلي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BSD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Bahamian dollar ",
+            "Ar": "دولار بهامي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BTN ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Ngultrum ",
+            "Ar": "نغولترم"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BWP ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Pula ",
+            "Ar": "بولا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BYR ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Belarusian ruble ",
+            "Ar": "روبل بلاروسي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "BZD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Belize dollar ",
+            "Ar": "دولار بليزي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CAD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Canadian dollar ",
+            "Ar": "دولار كندي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CDF ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Franc Congolais ",
+            "Ar": "فرنك كونغولي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CHE ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "WIR euro (complementary currency) ",
+            "Ar": "يورو فير"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CHF ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Swiss franc ",
+            "Ar": "فرنك سويسري"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CHW ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "WIR franc (complementary currency) ",
+            "Ar": "فرنك فير"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CLF ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Unidad de Fomento (funds code) ",
+            "Ar": "بيزو تشيلي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CLP ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Chilean peso ",
+            "Ar": "بيسو تشيلي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CNY ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Chinese Yuan ",
+            "Ar": "يوان"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "COP ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Colombian peso ",
+            "Ar": "بيزو كولومبي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "COU ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Unidad de Valor Real ",
+            "Ar": "ريال"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CRC ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Costa Rican colon ",
+            "Ar": "كولون كوستاريكي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CUC ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Cuban convertible peso ",
+            "Ar": "بيزو كوبي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CUP ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Cuban peso ",
+            "Ar": "بيزو كوبي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CVE ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Cape Verde escudo ",
+            "Ar": "ايسكودو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "CZK ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Czech Koruna ",
+            "Ar": "كرونة تشيكية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "DJF ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Djibouti franc ",
+            "Ar": "فرنك جيبوتي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "DKK ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Danish krone ",
+            "Ar": "كرونة دنماركية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "DOP ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Dominican peso ",
+            "Ar": "بيسو دومنيكاني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "DZD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Algerian dinar ",
+            "Ar": "دينار جزائري"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "EEK ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Kroon ",
+            "Ar": "كرون إستوني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "EGP ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Egyptian pound ",
+            "Ar": "جنيه مصري"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ERN ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Nakfa ",
+            "Ar": "ناكفا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ETB ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Ethiopian birr ",
+            "Ar": "بير"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "EUR ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "euro ",
+            "Ar": "يورو"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "FJD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Fiji dollar ",
+            "Ar": "دولار فيجي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "FKP ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Falkland Islands pound ",
+            "Ar": "جنيه جزر فوكلاند"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GBP ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Pound sterling ",
+            "Ar": "جنيه استرليني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GEL ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Lari ",
+            "Ar": "لاري"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GHS ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Cedi ",
+            "Ar": "سيدي غاني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GIP ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Gibraltar pound ",
+            "Ar": "جنيه جبرلتار"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GMD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Dalasi ",
+            "Ar": "دالاسي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GNF ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Guinea franc ",
+            "Ar": "فرنك غيني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GTQ ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Quetzal ",
+            "Ar": "كيتزال"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "GYD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Guyana dollar ",
+            "Ar": "دولار غوياني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "HKD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Hong Kong dollar ",
+            "Ar": "دولار هونغ كونغ"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "HNL ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Lempira ",
+            "Ar": "لمبيرا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "HRK ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Croatian kuna ",
+            "Ar": "كونا"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "HTG ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Haiti gourde ",
+            "Ar": "جوردة هايتية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "HUF ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Forint ",
+            "Ar": "فورنت"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "IDR ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Indonesian Rupiah ",
+            "Ar": "روبية أندونيسية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ILS ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Israeli new sheqel ",
+            "Ar": "شيكل"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "INR ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Indian rupee ",
+            "Ar": "روبي هندية"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "IQD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Iraqi dinar ",
+            "Ar": "دينار"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "IRR ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Iranian rial ",
+            "Ar": "ريال إيراني"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "ISK ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Iceland krona ",
+            "Ar": "كرون"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+        {
+          "Code": "JMD ",
+          "Category": "",
+          "Weight": "",
+          "Descriptions": {
+            "En": "Jamaican dollar ",
+            "Ar": "دولار جامايكي"
+          },
+          "Note": {
+            "En": "",
+            "Ar": ""
+          }
+        },
+
         {
           "Code": "JPY ",
           "Category": "",
@@ -16291,7 +22380,7 @@
     },
     {
       "Name": {
-        "En": "NegativeEventStatus",
+        "En": "EventStatus",
         "Ar": ""
       },
       "Tip": {
@@ -16535,6 +22624,18 @@
           }
         }
       ]
+    },
+    {
+      "Name": {
+        "En": "RiskLevel",
+        "Ar": ""
+      },
+      "Tip": {
+        "En": "",
+        "Ar": ""
+      },
+      "Type": "Label"
+
     },
     {
       "Name": {

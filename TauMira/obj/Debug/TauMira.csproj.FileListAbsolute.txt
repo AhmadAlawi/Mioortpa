@@ -326,3 +326,328 @@ C:\Users\RD\Desktop\New folder (7)\New folder\TauMira\obj\Debug\TauMira.csproj.C
 C:\Users\RD\Desktop\New folder (7)\New folder\TauMira\obj\Debug\TauMira.csproj.CopyComplete
 C:\Users\RD\Desktop\New folder (7)\New folder\TauMira\obj\Debug\TauMira.exe
 C:\Users\RD\Desktop\New folder (7)\New folder\TauMira\obj\Debug\TauMira.pdb
+C:\Users\Remawi\Desktop\TauMira\TauMira\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\Remawi\Desktop\TauMira\TauMira\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\Remawi\Desktop\TauMira\TauMira\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\Remawi\Desktop\TauMira\TauMira\bin\Debug\UIJson\UIJson.json
+C:\Users\Remawi\Desktop\TauMira\TauMira\bin\Debug\TauMira.exe.config
+C:\Users\Remawi\Desktop\TauMira\TauMira\bin\Debug\TauMira.exe.manifest
+C:\Users\Remawi\Desktop\TauMira\TauMira\bin\Debug\TauMira.application
+C:\Users\Remawi\Desktop\TauMira\TauMira\bin\Debug\TauMira.exe
+C:\Users\Remawi\Desktop\TauMira\TauMira\bin\Debug\TauMira.pdb
+C:\Users\Remawi\Desktop\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Core.dll
+C:\Users\Remawi\Desktop\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\Remawi\Desktop\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\Remawi\Desktop\TauMira\TauMira\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Remawi\Desktop\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Core.xml
+C:\Users\Remawi\Desktop\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
+C:\Users\Remawi\Desktop\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
+C:\Users\Remawi\Desktop\TauMira\TauMira\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\TauMira.csproj.AssemblyReference.cache
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\TauMira.csproj.SuggestedBindingRedirects.cache
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UIThems\LightTheme.baml
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UIThems\Theme.baml
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\MainWindow.g.cs
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UIJson\SegmentUserControl.g.cs
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UIThems\LightTheme.g.cs
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\ExpanderTree.g.cs
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\LoadingXml.g.cs
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\SubjectInfoWindow.g.cs
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlAdd.g.cs
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDomain.g.cs
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDot.g.cs
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlItemField.g.cs
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSearch.g.cs
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSection.g.cs
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlTreeItem.g.cs
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\WindowMessageBox.g.cs
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\WindowProfileData.g.cs
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\App.g.cs
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\TauMira_Content.g.cs
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\TauMira_MarkupCompile.cache
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\TauMira_MarkupCompile.lref
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\App.baml
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\MainWindow.baml
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UIJson\SegmentUserControl.baml
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\ExpanderTree.baml
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\LoadingXml.baml
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\SubjectInfoWindow.baml
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlAdd.baml
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDomain.baml
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDot.baml
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlItemField.baml
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSearch.baml
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSection.baml
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlTreeItem.baml
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\WindowMessageBox.baml
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\WindowProfileData.baml
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\TauMira.g.resources
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\TauMira.Properties.Resources.resources
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\TauMira.csproj.GenerateResource.cache
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\TauMira.csproj.CoreCompileInputs.cache
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\TauMira.exe.manifest
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\TauMira.application
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\TauMira.csproj.CopyComplete
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\TauMira.exe
+C:\Users\Remawi\Desktop\TauMira\TauMira\obj\Debug\TauMira.pdb
+F:\TauMira\TauMira\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
+F:\TauMira\TauMira\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
+F:\TauMira\TauMira\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+F:\TauMira\TauMira\bin\Debug\UIJson\UIJson.json
+F:\TauMira\TauMira\bin\Debug\TauMira.exe.config
+F:\TauMira\TauMira\bin\Debug\TauMira.exe.manifest
+F:\TauMira\TauMira\bin\Debug\TauMira.application
+F:\TauMira\TauMira\bin\Debug\TauMira.exe
+F:\TauMira\TauMira\bin\Debug\TauMira.pdb
+F:\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Core.dll
+F:\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+F:\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
+F:\TauMira\TauMira\bin\Debug\Newtonsoft.Json.dll
+F:\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Core.xml
+F:\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
+F:\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
+F:\TauMira\TauMira\bin\Debug\Newtonsoft.Json.xml
+F:\TauMira\TauMira\obj\Debug\TauMira.csproj.AssemblyReference.cache
+F:\TauMira\TauMira\obj\Debug\TauMira.csproj.SuggestedBindingRedirects.cache
+F:\TauMira\TauMira\obj\Debug\UIThems\LightTheme.baml
+F:\TauMira\TauMira\obj\Debug\UIThems\Theme.baml
+F:\TauMira\TauMira\obj\Debug\MainWindow.g.cs
+F:\TauMira\TauMira\obj\Debug\UIJson\SegmentUserControl.g.cs
+F:\TauMira\TauMira\obj\Debug\UIThems\LightTheme.g.cs
+F:\TauMira\TauMira\obj\Debug\UserCtrls\ExpanderTree.g.cs
+F:\TauMira\TauMira\obj\Debug\UserCtrls\LoadingXml.g.cs
+F:\TauMira\TauMira\obj\Debug\UserCtrls\SubjectInfoWindow.g.cs
+F:\TauMira\TauMira\obj\Debug\UserCtrls\UserControlAdd.g.cs
+F:\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDomain.g.cs
+F:\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDot.g.cs
+F:\TauMira\TauMira\obj\Debug\UserCtrls\UserControlItemField.g.cs
+F:\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSearch.g.cs
+F:\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSection.g.cs
+F:\TauMira\TauMira\obj\Debug\UserCtrls\UserControlTreeItem.g.cs
+F:\TauMira\TauMira\obj\Debug\UserCtrls\WindowMessageBox.g.cs
+F:\TauMira\TauMira\obj\Debug\UserCtrls\WindowProfileData.g.cs
+F:\TauMira\TauMira\obj\Debug\App.g.cs
+F:\TauMira\TauMira\obj\Debug\TauMira_Content.g.cs
+F:\TauMira\TauMira\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\TauMira\TauMira\obj\Debug\TauMira_MarkupCompile.cache
+F:\TauMira\TauMira\obj\Debug\TauMira_MarkupCompile.lref
+F:\TauMira\TauMira\obj\Debug\App.baml
+F:\TauMira\TauMira\obj\Debug\MainWindow.baml
+F:\TauMira\TauMira\obj\Debug\UIJson\SegmentUserControl.baml
+F:\TauMira\TauMira\obj\Debug\UserCtrls\ExpanderTree.baml
+F:\TauMira\TauMira\obj\Debug\UserCtrls\LoadingXml.baml
+F:\TauMira\TauMira\obj\Debug\UserCtrls\SubjectInfoWindow.baml
+F:\TauMira\TauMira\obj\Debug\UserCtrls\UserControlAdd.baml
+F:\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDomain.baml
+F:\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDot.baml
+F:\TauMira\TauMira\obj\Debug\UserCtrls\UserControlItemField.baml
+F:\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSearch.baml
+F:\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSection.baml
+F:\TauMira\TauMira\obj\Debug\UserCtrls\UserControlTreeItem.baml
+F:\TauMira\TauMira\obj\Debug\UserCtrls\WindowMessageBox.baml
+F:\TauMira\TauMira\obj\Debug\UserCtrls\WindowProfileData.baml
+F:\TauMira\TauMira\obj\Debug\TauMira.g.resources
+F:\TauMira\TauMira\obj\Debug\TauMira.Properties.Resources.resources
+F:\TauMira\TauMira\obj\Debug\TauMira.csproj.GenerateResource.cache
+F:\TauMira\TauMira\obj\Debug\TauMira.csproj.CoreCompileInputs.cache
+F:\TauMira\TauMira\obj\Debug\TauMira.exe.manifest
+F:\TauMira\TauMira\obj\Debug\TauMira.application
+F:\TauMira\TauMira\obj\Debug\TauMira.csproj.CopyComplete
+F:\TauMira\TauMira\obj\Debug\TauMira.exe
+F:\TauMira\TauMira\obj\Debug\TauMira.pdb
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\bin\Debug\UIJson\UIJson.json
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\bin\Debug\TauMira.exe.config
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\bin\Debug\TauMira.exe.manifest
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\bin\Debug\TauMira.application
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\bin\Debug\TauMira.exe
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\bin\Debug\TauMira.pdb
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Core.dll
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Core.xml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\TauMira.csproj.AssemblyReference.cache
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\TauMira.csproj.SuggestedBindingRedirects.cache
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UIThems\LightTheme.baml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UIThems\Theme.baml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\MainWindow.g.cs
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UIJson\SegmentUserControl.g.cs
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UIThems\LightTheme.g.cs
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\ExpanderTree.g.cs
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\LoadingXml.g.cs
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\SubjectInfoWindow.g.cs
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlAdd.g.cs
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDomain.g.cs
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDot.g.cs
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlItemField.g.cs
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSearch.g.cs
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSection.g.cs
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlTreeItem.g.cs
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\WindowMessageBox.g.cs
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\WindowProfileData.g.cs
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\App.g.cs
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\TauMira_Content.g.cs
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\TauMira_MarkupCompile.cache
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\TauMira_MarkupCompile.lref
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\App.baml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\MainWindow.baml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UIJson\SegmentUserControl.baml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\ExpanderTree.baml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\LoadingXml.baml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\SubjectInfoWindow.baml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlAdd.baml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDomain.baml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDot.baml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlItemField.baml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSearch.baml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSection.baml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\UserControlTreeItem.baml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\WindowMessageBox.baml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\UserCtrls\WindowProfileData.baml
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\TauMira.g.resources
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\TauMira.Properties.Resources.resources
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\TauMira.csproj.GenerateResource.cache
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\TauMira.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\TauMira.exe.manifest
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\TauMira.application
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\TauMira.csproj.CopyComplete
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\TauMira.exe
+C:\Users\ThinkPad\Desktop\TauMira\TauMira\obj\Debug\TauMira.pdb
+F:\TauMira\TauMira\TauMira\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
+F:\TauMira\TauMira\TauMira\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
+F:\TauMira\TauMira\TauMira\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+F:\TauMira\TauMira\TauMira\bin\Debug\UIJson\UIJson.json
+F:\TauMira\TauMira\TauMira\bin\Debug\TauMira.exe.config
+F:\TauMira\TauMira\TauMira\bin\Debug\TauMira.exe.manifest
+F:\TauMira\TauMira\TauMira\bin\Debug\TauMira.application
+F:\TauMira\TauMira\TauMira\bin\Debug\TauMira.exe
+F:\TauMira\TauMira\TauMira\bin\Debug\TauMira.pdb
+F:\TauMira\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Core.dll
+F:\TauMira\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+F:\TauMira\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
+F:\TauMira\TauMira\TauMira\bin\Debug\Newtonsoft.Json.dll
+F:\TauMira\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Core.xml
+F:\TauMira\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
+F:\TauMira\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
+F:\TauMira\TauMira\TauMira\bin\Debug\Newtonsoft.Json.xml
+F:\TauMira\TauMira\TauMira\obj\Debug\TauMira.csproj.AssemblyReference.cache
+F:\TauMira\TauMira\TauMira\obj\Debug\TauMira.csproj.SuggestedBindingRedirects.cache
+F:\TauMira\TauMira\TauMira\obj\Debug\UIThems\LightTheme.baml
+F:\TauMira\TauMira\TauMira\obj\Debug\UIThems\Theme.baml
+F:\TauMira\TauMira\TauMira\obj\Debug\MainWindow.g.cs
+F:\TauMira\TauMira\TauMira\obj\Debug\UIJson\SegmentUserControl.g.cs
+F:\TauMira\TauMira\TauMira\obj\Debug\UIThems\LightTheme.g.cs
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\ExpanderTree.g.cs
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\LoadingXml.g.cs
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\SubjectInfoWindow.g.cs
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlAdd.g.cs
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDomain.g.cs
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDot.g.cs
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlItemField.g.cs
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSearch.g.cs
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSection.g.cs
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlTreeItem.g.cs
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\WindowMessageBox.g.cs
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\WindowProfileData.g.cs
+F:\TauMira\TauMira\TauMira\obj\Debug\App.g.cs
+F:\TauMira\TauMira\TauMira\obj\Debug\TauMira_Content.g.cs
+F:\TauMira\TauMira\TauMira\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\TauMira\TauMira\TauMira\obj\Debug\TauMira_MarkupCompile.cache
+F:\TauMira\TauMira\TauMira\obj\Debug\TauMira_MarkupCompile.lref
+F:\TauMira\TauMira\TauMira\obj\Debug\App.baml
+F:\TauMira\TauMira\TauMira\obj\Debug\MainWindow.baml
+F:\TauMira\TauMira\TauMira\obj\Debug\UIJson\SegmentUserControl.baml
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\ExpanderTree.baml
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\LoadingXml.baml
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\SubjectInfoWindow.baml
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlAdd.baml
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDomain.baml
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDot.baml
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlItemField.baml
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSearch.baml
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSection.baml
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlTreeItem.baml
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\WindowMessageBox.baml
+F:\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\WindowProfileData.baml
+F:\TauMira\TauMira\TauMira\obj\Debug\TauMira.g.resources
+F:\TauMira\TauMira\TauMira\obj\Debug\TauMira.Properties.Resources.resources
+F:\TauMira\TauMira\TauMira\obj\Debug\TauMira.csproj.GenerateResource.cache
+F:\TauMira\TauMira\TauMira\obj\Debug\TauMira.csproj.CoreCompileInputs.cache
+F:\TauMira\TauMira\TauMira\obj\Debug\TauMira.exe.manifest
+F:\TauMira\TauMira\TauMira\obj\Debug\TauMira.application
+F:\TauMira\TauMira\TauMira\obj\Debug\TauMira.csproj.CopyComplete
+F:\TauMira\TauMira\TauMira\obj\Debug\TauMira.exe
+F:\TauMira\TauMira\TauMira\obj\Debug\TauMira.pdb
+D:\My Games\New folder\TauMira\TauMira\TauMira\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
+D:\My Games\New folder\TauMira\TauMira\TauMira\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
+D:\My Games\New folder\TauMira\TauMira\TauMira\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+D:\My Games\New folder\TauMira\TauMira\TauMira\bin\Debug\UIJson\UIJson.json
+D:\My Games\New folder\TauMira\TauMira\TauMira\bin\Debug\TauMira.exe.config
+D:\My Games\New folder\TauMira\TauMira\TauMira\bin\Debug\TauMira.exe.manifest
+D:\My Games\New folder\TauMira\TauMira\TauMira\bin\Debug\TauMira.application
+D:\My Games\New folder\TauMira\TauMira\TauMira\bin\Debug\TauMira.exe
+D:\My Games\New folder\TauMira\TauMira\TauMira\bin\Debug\TauMira.pdb
+D:\My Games\New folder\TauMira\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Core.dll
+D:\My Games\New folder\TauMira\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+D:\My Games\New folder\TauMira\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
+D:\My Games\New folder\TauMira\TauMira\TauMira\bin\Debug\Newtonsoft.Json.dll
+D:\My Games\New folder\TauMira\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Core.xml
+D:\My Games\New folder\TauMira\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
+D:\My Games\New folder\TauMira\TauMira\TauMira\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
+D:\My Games\New folder\TauMira\TauMira\TauMira\bin\Debug\Newtonsoft.Json.xml
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\TauMira.csproj.AssemblyReference.cache
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\TauMira.csproj.SuggestedBindingRedirects.cache
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UIThems\LightTheme.baml
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UIThems\Theme.baml
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\MainWindow.g.cs
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UIJson\SegmentUserControl.g.cs
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UIThems\LightTheme.g.cs
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\ExpanderTree.g.cs
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\LoadingXml.g.cs
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\SubjectInfoWindow.g.cs
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlAdd.g.cs
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDomain.g.cs
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDot.g.cs
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlItemField.g.cs
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSearch.g.cs
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSection.g.cs
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlTreeItem.g.cs
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\WindowMessageBox.g.cs
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\WindowProfileData.g.cs
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\App.g.cs
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\TauMira_Content.g.cs
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\TauMira_MarkupCompile.cache
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\TauMira_MarkupCompile.lref
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\App.baml
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\MainWindow.baml
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UIJson\SegmentUserControl.baml
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\ExpanderTree.baml
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\LoadingXml.baml
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\SubjectInfoWindow.baml
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlAdd.baml
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDomain.baml
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlDot.baml
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlItemField.baml
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSearch.baml
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlSection.baml
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\UserControlTreeItem.baml
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\WindowMessageBox.baml
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\UserCtrls\WindowProfileData.baml
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\TauMira.g.resources
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\TauMira.Properties.Resources.resources
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\TauMira.csproj.GenerateResource.cache
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\TauMira.csproj.CoreCompileInputs.cache
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\TauMira.exe.manifest
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\TauMira.application
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\TauMira.csproj.CopyComplete
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\TauMira.exe
+D:\My Games\New folder\TauMira\TauMira\TauMira\obj\Debug\TauMira.pdb

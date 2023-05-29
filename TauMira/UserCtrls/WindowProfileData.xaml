@@ -5,26 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TauMira.UserCtrls"
         mc:Ignorable="d"
-        Title="Profiles Data" WindowStyle="None" WindowStartupLocation="CenterScreen" Height="100" Width="280" MaxHeight="100" MinHeight="100" MaxWidth="280" MinWidth="280" >
+        Title="Profiles Data" WindowStyle="None" WindowStartupLocation="CenterScreen" Height="100" Width="280" MaxHeight="100" MinHeight="120" MaxWidth="450" MinWidth="450" >
 
     <Border CornerRadius="4">
 
         <StackPanel>
-            <Label  HorizontalAlignment="Center"  Style="{DynamicResource LabelStyleSectionName}" Content="  Set the number of profiles  " />
-            <Label HorizontalAlignment="Center"  Style="{DynamicResource LabelStyleClearFieldInput}" Content=" Months " />
+            <Label HorizontalAlignment="Center" x:Name="LabelProfileData" Style="{DynamicResource LabelStyleSectionName}" Content="Set the number of profiles" />
+            <Label HorizontalAlignment="Center" x:Name="LabelNumberOf" Style="{DynamicResource LabelStyleClearFieldInput}" Content="Months" />
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <TextBox  x:Name="TextBoxTo" MinWidth="100" Width="209" MinHeight="25" />
-            <Button Cursor="Hand"  Click="Button_Click" Width="30" Height="20"  Content=" Ok "></Button>
-                
+                <TextBox  x:Name="TextBoxTo" MinWidth="100" Width="209" MinHeight="25" KeyDown="OnKeyDownHandler"/>
+                <Border CornerRadius="3" BorderThickness="1" Width="30" Height="25" BorderBrush="Gray" Background="LightGray">
+                    <Button Cursor="Hand"  Click="Button_Click"  Content="Ok" Background="Transparent" BorderThickness="0" />
+                </Border>
             </StackPanel>
         </StackPanel>
-     
-         
-       
 
 
 
-    
+
+
+
+
 
     </Border>
 </Window>
