@@ -122,30 +122,22 @@ namespace TauMira
             return stackPanel;
         }
 
-        StackPanel InstallmentContract(bool isImported = false)
+        StackPanel InstallmentContract()
         {
             StackPanel stackPanel = new StackPanel();
+            var granted = new GrantedContract2<InstallmentsProfile>();
 
-            stackPanel.Children.Add(new UserControlSection("Granted Contract", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Installments.GrantedContract.GrantedContract));
-            stackPanel.Children.Add(new UserControlSection("Granted Installment", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Installments.GrantedContract.GrantedInstallment));
-            stackPanel.Children.Add(new UserControlSection("Maximum", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Installments.GrantedContract.Maximum));
+            stackPanel.Children.Add(new UserControlSection("Granted Contract", granted.GrantedContract));
+            stackPanel.Children.Add(new UserControlSection("Granted Installment", granted.GrantedInstallment));
+            stackPanel.Children.Add(new UserControlSection("Maximum", granted.Maximum));
+            WindowProfileData windowProfileData = new WindowProfileData();
+            windowProfileData.ShowDialog();
+            int Months = windowProfileData.GetMonths();
+            granted.Profile = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Installments.GenerateProfile<InstallmentsProfile>(Months, ref stackPanel);
 
-            if (!isImported)
-            {
-                WindowProfileData windowProfileData = new WindowProfileData();
-                windowProfileData.ShowDialog();
-                int Months = windowProfileData.GetMonths();
+            //mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Installments.GrantedContract.GrantedContract.Profile = Profile(Months, ref stackPanel);
+            mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Installments.GrantedContract.Add(granted);
 
-                //mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Installments.GrantedContract.GrantedContract.Profile = Profile(Months, ref stackPanel);
-                mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Installments.GrantedContract.Profile = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Installments.GenerateProfile(Months, ref stackPanel);
-            }
-            else
-            {
-                //UIXMLTemp.Profile.ShowProfiles(mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Installments.GrantedContract.Profile, ref stackPanel);
-                // mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Installments.GrantedContract.Profile.AddRange(mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Installments.GrantedContract.Profile);
-                var Profile = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Installments.GrantedContract.Profile;
-                mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Installments.GrantedContract.Profile = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Installments.ShowProfiles(Profile, ref stackPanel);
-            }
             return stackPanel;
         }
 
@@ -164,7 +156,7 @@ namespace TauMira
         {
             StackPanel stackPanel = new StackPanel();
 
-            stackPanel.Children.Add(new UserControlSection("Granted Contract", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.NonInstallments.GrantedContract));
+            stackPanel.Children.Add(new UserControlSection("Granted Contract", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.NonInstallments.GrantedContract.GrantedContract));
             stackPanel.Children.Add(new UserControlSection("Granted Installment", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.NonInstallments.GrantedContract.GrantedInstallment));
             stackPanel.Children.Add(new UserControlSection("Maximum", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.NonInstallments.GrantedContract.Maximum));
 
@@ -173,7 +165,7 @@ namespace TauMira
             int Months = windowProfileData.GetMonths();
 
             // mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.NonInstallments.GrantedContract.GrantedContract.Profile = Profile(Months, ref stackPanel);
-            mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.NonInstallments.GrantedContract.Profile = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.NonInstallments.GenerateProfile(Months, ref stackPanel);
+            mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.NonInstallments.GrantedContract.Profile = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.NonInstallments.GenerateProfile<NonInstallmentsProfile>(Months, ref stackPanel);
 
             return stackPanel;
         }
@@ -200,7 +192,7 @@ namespace TauMira
             windowProfileData.ShowDialog();
             int Months = windowProfileData.GetMonths();
             //mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.CreditCards.GrantedContract.GrantedContract.Profile = Profile(Months, ref stackPanel);
-            mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.CreditCards.GrantedContract.Profile = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.CreditCards.GenerateProfile(Months, ref stackPanel);
+            mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.CreditCards.GrantedContract.Profile = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.CreditCards.GenerateProfile<CreditCardsProfile>(Months, ref stackPanel);
             return stackPanel;
         }
 
@@ -223,7 +215,7 @@ namespace TauMira
             windowProfileData.ShowDialog();
             int Months = windowProfileData.GetMonths();
             // mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GrantedContract.GrantedContract.Profile = Profile(Months, ref stackPanel);
-            mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GrantedContract.Profile = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GenerateProfile(Months, ref stackPanel);
+            mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GrantedContract.Profile = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GenerateProfile<ServicesProfile>(Months, ref stackPanel);
             return stackPanel;
         }
 
@@ -279,10 +271,10 @@ namespace TauMira
             //stackPanel.Children.Add(new UserControlSection("Ahmad", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.SubjectInfo.NegativeEvent));
             return SubjectstackPanel;
         }
-        
 
-        
-        
+
+
+
         public MainWindow()
 
         {
@@ -337,9 +329,9 @@ namespace TauMira
                 ItemsControlDomains.Items.Add(MainItems[i]);
             }
         }
-        
+
         public static MainWindow mainWindow;
-        
+
         private void TagsInitializer()
         {
             TauMira.UIXML.UIXMLTemp.Envelope envelope = new UIXML.UIXMLTemp.Envelope();
@@ -409,7 +401,7 @@ namespace TauMira
             UserControlTreeItem userControlTreeItem = new UserControlTreeItem("Contract" + ++AddInex["Installments"].count, Visibility.Collapsed)
             {
                 Margin = new Thickness(20, 0, 0, 0),
-                Tag = InstallmentContract(sender == null)
+                Tag = InstallmentContract()
             };
             int index = ItemsControlDomains.Items.IndexOf(MainItemsPairs["Installments"]) + AddInex["Installments"].count;
             ItemsControlDomains.Items.Insert(index, userControlTreeItem);
@@ -534,7 +526,7 @@ namespace TauMira
             using (var reader = new StreamReader(fileName))
                 content = reader.ReadToEnd();
 
-            //   content = FixXmlSoapMistakes(content);
+            content = FixXmlSoapMistakes(content);
 
             using (var writer = new StreamWriter(fileName))
                 writer.Write(content, FileMode.Truncate);
@@ -544,12 +536,12 @@ namespace TauMira
         {
             Dictionary<string, string> crifMistakes = new Dictionary<string, string>
             {
-                { "<?xml version=\"1.0\" encoding=\"utf-8\"?>", "" },
-                { "ContractStatusLastUpdateDesc", "ContractStatusLastUpdatDesc" },
-                { "<s:Body>", "<s:Body xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">" },
-                { "<s:Envelope xmlns:cb=\"urn:crif-creditbureau:v1\" xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\">", "<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\">" },
-                { "<cb:CB_NAE_ProductOutput>", "<cb:CB_NAE_ProductOutput xmlns:cb=\"urn:crif-creditbureau:v1\">" },
-                { "<cb:CB_ME_ProductOutput>", "<cb:CB_ME_ProductOutput xmlns:cb=\"urn:crif-creditbureau:v1\">" },
+                //{ "<?xml version=\"1.0\" encoding=\"utf-8\"?>", "" },
+                { "ContractStatusLastUpdateDesc", "ContractStatusLastUpdatDesc" }
+                //{ "<s:Body>", "<s:Body xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">" },
+                //{ "<s:Envelope xmlns:cb=\"urn:crif-creditbureau:v1\" xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\">", "<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\">" },
+                //{ "<cb:CB_NAE_ProductOutput>", "<cb:CB_NAE_ProductOutput xmlns:cb=\"urn:crif-creditbureau:v1\">" },
+                //{ "<cb:CB_ME_ProductOutput>", "<cb:CB_ME_ProductOutput xmlns:cb=\"urn:crif-creditbureau:v1\">" },
             };
 
             foreach (var item in crifMistakes)
@@ -603,7 +595,7 @@ namespace TauMira
             AddUserControlTreeItem("CreditCards", Visibility.Visible, CreditCards());
             AddUserControlTreeItem("Services", Visibility.Visible, Services());
             //Edit Here Please
-            opentestProfile();
+
             //To Here
             AddUserControlTreeItem("CBScore", Visibility.Visible, CBScore());
             AddUserControlTreeItem("NegativeEvent/BouncedCheque", Visibility.Visible, ImportExistSubjectInfo());
@@ -614,30 +606,16 @@ namespace TauMira
             {
                 ItemsControlDomains.Items.Add(MainItems[i]);
             }
+            ImportExistsServiceContract();
+            ImportExistsCreditCardsContract();
+            ImportExistsNonInstallmentContract();
+            ImportExistsInstallmentContract();
         }
         //From Here
-        private void opentestProfile()
-        {
-            UserControlTreeItem userControlTreeItem = new UserControlTreeItem("Contract" + ++AddInex["Services"].count, Visibility.Collapsed);
-            userControlTreeItem.Margin = new Thickness(20, 0, 0, 0);
-            userControlTreeItem.Tag = TestProfiles();
-            int index = ItemsControlDomains.Items.IndexOf(MainItemsPairs["Services"]) + AddInex["Services"].count;
-            ItemsControlDomains.Items.Insert(index, userControlTreeItem);
-        }
 
-        StackPanel TestProfiles()
-        {
 
-            StackPanel stackPanel = new StackPanel();
-            stackPanel.Children.Add(new UserControlSection("Granted Contract", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GrantedContract.GrantedContract));
-            stackPanel.Children.Add(new UserControlSection("Granted Installment", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GrantedContract.GrantedInstallment));
-            stackPanel.Children.Add(new UserControlSection("Maximum", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GrantedContract.Maximum));
 
-            int Months = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GrantedContract.Profile.Count();
-            // mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GrantedContract.GrantedContract.Profile = Profile(Months, ref stackPanel);
-            mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GrantedContract.Profile = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GenerateProfile(Months, ref stackPanel);
-            return stackPanel;
-        }
+
         //To Here
         StackPanel ImportExistSubjectInfo()
         {
@@ -651,7 +629,7 @@ namespace TauMira
 
             return SubjectInfoStackPanel;
         }
-        
+
         string ConvertBytesToSize(float size)
         {
             int unit = 0;
@@ -771,5 +749,123 @@ namespace TauMira
 
 
 
+
+
+
+        //Import
+        private void ImportExistsServiceContract()
+        {
+            UserControlTreeItem userControlTreeItem = new UserControlTreeItem("Contract" + ++AddInex["Services"].count, Visibility.Collapsed);
+            userControlTreeItem.Margin = new Thickness(20, 0, 0, 0);
+            userControlTreeItem.Tag = GenerateServiceContract();
+            int index = ItemsControlDomains.Items.IndexOf(MainItemsPairs["Services"]) + AddInex["Services"].count;
+            ItemsControlDomains.Items.Insert(index, userControlTreeItem);
+        }
+
+
+        StackPanel GenerateServiceContract()
+        {
+
+            StackPanel stackPanel = new StackPanel();
+            stackPanel.Children.Add(new UserControlSection("Granted Contract", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GrantedContract.GrantedContract));
+            stackPanel.Children.Add(new UserControlSection("Granted Installment", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GrantedContract.GrantedInstallment));
+            stackPanel.Children.Add(new UserControlSection("Maximum", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GrantedContract.Maximum));
+
+            int Months = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GrantedContract.Profile.Count();
+            // mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GrantedContract.GrantedContract.Profile = Profile(Months, ref stackPanel);
+            mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GrantedContract.Profile = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Services.GenerateProfile<ServicesProfile>(Months, ref stackPanel);
+            return stackPanel;
+        }
+
+        private void ImportExistsInstallmentContract()
+        {
+            var stacks = GenerateInstallmentContract();
+
+            foreach (var stack in stacks)
+            {
+                UserControlTreeItem userControlTreeItem = new UserControlTreeItem("Contract" + ++AddInex["Installments"].count, Visibility.Collapsed)
+                {
+                    Margin = new Thickness(20, 0, 0, 0),
+                    Tag = stack
+                };
+
+                int index = ItemsControlDomains.Items.IndexOf(MainItemsPairs["Installments"]) + AddInex["Installments"].count;
+                ItemsControlDomains.Items.Insert(index, userControlTreeItem);
+            }
+            //UserControlTreeItem userControlTreeItem = new UserControlTreeItem("Contract" + ++AddInex["Installments"].count, Visibility.Collapsed)
+            //{
+            //    Margin = new Thickness(20, 0, 0, 0),
+            //    Tag = GenerateInstallmentContract()
+            //};
+        }
+
+        List<StackPanel> GenerateInstallmentContract()
+        {
+            var stacks = new List<StackPanel>();
+
+            foreach (var contract in mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Installments.GrantedContract)
+            {
+                StackPanel stackPanel = new StackPanel();
+
+                stackPanel.Children.Add(new UserControlSection("Granted Contract", contract.GrantedContract));
+                stackPanel.Children.Add(new UserControlSection("Granted Installment", contract.GrantedInstallment));
+                stackPanel.Children.Add(new UserControlSection("Maximum", contract.Maximum));
+
+                int Months = contract.Profile.Count();
+
+                //mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Installments.GrantedContract.GrantedContract.Profile = Profile(Months, ref stackPanel);
+                contract.Profile = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.Installments.ShowProfiles(Months, ref stackPanel, contract.Profile);
+                stacks.Add(stackPanel);
+            }
+
+            return stacks;
+        }
+        private void ImportExistsNonInstallmentContract()
+        {
+            UserControlTreeItem userControlTreeItem = new UserControlTreeItem("Contract" + ++AddInex["NonInstallments"].count, Visibility.Collapsed);
+            userControlTreeItem.Margin = new Thickness(20, 0, 0, 0);
+            userControlTreeItem.Tag = GenerateNonInstallmentContract();
+            int index = ItemsControlDomains.Items.IndexOf(MainItemsPairs["NonInstallments"]) + AddInex["NonInstallments"].count;
+            ItemsControlDomains.Items.Insert(index, userControlTreeItem);
+        }
+        StackPanel GenerateNonInstallmentContract()
+        {
+            StackPanel stackPanel = new StackPanel();
+
+            stackPanel.Children.Add(new UserControlSection("Granted Contract", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.NonInstallments.GrantedContract.GrantedContract));
+            stackPanel.Children.Add(new UserControlSection("Granted Installment", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.NonInstallments.GrantedContract.GrantedInstallment));
+            stackPanel.Children.Add(new UserControlSection("Maximum", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.NonInstallments.GrantedContract.Maximum));
+
+
+            int Months = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.NonInstallments.GrantedContract.Profile.Count();
+
+            // mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.NonInstallments.GrantedContract.GrantedContract.Profile = Profile(Months, ref stackPanel);
+            mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.NonInstallments.GrantedContract.Profile = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.NonInstallments.GenerateProfile<NonInstallmentsProfile>(Months, ref stackPanel);
+
+            return stackPanel;
+        }
+        private void ImportExistsCreditCardsContract()
+        {
+            UserControlTreeItem userControlTreeItem = new UserControlTreeItem("Contract" + ++AddInex["CreditCards"].count, Visibility.Collapsed);
+            userControlTreeItem.Margin = new Thickness(20, 0, 0, 0);
+            userControlTreeItem.Tag = GenerateCreditCardsContract();
+            int index = ItemsControlDomains.Items.IndexOf(MainItemsPairs["CreditCards"]) + AddInex["CreditCards"].count;
+            ItemsControlDomains.Items.Insert(index, userControlTreeItem);
+
+        }
+        StackPanel GenerateCreditCardsContract()
+        {
+            StackPanel stackPanel = new StackPanel();
+            stackPanel.Children.Add(new UserControlSection("Granted Contract", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.CreditCards.GrantedContract.GrantedContract));
+            stackPanel.Children.Add(new UserControlSection("Granted Installment", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.CreditCards.GrantedContract.GrantedInstallment));
+            stackPanel.Children.Add(new UserControlSection("Maximum", mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.CreditCards.GrantedContract.Maximum));
+
+            int Months = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.CreditCards.GrantedContract.Profile.Count();
+            //mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.CreditCards.GrantedContract.GrantedContract.Profile = Profile(Months, ref stackPanel);
+            mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.CreditCards.GrantedContract.Profile = mainEnvelope.Body.MGResponse.ProductResponse.CBNAEProductOutput.CreditReport.ContractsHistory.CreditCards.GenerateProfile<CreditCardsProfile>(Months, ref stackPanel);
+            return stackPanel;
+        }
+
     }
+
 }

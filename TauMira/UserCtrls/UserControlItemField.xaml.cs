@@ -21,30 +21,25 @@ namespace TauMira.UserCtrls
     /// </summary>
     public partial class UserControlItemField : UserControl
     {
-        enum Type_
+        enum TauMiraTypes
         {
             STRING, INT, DROPDOWN, DATE, LABEL
         }
-        Type_ type_;
+        TauMiraTypes type;
 
         object parentObj;
         int PropertyIndex = 0;
         object Property;
-        public UserControlItemField(ref System.Reflection.PropertyInfo Property, ref object obj, int i)
+
+        public UserControlItemField(ref System.Reflection.PropertyInfo property, ref object obj, int i)
         {
-
-
-
-            this.parentObj = obj;
-            this.PropertyIndex = i;
-            this.Property = Property;
-
-
-
             InitializeComponent();
-            FieldName.Content = Property.Name;
-            Init(Property.Name, Property.GetValue(obj));
 
+            parentObj = obj;
+            PropertyIndex = i;
+            Property = property;
+            FieldName.Content = property.Name;
+            Init(property.Name, property.GetValue(obj));
         }
 
         public UserControlItemField(string Name_, object obj)
@@ -54,13 +49,13 @@ namespace TauMira.UserCtrls
             Init(Name_, obj);
 
         }
-        void Init(string Name_, object obj)
+        void Init(string name, object obj)
         {
-            type_ = Type_.STRING;
-            string gettype = obj.GetType().ToString().ToLower();
-            switch (gettype)
-            {
+            type = TauMiraTypes.STRING;
+            string getType = obj.GetType().ToString().ToLower();
 
+            switch (getType)
+            {
                 case "system.boolean":
                     {
                         ComboBox comboBox = new ComboBox();
@@ -68,7 +63,7 @@ namespace TauMira.UserCtrls
                             ComboBoxItem comboBoxItem = new ComboBoxItem();
                             comboBox.Items.Add(true);
                             comboBox.Items.Add(false);
-                            type_ = Type_.DROPDOWN;
+                            type = TauMiraTypes.DROPDOWN;
 
                         }
                         comboBox.MinWidth = 200;
@@ -83,16 +78,15 @@ namespace TauMira.UserCtrls
                 case "system.string":
                 case "system.int32":
                     {
-
-                        if (MainWindow.keyValuePairs.ContainsKey(Name_.ToUpper()))
+                        if (MainWindow.keyValuePairs.ContainsKey(name.ToUpper()))
                         {
 
-                            var domain = MainWindow.keyValuePairs[Name_.ToUpper()];
+                            var domain = MainWindow.keyValuePairs[name.ToUpper()];
                             FieldName.Content = domain.Name.Get();
 
                             if (domain.Type.ToLower() == "dropdown")
                             {
-                                type_ = Type_.DROPDOWN;
+                                type = TauMiraTypes.DROPDOWN;
                                 ComboBox comboBox = new ComboBox();
                                 foreach (var item in domain.Values)
                                 {
@@ -129,8 +123,8 @@ namespace TauMira.UserCtrls
                         else
                         {
                             //double hanle
-                            if (gettype == "system.int32")
-                                type_ = Type_.INT;
+                            if (getType == "system.int32")
+                                type = TauMiraTypes.INT;
                             TextBox textBox = new TextBox();
                             textBox.Text = obj.ToString();
                             textBox.MinWidth = 200;
@@ -146,7 +140,7 @@ namespace TauMira.UserCtrls
                         GBody.Children.Add(datePicker);
                         datePicker.Text = obj.ToString();
                         DateTimeChange(datePicker, obj);
-                        type_ = Type_.DATE;
+                        type = TauMiraTypes.DATE;
 
                         return;
                     }
@@ -290,15 +284,17 @@ namespace TauMira.UserCtrls
                 var name = ((System.Reflection.PropertyInfo)this.Property).Name;
                 var propertyDesc = parentObj.GetType().GetProperty(name + "Desc");
                 var code = MainWindow.keyValuePairs[name.ToUpper()].Values.Where(v => v.Descriptions.En == selectedValue).ToList().First().Code;
-
                 if (propertyDesc != null)
                 {
                     propertyDesc.SetValue(parentObj, (tb.SelectedItem as ComboBoxItem).Content.ToString());
                 }
 
+                object value = code;
 
+                if (int.TryParse(code, out int converted))
+                    value = converted;
 
-                ((System.Reflection.PropertyInfo)this.Property).SetValue(parentObj, code.ToString());
+                ((System.Reflection.PropertyInfo)this.Property).SetValue(parentObj, value);
 
             }
             catch (Exception)
@@ -314,6 +310,7 @@ namespace TauMira.UserCtrls
 
                 // var selectedValue = (tb.SelectedItem as ComboBoxItem).Content.ToString();
                 var name = ((System.Reflection.PropertyInfo)this.Property).Name;
+
                 var propertyDesc = parentObj.GetType().GetProperty(name + "Desc");
                 //var code = MainWindow.keyValuePairs[name.ToUpper()].Values.Where(v => v.Descriptions.En == selectedValue).ToList().First().Code;
                 //var des = MainWindow.keyValuePairs[name.ToUpper()].Values.Where(v => v.Code = obj.ToString()).ToList().First().Code;
@@ -412,7 +409,7 @@ namespace TauMira.UserCtrls
             try
             {
 
-                if (type_ == Type_.INT)
+                if (type == TauMiraTypes.INT)
                 {
                     int data_ = 0;
                     int.TryParse(tb.Text, out data_);
@@ -428,11 +425,11 @@ namespace TauMira.UserCtrls
             {
             }
 
-            switch (type_)
+            switch (type)
             {
-                case Type_.STRING:
+                case TauMiraTypes.STRING:
                     break;
-                case Type_.INT:
+                case TauMiraTypes.INT:
                     int result = 0;
                     if (!int.TryParse(tb.Text, out result))
                     {
@@ -452,17 +449,17 @@ namespace TauMira.UserCtrls
         {
             for (int i = 0; i < GBody.Children.Count; i++)
             {
-                switch (type_)
+                switch (type)
                 {
-                    case Type_.STRING:
-                    case Type_.INT:
+                    case TauMiraTypes.STRING:
+                    case TauMiraTypes.INT:
                         ((TextBox)GBody.Children[0]).Clear();
                         break;
-                    case Type_.DROPDOWN:
+                    case TauMiraTypes.DROPDOWN:
                         ((ComboBox)GBody.Children[0]).SelectedIndex = -1;
 
                         break;
-                    case Type_.DATE:
+                    case TauMiraTypes.DATE:
                         ((DatePicker)GBody.Children[0]).Text = "";
                         break;
                     default:

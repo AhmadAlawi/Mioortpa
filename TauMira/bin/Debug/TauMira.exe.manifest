@@ -90,14 +90,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TauMira.exe" size="4603880">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TauMira.exe" size="4607976">
       <assemblyIdentity name="TauMira" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>aeNNed9yH81ADO8kG88kXcgZzUkxGwX2u66yIhr4iHE=</dsig:DigestValue>
+        <dsig:DigestValue>v+CqfG7wezJFTyAawc0wFI90W0NlD4Lrx/T2YrYRtlY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -27,25 +27,25 @@ namespace TauMira.UserCtrls
             InitializeComponent();
 
             labelTitle.Content = title;
-            AddCTRL.Visibility = add;
+            //AddCTRL.Visibility = add;
             ItemsList.SelectionChanged += MainWindow.mainWindow.ItemsControlDomains_SelectionChanged;
         }
 
 
 
-        public Visibility visa_
-        {
-            get
-            {
-                return AddCTRL.Visibility;
-            }
-            set
-            {
-                AddCTRL.Visibility = value;
+        //public Visibility visa_
+        //{
+        //    get
+        //    {
+        //        ; //return AddCTRL.Visibility;
+        //    }
+        //    set
+        //    {
+        //        ;  //AddCTRL.Visibility = value;
 
 
-            }
-        }
+        //    }
+        //}
         public string name_
         {
 

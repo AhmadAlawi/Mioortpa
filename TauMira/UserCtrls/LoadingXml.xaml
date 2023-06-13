@@ -40,8 +40,8 @@
                 </StackPanel>
             
         <StackPanel Grid.Column="2" Orientation="Vertical">
-            <Image Source="file:///C:/Users/RD/Pictures/ssss.PNG" HorizontalAlignment="Center" Width="139.14" Height="141"/>
-                    <TextBlock Text="Cancel" Foreground="#DB2828" HorizontalAlignment="Center" TextDecorations="Underline" FontSize="17" FontFamily="Montserrat" FontWeight="Medium" Margin="16"/>
+            <!--<Image Source="file:///C:/Users/RD/Pictures/ssss.PNG" HorizontalAlignment="Center" Width="139.14" Height="141"/>-->
+                    <!--<TextBlock Text="Cancel" Foreground="#DB2828" HorizontalAlignment="Center" TextDecorations="Underline" FontSize="17" FontFamily="Montserrat" FontWeight="Medium" Margin="16"/>-->
         </StackPanel>
             </Grid>
         </Border>

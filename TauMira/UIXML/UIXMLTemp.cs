@@ -304,7 +304,8 @@ namespace TauMira.UIXML
         {
             public Contact()
             {
-                Type = Value = 0;
+                Type = 0;
+                Value = "";
 
 
             }
@@ -312,7 +313,7 @@ namespace TauMira.UIXML
             public int Type { get; set; }
 
             [XmlAttribute(AttributeName = "Value")]
-            public int Value { get; set; }
+            public string Value { get; set; }
 
 
         }
@@ -598,13 +599,13 @@ namespace TauMira.UIXML
             public ApplicationCodes()
             {
                 ProviderApplicationNo = "";
-                CBContractCode = 0;
+                CBContractCode = "";
             }
             [XmlAttribute(AttributeName = "ProviderApplicationNo")]
             public string ProviderApplicationNo { get; set; }
 
             [XmlAttribute(AttributeName = "CBContractCode")]
-            public int CBContractCode { get; set; }
+            public string CBContractCode { get; set; }
         }
 
         [XmlRoot(ElementName = "BirthDataDesc", Namespace = "urn:crif-creditbureau:v1")]
@@ -1193,7 +1194,9 @@ namespace TauMira.UIXML
         {
             public NotGrantedContract()
             {
-                CBContractCode = ContractType = CreditFacilityPurpose = 0;
+                CBContractCode = "";
+                ContractType = 0;
+                CreditFacilityPurpose = 0;
 
                 ContractTypeDesc = ProviderCodeEncrypted = ContractPhase = CreditFacilityPurposeDesc = ContractPhaseDesc = Role = RoleDesc = "";
                 ContractRequestDate = LastUpdateDate = DateTime.Now;
@@ -1203,7 +1206,7 @@ namespace TauMira.UIXML
             }
 
             [XmlAttribute(AttributeName = "CBContractCode")]
-            public int CBContractCode { get; set; }
+            public string CBContractCode { get; set; }
 
             [XmlAttribute(AttributeName = "ContractType")]
             public int ContractType { get; set; }
@@ -1356,7 +1359,7 @@ namespace TauMira.UIXML
 
 
         [XmlRoot(ElementName = "GrantedContract", Namespace = "urn:crif-creditbureau:v1")]
-        public class GrantedContract2
+        public class GrantedContract2<T> where T : Profile
         {
             public GrantedContract2()
             {
@@ -1365,7 +1368,7 @@ namespace TauMira.UIXML
 
                 Maximum = new Maximum();
 
-                Profile = new List<Profile>();
+                Profile = new List<T>();
 
                 Guarantee = new Guarantee();
 
@@ -1386,7 +1389,7 @@ namespace TauMira.UIXML
             public Maximum Maximum { get; set; }
 
             [XmlElement(ElementName = "Profile", Namespace = "urn:crif-creditbureau:v1")]
-            public List<Profile> Profile { get; set; }
+            public List<T> Profile { get; set; }
 
             [XmlElement(ElementName = "Guarantee", Namespace = "urn:crif-creditbureau:v1")]
             public Guarantee Guarantee { get; set; }
@@ -1551,7 +1554,7 @@ namespace TauMira.UIXML
             public string ContractStatusLastUpdate { get; set; }
 
             [XmlAttribute(AttributeName = "ContractStatusLastUpdateDesc")]
-            public string ContractStatusLastUpdaetDesc { get; set; }
+            public string ContractStatusLastUpdateDesc { get; set; }
 
             [XmlAttribute(AttributeName = "ContractStatusLastUpdateDate")]
             public DateTime ContractStatusLastUpdateDate { get; set; }
@@ -1564,17 +1567,22 @@ namespace TauMira.UIXML
                 Status = "B";
                 StatusDesc = "No info";
                 ContractStatusLastUpdate = "A";
-                ContractStatusLastUpdaetDesc = "No info";
+                ContractStatusLastUpdateDesc = "No info";
                 ContractStatusLastUpdateDate = DateTime.Now;
             }
 
-            public virtual List<Profile> GenerateProfile(int months, ref StackPanel stackPanel)
+            public virtual List<T> GenerateProfile<T>(int months, ref StackPanel stackPanel) where T : Profile
             {
                 //for (int i = 0; i < months; i++)
                 //{
 
                 //}
-                return new List<Profile>();
+                return new List<T>();
+            }
+
+            public virtual List<T> ShowProfiles<T>(int months, ref StackPanel stackPanel, List<T> Profiles) where T : Profile
+            {
+                return new List<T>();
             }
 
             //public static void ShowProfiles(List<Profile> profiles, ref StackPanel stackPanel)
@@ -1583,13 +1591,13 @@ namespace TauMira.UIXML
             //    foreach (var profile in profiles)
             //        stackPanel.Children.Add(new UserControlSection($"Profile #{++i}", profile, Visibility.Visible, stackPanel));
             //}
-            public virtual List<Profile> ShowProfiles(List<Profile> profiles, ref StackPanel stackPanel)
-            {
-                //int i = 0;
-                //foreach (var profile in profiles)
-                //    stackPanel.Children.Add(new UserControlSection($"Profile #{++i}", profile, Visibility.Visible, stackPanel));
-                return new List<Profile>();
-            }
+            //public virtual List<Profile> ShowProfiles(int months,List<Profile> profiles, ref StackPanel stackPanel)
+            //{
+            //    //int i = 0;
+            //    //foreach (var profile in profiles)
+            //    //    stackPanel.Children.Add(new UserControlSection($"Profile #{++i}", profile, Visibility.Visible, stackPanel));
+            //    return new List<Profile>();
+            //}
         }
 
         // NonInstallments
@@ -1605,20 +1613,22 @@ namespace TauMira.UIXML
             [XmlAttribute(AttributeName = "TotalGuaranteedAmount")]
             public int TotalGuaranteedAmount { get; set; }
 
-            public override List<Profile> GenerateProfile(int months, ref StackPanel stackPanel)
+            public override List<T> GenerateProfile<T>(int months, ref StackPanel stackPanel)
             {
-                var profiles = new List<Profile>();
+                var profiles = new List<T>();
                 var lastMonth = DateTime.Today.AddMonths(0);
 
                 for (int i = 0; i < months; i++)
                 {
-                    var profile = new NonInstallmentsProfile();
+                    var profile = (T)Activator.CreateInstance(typeof(NonInstallmentsProfile));
+
                     profiles.Add(profile);
                     profiles[i].ReferenceYear = lastMonth.Year;
                     profiles[i].ReferenceMonth = lastMonth.Month;
                     lastMonth = lastMonth.AddMonths(-1);
                     stackPanel.Children.Add(new UserControlSection("Profile", profile, Visibility.Visible, stackPanel));
                 }
+
                 return profiles;
             }
         }
@@ -1636,16 +1646,18 @@ namespace TauMira.UIXML
             [XmlAttribute(AttributeName = "DaysPastDueDesc")]
             public string DaysPastDueDesc { get; set; }
 
-            public override List<Profile> GenerateProfile(int months, ref StackPanel stackPanel)
+            public override List<T> GenerateProfile<T>(int months, ref StackPanel stackPanel)
             {
-                var profiles = new List<Profile>();
+                var profiles = new List<T>();
                 var lastMonth = DateTime.Today.AddMonths(0);
 
                 for (int i = 0; i < months; i++)
                 {
-                    var profile = new InstallmentsProfile();
-                    profile.DaysPastDueDesc = "Paid as agreed";
-                    profile.DaysPastDue = 1;
+                    var profile = (T)Activator.CreateInstance(typeof(InstallmentsProfile));
+
+                    (profile as InstallmentsProfile).DaysPastDueDesc = "Paid as agreed";
+                    (profile as InstallmentsProfile).DaysPastDue = 1;
+
                     profiles.Add(profile);
                     profiles[i].ReferenceYear = lastMonth.Year;
                     profiles[i].ReferenceMonth = lastMonth.Month;
@@ -1656,13 +1668,27 @@ namespace TauMira.UIXML
                 return profiles;
             }
 
-            public virtual List<Profile> ShowProfiles(List<Profile> profiles, ref StackPanel stackPanel)
+            public override List<T> ShowProfiles<T>(int months, ref StackPanel stackPanel, List<T> Profiles)
             {
-                int i = 0;
-                foreach (var profile in profiles)
+                //List<Profile> profiless = new List<Profile>();
+                //foreach (var item in Profiles)
+                //{
+                //    var profile = item;
+                //    profiless.Add(profile);
+                //}
+                //for (int i = 0;i < months; i++)
+                //{
+                //    var profile = new InstallmentsProfile();
+
+                //    profiless.Add(profile);
+                //}
+
+
+                foreach (var profile in Profiles)
                     stackPanel.Children.Add(new UserControlSection("Profile", profile, Visibility.Visible, stackPanel));
+
                 //stackPanel.Children.Add(new UserControlSection($"Profile #{++i}", profile, Visibility.Visible, stackPanel));
-                return profiles;    
+                return Profiles;
             }
         }
 
@@ -1693,24 +1719,50 @@ namespace TauMira.UIXML
 
             [XmlAttribute(AttributeName = "TimesCardUsed")]
             public int TimesCardUsed { get; set; }
-            public override List<Profile> GenerateProfile(int months, ref StackPanel stackPanel)
+
+            public override List<T> GenerateProfile<T>(int months, ref StackPanel stackPanel)
             {
-                var profiles = new List<Profile>();
+                var profiles = new List<T>();
                 var lastMonth = DateTime.Today.AddMonths(0);
+
                 for (int i = 0; i < months; i++)
                 {
-                    var profile = new CreditCardsProfile();
-                    profile.DaysPastDue = 1;
-                    profile.DaysPastDueDesc = "Paid as agreed";
-                    profile.MinPaymentIndicatorDesc = "";
+                    var profile = (T)Activator.CreateInstance(typeof(CreditCardsProfile));
+
+                    (profile as CreditCardsProfile).DaysPastDue = 1;
+                    (profile as CreditCardsProfile).DaysPastDueDesc = "Paid as agreed";
+                    (profile as CreditCardsProfile).MinPaymentIndicatorDesc = "";
+
                     profiles.Add(profile);
                     profiles[i].ReferenceYear = lastMonth.Year;
                     profiles[i].ReferenceMonth = lastMonth.Month;
                     lastMonth = lastMonth.AddMonths(-1);
                     stackPanel.Children.Add(new UserControlSection("Profile", profile, Visibility.Visible, stackPanel));
                 }
+
                 return profiles;
             }
+
+            //public override List<Profile> ShowProfiles(int months, ref StackPanel stackPanel, List<Profile> Profiles)
+            //{
+            //    //List<Profile> profiless = new List<Profile>();
+            //    //foreach (var item in Profiles)
+            //    //{
+            //    //    var profile = item;
+            //    //    profiless.Add(profile);
+            //    //}
+            //    //for (int i = 0;i < months; i++)
+            //    //{
+            //    //    var profile = new InstallmentsProfile();
+
+            //    //    profiless.Add(profile);
+            //    //}
+
+            //    foreach (var profile in Profiles)
+            //        stackPanel.Children.Add(new UserControlSection("Profile", profile, Visibility.Visible, stackPanel));
+            //    //stackPanel.Children.Add(new UserControlSection($"Profile #{++i}", profile, Visibility.Visible, stackPanel));
+            //    return Profiles;
+            //}
 
         }
 
@@ -1733,21 +1785,25 @@ namespace TauMira.UIXML
             [XmlAttribute(AttributeName = "DaysPastDueDesc")]
             public string DaysPastDueDesc { get; set; }
 
-            public override List<Profile> GenerateProfile(int months, ref StackPanel stackPanel)
+            public override List<T> GenerateProfile<T>(int months, ref StackPanel stackPanel)
             {
-                var profiles = new List<Profile>();
+                var profiles = new List<T>();
                 var lastMonth = DateTime.Today.AddMonths(0);
+
                 for (int i = 0; i < months; i++)
                 {
-                    var profile = new ServicesProfile();
-                    profile.DaysPastDue = 1;
-                    profile.DaysPastDueDesc = "Paid as agreed";
+                    var profile = (T)Activator.CreateInstance(typeof(ServicesProfile));
+
+                    (profile as ServicesProfile).DaysPastDue = 1;
+                    (profile as ServicesProfile).DaysPastDueDesc = "Paid as agreed";
+
                     profiles.Add(profile);
                     profiles[i].ReferenceYear = lastMonth.Year;
                     profiles[i].ReferenceMonth = lastMonth.Month;
                     lastMonth = lastMonth.AddMonths(-1);
                     stackPanel.Children.Add(new UserControlSection("Profile", profile, Visibility.Visible, stackPanel));
                 }
+
                 return profiles;
             }
         }
@@ -1825,7 +1881,7 @@ namespace TauMira.UIXML
                 NumbersSummary = new NumbersSummary();
                 AmountsSummary = new AmountsSummary();
                 NotGrantedContract = new List<NotGrantedContract2>();
-                GrantedContract = new GrantedContract2();
+                GrantedContract = new List<GrantedContract2<InstallmentsProfile>>();
             }
             [XmlElement(ElementName = "NumbersSummary", Namespace = "urn:crif-creditbureau:v1")]
             public NumbersSummary NumbersSummary { get; set; }
@@ -1837,7 +1893,7 @@ namespace TauMira.UIXML
             public List<NotGrantedContract2> NotGrantedContract { get; set; }
 
             [XmlElement(ElementName = "GrantedContract", Namespace = "urn:crif-creditbureau:v1")]
-            public GrantedContract2 GrantedContract { get; set; }
+            public List<GrantedContract2<InstallmentsProfile>> GrantedContract { get; set; }
         }
 
         [XmlRoot(ElementName = "GrantedNonInstallment", Namespace = "urn:crif-creditbureau:v1")]
@@ -1900,7 +1956,7 @@ namespace TauMira.UIXML
             {
                 NumbersSummary = new NumbersSummary();
                 AmountsSummary = new AmountsSummary();
-                GrantedContract = new GrantedContract2();
+                GrantedContract = new GrantedContract2<NonInstallmentsProfile>();
             }
             [XmlElement(ElementName = "NumbersSummary", Namespace = "urn:crif-creditbureau:v1")]
             public NumbersSummary NumbersSummary { get; set; }
@@ -1909,7 +1965,7 @@ namespace TauMira.UIXML
             public AmountsSummary AmountsSummary { get; set; }
 
             [XmlElement(ElementName = "GrantedContract", Namespace = "urn:crif-creditbureau:v1")]
-            public GrantedContract2 GrantedContract { get; set; }
+            public GrantedContract2<NonInstallmentsProfile> GrantedContract { get; set; }
         }
 
         [XmlRoot(ElementName = "NotGrantedCard", Namespace = "urn:crif-creditbureau:v1")]
@@ -2024,7 +2080,7 @@ namespace TauMira.UIXML
                 NumbersSummary = new NumbersSummary();
                 AmountsSummary = new AmountsSummary();
                 NotGrantedContract = new NotGrantedContract2();
-                GrantedContract = new GrantedContract2();
+                GrantedContract = new GrantedContract2<CreditCardsProfile>();
 
             }
             [XmlElement(ElementName = "NumbersSummary", Namespace = "urn:crif-creditbureau:v1")]
@@ -2037,7 +2093,7 @@ namespace TauMira.UIXML
             public NotGrantedContract2 NotGrantedContract { get; set; }
 
             [XmlElement(ElementName = "GrantedContract", Namespace = "urn:crif-creditbureau:v1")]
-            public GrantedContract2 GrantedContract { get; set; }
+            public GrantedContract2<CreditCardsProfile> GrantedContract { get; set; }
         }
 
         [XmlRoot(ElementName = "GrantedService", Namespace = "urn:crif-creditbureau:v1")]
@@ -2102,7 +2158,7 @@ namespace TauMira.UIXML
             {
                 NumbersSummary = new NumbersSummary();
                 AmountsSummary = new AmountsSummary();
-                GrantedContract = new GrantedContract2();
+                GrantedContract = new GrantedContract2<ServicesProfile>();
             }
             [XmlElement(ElementName = "NumbersSummary", Namespace = "urn:crif-creditbureau:v1")]
             public NumbersSummary NumbersSummary { get; set; }
@@ -2111,7 +2167,7 @@ namespace TauMira.UIXML
             public AmountsSummary AmountsSummary { get; set; }
 
             [XmlElement(ElementName = "GrantedContract", Namespace = "urn:crif-creditbureau:v1")]
-            public GrantedContract2 GrantedContract { get; set; }
+            public GrantedContract2<ServicesProfile> GrantedContract { get; set; }
         }
 
         [XmlRoot(ElementName = "FootPrint", Namespace = "urn:crif-creditbureau:v1")]

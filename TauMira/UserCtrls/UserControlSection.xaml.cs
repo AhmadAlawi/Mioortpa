@@ -54,33 +54,21 @@ namespace TauMira.UserCtrls
             {
                 try
                 {
+                    if (types.Contains(Properties[i].GetValue(obj).GetType().ToString().ToLower()))
+                    {
+                        UserControlItemField userControlItemField = new UserControlItemField(ref Properties[i], ref obj, i)
+                        {
+                            Margin = new Thickness(0, 0, 5, 0)
+                        };
 
-                if (types.Contains(Properties[i].GetValue(obj).GetType().ToString().ToLower()))
-                {
-                    UserControlItemField userControlItemField = new UserControlItemField(ref Properties[i], ref obj, i);
-                    userControlItemField.Margin = new Thickness(0, 0, 5, 0);
                         if (!userControlItemField.FieldName.Content.ToString().EndsWith("Desc"))
                             WrapPanelData.Children.Add(userControlItemField);
-                }
+                    }
                 }
                 catch { }
             }
 
             return;
-            foreach (var item in obj.GetType().GetProperties())
-            {
-
-
-                if (types.Contains(item.GetValue(obj).GetType().ToString().ToLower()))
-                {
-
-                    UserControlItemField userControlItemField = new UserControlItemField(item.Name, item.GetValue(obj));
-
-                    userControlItemField.Margin = new Thickness(0, 0, 5, 0);
-                    WrapPanelData.Children.Add(userControlItemField);
-                }
-
-            }
         }
 
         private void Label_MouseUp(object sender, MouseButtonEventArgs e)

@@ -17,13 +17,13 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="30"/>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+                <!--<ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>-->
             </Grid.ColumnDefinitions>
                 <local:UserControlDot Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UserControlDot>
-                <Label Grid.Column="1" Name="labelTitle" Style="{DynamicResource LabelStyle1}" >Sfff</Label>
+                <Label Grid.Column="1" Name="labelTitle" Style="{DynamicResource LabelStyle1}">Sfff</Label>
                 <Label Grid.Column="2" x:Name="labelNumber" Content="{Binding number_, ElementName=TI}"  Style="{DynamicResource LabelStyle2}" ></Label>
-            <local:UserControlAdd  Grid.Column="3" Margin="5" x:Name="AddCTRL" HorizontalAlignment="Right" VerticalAlignment="Center" HorizontalContentAlignment="Right"/>
+            <!--<local:UserControlAdd  Grid.Column="3" Margin="5" x:Name="AddCTRL" HorizontalAlignment="Right" VerticalAlignment="Center" HorizontalContentAlignment="Right"/>-->
         </Grid>
 
         <Grid Margin="20,0,0,0" x:Name="GridItemsList" Grid.Row="1">

@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="1080" Width="1920" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow"
         WindowState="Maximized" Loaded="Window_Loaded"
-        Style="{DynamicResource CustomWindowStyle}">
+        Style="{DynamicResource CustomWindowStyle}" Icon="/Group 193@2x.png">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -19,12 +19,12 @@
 
             <Menu Style="{DynamicResource MainMenuTheme}" Background="Red">
                 <MenuItem Header="File" FontSize="16" FontFamily="Montserrat" FontWeight="Medium" Foreground="#264B80">
-                    <MenuItem Header="Option 1"/>
-                    <MenuItem Header="Option 2"/>
-                    <MenuItem Header="Option 3"/>
+                    <MenuItem Header="Option 1" IsEnabled="False"/>
+                    <MenuItem Header="Option 2" IsEnabled="False"/>
+                    <MenuItem Header="Option 3" IsEnabled="False"/>
                     <Line X1="-5" Y1="10"
                           X2="100" Y2="10" Stroke="#C7C7C7" StrokeThickness="1.5" IsEnabled="False" />
-                    <MenuItem Header="Import XML" Click="ImportXml_Click"/>
+                    <MenuItem Header="Import XML" Click="ImportXml_Click" IsEnabled="True"/>
                 </MenuItem>
                 <MenuItem Header="Add Segmant" FontSize="16" FontFamily="Montserrat" FontWeight="Medium" Foreground="#264B80">
                     <MenuItem Header="Individual">
